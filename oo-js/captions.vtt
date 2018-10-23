@@ -1,0 +1,3950 @@
+WEBVTT
+
+1
+00:00:00.170 --> 00:00:09.179
+<font color="#E5E5E5">okay so this is a little bit of an</font>
+
+2
+00:00:06.269 --> 00:00:13.018
+experiment<font color="#E5E5E5"> in how we might be able</font><font color="#CCCCCC"> to</font>
+
+3
+00:00:09.179 --> 00:00:16.019
+better deliver<font color="#E5E5E5"> some of the content of</font>
+
+4
+00:00:13.019 --> 00:00:18.660
+this course<font color="#CCCCCC"> I think a lot of</font><font color="#E5E5E5"> the stuff</font>
+
+5
+00:00:16.019 --> 00:00:19.230
+that<font color="#CCCCCC"> we've been doing</font><font color="#E5E5E5"> at the front</font><font color="#CCCCCC"> to</font>
+
+6
+00:00:18.660 --> 00:00:20.910
+everyone
+
+7
+00:00:19.230 --> 00:00:23.129
+hasn't been<font color="#CCCCCC"> landing as</font><font color="#E5E5E5"> well</font><font color="#CCCCCC"> as we want</font>
+
+8
+00:00:20.910 --> 00:00:26.879
+it to<font color="#E5E5E5"> and care the same actually for a</font>
+
+9
+00:00:23.129 --> 00:00:31.018
+lot of<font color="#E5E5E5"> things that we've done in our</font>
+
+10
+00:00:26.879 --> 00:00:32.488
+three separate<font color="#E5E5E5"> groups we can do a lot</font>
+
+11
+00:00:31.018 --> 00:00:36.329
+more<font color="#E5E5E5"> stuff there</font><font color="#CCCCCC"> but they're still kind</font>
+
+12
+00:00:32.488 --> 00:00:41.119
+of those groups is still too big<font color="#E5E5E5"> really</font>
+
+13
+00:00:36.329 --> 00:00:44.160
+<font color="#E5E5E5">faster to do what we</font><font color="#CCCCCC"> wanted to do so</font>
+
+14
+00:00:41.119 --> 00:00:47.488
+this is I<font color="#E5E5E5"> guess a little bit of an</font>
+
+15
+00:00:44.159 --> 00:00:50.750
+experiment<font color="#E5E5E5"> in talking through some of</font>
+
+16
+00:00:47.488 --> 00:00:54.599
+the content of course some<font color="#E5E5E5"> of the theory</font>
+
+17
+00:00:50.750 --> 00:00:58.170
+doing a bit of<font color="#CCCCCC"> coding together and</font>
+
+18
+00:00:54.600 --> 00:01:01.140
+trying<font color="#E5E5E5"> to do that in a way where you</font><font color="#CCCCCC"> can</font>
+
+19
+00:00:58.170 --> 00:01:02.969
+go through<font color="#CCCCCC"> it at your own pace pausing</font>
+
+20
+00:01:01.140 --> 00:01:07.109
+the video where you<font color="#E5E5E5"> need to or like</font>
+
+21
+00:01:02.969 --> 00:01:09.570
+skipping sections if you need to but
+
+22
+00:01:07.109 --> 00:01:12.989
+also<font color="#E5E5E5"> still be able</font><font color="#CCCCCC"> to like ask questions</font>
+
+23
+00:01:09.569 --> 00:01:14.849
+<font color="#E5E5E5">and all of that sort of</font><font color="#CCCCCC"> stuff so I think</font>
+
+24
+00:01:12.989 --> 00:01:19.709
+roughly<font color="#E5E5E5"> the way that this is gonna work</font>
+
+25
+00:01:14.849 --> 00:01:21.839
+<font color="#CCCCCC">is I've got</font><font color="#E5E5E5"> this video I'm I'm making</font>
+
+26
+00:01:19.709 --> 00:01:24.500
+right I will have<font color="#E5E5E5"> made by the time</font>
+
+27
+00:01:21.840 --> 00:01:30.600
+you've this is the video I am making it
+
+28
+00:01:24.500 --> 00:01:33.420
+and we're gonna set<font color="#E5E5E5"> up</font><font color="#CCCCCC"> some places</font><font color="#E5E5E5"> where</font>
+
+29
+00:01:30.599 --> 00:01:35.069
+it will pause automatically for you to
+
+30
+00:01:33.420 --> 00:01:37.590
+catch up<font color="#CCCCCC"> with the code when we're</font>
+
+31
+00:01:35.069 --> 00:01:40.529
+writing code<font color="#E5E5E5"> and there should also be</font>
+
+32
+00:01:37.590 --> 00:01:43.350
+<font color="#E5E5E5">something on the screen where you can</font>
+
+33
+00:01:40.530 --> 00:01:46.500
+<font color="#CCCCCC">ask a question and I imagine that's</font>
+
+34
+00:01:43.349 --> 00:01:48.118
+<font color="#E5E5E5">gonna like probably ping us on</font><font color="#CCCCCC"> slack and</font>
+
+35
+00:01:46.500 --> 00:01:50.069
+then we'll like reply to you<font color="#CCCCCC"> and slack</font>
+
+36
+00:01:48.118 --> 00:01:52.560
+<font color="#CCCCCC">will answers</font><font color="#E5E5E5"> to your questions</font>
+
+37
+00:01:50.069 --> 00:01:55.379
+anywhere<font color="#CCCCCC"> where something seems a bit a</font>
+
+38
+00:01:52.560 --> 00:01:57.329
+little<font color="#E5E5E5"> bit confusing or whatever or</font>
+
+39
+00:01:55.379 --> 00:01:58.319
+<font color="#E5E5E5">potentially</font><font color="#CCCCCC"> will just come over and</font><font color="#E5E5E5"> have</font>
+
+40
+00:01:57.328 --> 00:02:04.618
+a chat to you about it
+
+41
+00:01:58.319 --> 00:02:07.048
+so the idea is that<font color="#E5E5E5"> we</font><font color="#CCCCCC"> can deliver this</font>
+
+42
+00:02:04.618 --> 00:02:09.000
+content<font color="#E5E5E5"> to you in a way where you can go</font>
+
+43
+00:02:07.049 --> 00:02:10.590
+<font color="#E5E5E5">through at</font><font color="#CCCCCC"> your</font><font color="#E5E5E5"> own pace but still get</font>
+
+44
+00:02:09.000 --> 00:02:12.590
+the more individualized support from<font color="#E5E5E5"> us</font>
+
+45
+00:02:10.590 --> 00:02:14.819
+that you need when you need<font color="#E5E5E5"> it</font>
+
+46
+00:02:12.590 --> 00:02:16.039
+<font color="#E5E5E5">and maybe it will work hopefully you'll</font>
+
+47
+00:02:14.819 --> 00:02:20.159
+be<font color="#E5E5E5"> able to give us some</font><font color="#CCCCCC"> feedback</font>
+
+48
+00:02:16.039 --> 00:02:23.900
+<font color="#CCCCCC">afterwards so we're gonna be</font><font color="#E5E5E5"> talking</font>
+
+49
+00:02:20.159 --> 00:02:27.449
+about<font color="#E5E5E5"> object-oriented JavaScript and</font>
+
+50
+00:02:23.900 --> 00:02:29.490
+we've already spent the<font color="#E5E5E5"> morning talking</font>
+
+51
+00:02:27.449 --> 00:02:31.019
+<font color="#E5E5E5">about some of the concepts of</font><font color="#CCCCCC"> object</font>
+
+52
+00:02:29.490 --> 00:02:33.320
+<font color="#E5E5E5">oriented programming and object oriented</font>
+
+53
+00:02:31.020 --> 00:02:33.320
+<font color="#E5E5E5">design</font>
+
+54
+00:02:34.490 --> 00:02:42.240
+<font color="#CCCCCC">okay so we've talked</font><font color="#E5E5E5"> about how objects</font>
+
+55
+00:02:40.110 --> 00:02:44.870
+represent things<font color="#E5E5E5"> in the real world that</font>
+
+56
+00:02:42.240 --> 00:02:47.400
+we<font color="#E5E5E5"> want to use in our programs and</font>
+
+57
+00:02:44.870 --> 00:02:49.650
+that's true in a lot<font color="#CCCCCC"> of cases but not</font>
+
+58
+00:02:47.400 --> 00:02:52.469
+not<font color="#CCCCCC"> always true often object oriented</font>
+
+59
+00:02:49.650 --> 00:02:55.319
+programs end up having objects<font color="#E5E5E5"> that</font>
+
+60
+00:02:52.469 --> 00:02:58.289
+aren't<font color="#E5E5E5"> necessarily real-world things but</font>
+
+61
+00:02:55.319 --> 00:03:00.509
+I like<font color="#E5E5E5"> to think</font><font color="#CCCCCC"> them</font><font color="#E5E5E5"> think of them as</font>
+
+62
+00:02:58.289 --> 00:03:02.039
+like machines in<font color="#E5E5E5"> our code that do</font>
+
+63
+00:03:00.509 --> 00:03:06.599
+different<font color="#CCCCCC"> things and</font><font color="#E5E5E5"> act in a certain</font>
+
+64
+00:03:02.039 --> 00:03:10.789
+<font color="#E5E5E5">way</font><font color="#CCCCCC"> so we've talked about</font><font color="#E5E5E5"> how classes</font>
+
+65
+00:03:06.599 --> 00:03:14.370
+are like blueprints<font color="#CCCCCC"> or templates for</font>
+
+66
+00:03:10.789 --> 00:03:17.250
+<font color="#E5E5E5">objects in our code they list all the</font>
+
+67
+00:03:14.370 --> 00:03:19.680
+attributes<font color="#CCCCCC"> so the</font><font color="#E5E5E5"> information about that</font>
+
+68
+00:03:17.250 --> 00:03:21.930
+thing<font color="#E5E5E5"> and all of the methods which are</font>
+
+69
+00:03:19.680 --> 00:03:30.330
+<font color="#CCCCCC">author</font><font color="#E5E5E5"> all the stuff that that</font><font color="#CCCCCC"> thing can</font>
+
+70
+00:03:21.930 --> 00:03:33.900
+do so<font color="#E5E5E5"> objects are actual instances of a</font>
+
+71
+00:03:30.330 --> 00:03:36.239
+class so people every single<font color="#E5E5E5"> person</font>
+
+72
+00:03:33.900 --> 00:03:39.360
+<font color="#E5E5E5">every one of us might be an instance of</font>
+
+73
+00:03:36.239 --> 00:03:41.759
+the human class if<font color="#CCCCCC"> I'm</font><font color="#E5E5E5"> creating a</font>
+
+74
+00:03:39.360 --> 00:03:45.180
+service<font color="#E5E5E5"> like Spotify probably I have a</font>
+
+75
+00:03:41.759 --> 00:03:50.189
+song class and lots of individual songs
+
+76
+00:03:45.180 --> 00:03:52.049
+that are instances<font color="#E5E5E5"> of</font><font color="#CCCCCC"> that so you might</font>
+
+77
+00:03:50.189 --> 00:03:56.250
+remember this<font color="#CCCCCC"> diagram from earlier</font><font color="#E5E5E5"> on</font>
+
+78
+00:03:52.049 --> 00:04:01.530
+the idea of<font color="#E5E5E5"> having cows and we</font><font color="#CCCCCC"> have a</font>
+
+79
+00:03:56.250 --> 00:04:03.989
+small red cow and a long blue cow so
+
+80
+00:04:01.530 --> 00:04:08.759
+they both<font color="#E5E5E5"> have the both unique they both</font>
+
+81
+00:04:03.989 --> 00:04:12.090
+have some separate information<font color="#E5E5E5"> regarding</font>
+
+82
+00:04:08.759 --> 00:04:15.989
+them but they both embody this like
+
+83
+00:04:12.090 --> 00:04:20.280
+overarching concept of being<font color="#E5E5E5"> a cow they</font>
+
+84
+00:04:15.989 --> 00:04:24.199
+are both cows they just one is a cow
+
+85
+00:04:20.279 --> 00:04:24.199
+it's red<font color="#CCCCCC"> and my as a cow if it's blue</font>
+
+86
+00:04:24.300 --> 00:04:29.939
+so classes have attributes which is the
+
+87
+00:04:28.288 --> 00:04:32.668
+data or you<font color="#CCCCCC"> can</font><font color="#E5E5E5"> think of them as the</font>
+
+88
+00:04:29.939 --> 00:04:34.740
+<font color="#E5E5E5">variables in the class and they also</font>
+
+89
+00:04:32.668 --> 00:04:37.348
+have methods which<font color="#E5E5E5"> are the actions that</font>
+
+90
+00:04:34.740 --> 00:04:42.150
+the class can take which are also a type
+
+91
+00:04:37.348 --> 00:04:44.550
+of function and we've been<font color="#CCCCCC"> using class</font>
+
+92
+00:04:42.149 --> 00:04:48.209
+diagrams like<font color="#CCCCCC"> this to</font><font color="#E5E5E5"> help us design</font>
+
+93
+00:04:44.550 --> 00:04:50.610
+classes<font color="#E5E5E5"> they have our class name at the</font>
+
+94
+00:04:48.209 --> 00:04:54.478
+top<font color="#E5E5E5"> which always starts where the</font>
+
+95
+00:04:50.610 --> 00:04:58.439
+<font color="#E5E5E5">capital all of the</font><font color="#CCCCCC"> attributes the</font>
+
+96
+00:04:54.478 --> 00:05:01.258
+<font color="#E5E5E5">information associated with a class and</font>
+
+97
+00:04:58.439 --> 00:05:04.589
+that<font color="#E5E5E5"> includes any of the usually</font>
+
+98
+00:05:01.259 --> 00:05:07.259
+includes the<font color="#E5E5E5"> data type and also any of</font>
+
+99
+00:05:04.589 --> 00:05:11.250
+<font color="#E5E5E5">the methods</font><font color="#CCCCCC"> or actions</font><font color="#E5E5E5"> that we had which</font>
+
+100
+00:05:07.259 --> 00:05:15.770
+tend to include the inputs<font color="#E5E5E5"> and output</font>
+
+101
+00:05:11.250 --> 00:05:15.769
+type as well<font color="#CCCCCC"> if they have a return value</font>
+
+102
+00:05:17.360 --> 00:05:28.009
+so in JavaScript<font color="#CCCCCC"> there's also something</font>
+
+103
+00:05:21.569 --> 00:05:30.419
+called<font color="#E5E5E5"> the constructor and all classes</font>
+
+104
+00:05:28.009 --> 00:05:32.460
+typically<font color="#CCCCCC"> there actually have to</font><font color="#E5E5E5"> have a</font>
+
+105
+00:05:30.418 --> 00:05:34.788
+constructor but most classes in
+
+106
+00:05:32.459 --> 00:05:40.399
+JavaScript<font color="#E5E5E5"> will have a constructor and</font>
+
+107
+00:05:34.788 --> 00:05:45.418
+the constructor is used<font color="#E5E5E5"> to build or make</font>
+
+108
+00:05:40.399 --> 00:05:51.478
+the technical term<font color="#E5E5E5"> is instantiate object</font>
+
+109
+00:05:45.418 --> 00:05:53.639
+of that class<font color="#E5E5E5"> so if we had our cow class</font>
+
+110
+00:05:51.478 --> 00:05:55.560
+<font color="#E5E5E5">from earlier</font><font color="#CCCCCC"> on then the constructor</font>
+
+111
+00:05:53.639 --> 00:06:00.379
+would be the thing that<font color="#E5E5E5"> makes the color</font>
+
+112
+00:05:55.560 --> 00:06:00.379
+red<font color="#E5E5E5"> and</font><font color="#CCCCCC"> the size</font><font color="#E5E5E5"> 20 or whatever it was</font>
+
+113
+00:06:00.800 --> 00:06:08.579
+there's also this special word<font color="#E5E5E5"> this</font>
+
+114
+00:06:04.098 --> 00:06:13.110
+inside classes and this is it's very
+
+115
+00:06:08.579 --> 00:06:17.038
+it's like<font color="#E5E5E5"> a special variable that refers</font>
+
+116
+00:06:13.110 --> 00:06:19.408
+to the current object so in
+
+117
+00:06:17.038 --> 00:06:22.079
+<font color="#E5E5E5">object-oriented</font><font color="#CCCCCC"> programming</font><font color="#E5E5E5"> objects have</font>
+
+118
+00:06:19.408 --> 00:06:23.579
+this idea<font color="#E5E5E5"> of their self like in this</font>
+
+119
+00:06:22.079 --> 00:06:27.899
+current object<font color="#E5E5E5"> that we're</font><font color="#CCCCCC"> talking about</font>
+
+120
+00:06:23.579 --> 00:06:30.538
+<font color="#E5E5E5">right now and using this magic this word</font>
+
+121
+00:06:27.899 --> 00:06:35.519
+they can<font color="#E5E5E5"> refer to their own attributes</font>
+
+122
+00:06:30.538 --> 00:06:37.800
+and methods<font color="#E5E5E5"> so this dot name or</font><font color="#CCCCCC"> this dot</font>
+
+123
+00:06:35.519 --> 00:06:40.918
+go home<font color="#E5E5E5"> or whatever the</font>
+
+124
+00:06:37.800 --> 00:06:43.650
+things are so this<font color="#E5E5E5"> is what we're gonna</font>
+
+125
+00:06:40.918 --> 00:06:47.719
+<font color="#E5E5E5">be</font><font color="#CCCCCC"> making</font><font color="#E5E5E5"> and it doesn't look</font><font color="#CCCCCC"> like much</font>
+
+126
+00:06:43.649 --> 00:06:52.918
+<font color="#CCCCCC">unfortunately</font><font color="#E5E5E5"> but what we have</font><font color="#CCCCCC"> here are</font>
+
+127
+00:06:47.720 --> 00:06:54.870
+four<font color="#CCCCCC"> buttons in p5 they've got this</font>
+
+128
+00:06:52.918 --> 00:06:57.799
+<font color="#E5E5E5">little subtle hover effect so they</font>
+
+129
+00:06:54.870 --> 00:07:01.639
+change color<font color="#E5E5E5"> when I mouse over them and</font>
+
+130
+00:06:57.800 --> 00:07:05.610
+when<font color="#E5E5E5"> I click on</font><font color="#CCCCCC"> one</font><font color="#E5E5E5"> I get the noise that</font>
+
+131
+00:07:01.639 --> 00:07:09.000
+<font color="#E5E5E5">the animal on the label makes so dog</font>
+
+132
+00:07:05.610 --> 00:07:11.848
+says woof cat says meow<font color="#E5E5E5"> go says now</font><font color="#CCCCCC"> and</font>
+
+133
+00:07:09.000 --> 00:07:15.899
+no<font color="#E5E5E5"> one has what most</font><font color="#CCCCCC"> Turtles</font><font color="#E5E5E5"> make so</font>
+
+134
+00:07:11.848 --> 00:07:18.689
+that's fine so this<font color="#E5E5E5"> is what we're going</font>
+
+135
+00:07:15.899 --> 00:07:21.948
+<font color="#CCCCCC">to be making and for the object oriented</font>
+
+136
+00:07:18.689 --> 00:07:28.168
+part<font color="#E5E5E5"> we're just going to be focusing on</font>
+
+137
+00:07:21.949 --> 00:07:30.840
+the button the<font color="#E5E5E5"> object</font><font color="#CCCCCC"> oriented</font><font color="#E5E5E5"> class for</font>
+
+138
+00:07:28.168 --> 00:07:36.019
+the button because one<font color="#CCCCCC"> of the things the</font>
+
+139
+00:07:30.839 --> 00:07:39.508
+<font color="#CCCCCC">object-oriented</font><font color="#E5E5E5"> code is great for is</font>
+
+140
+00:07:36.019 --> 00:07:44.250
+code reuse<font color="#E5E5E5"> so that we avoid repetition</font>
+
+141
+00:07:39.509 --> 00:07:48.150
+in<font color="#CCCCCC"> our code because you know I</font><font color="#E5E5E5"> could if</font>
+
+142
+00:07:44.250 --> 00:07:50.310
+I wanted<font color="#CCCCCC"> to</font><font color="#E5E5E5"> program this by drawing it</font>
+
+143
+00:07:48.149 --> 00:07:52.799
+like<font color="#E5E5E5"> you know including rect in my code</font>
+
+144
+00:07:50.310 --> 00:07:55.649
+like four times<font color="#E5E5E5"> to draw out all</font><font color="#CCCCCC"> of these</font>
+
+145
+00:07:52.800 --> 00:07:58.168
+<font color="#CCCCCC">rectangles</font><font color="#E5E5E5"> and I could include like some</font>
+
+146
+00:07:55.649 --> 00:08:00.448
+big complicated<font color="#CCCCCC"> if statements to work</font>
+
+147
+00:07:58.168 --> 00:08:01.799
+out like<font color="#E5E5E5"> the position</font><font color="#CCCCCC"> of the mouse and</font>
+
+148
+00:08:00.449 --> 00:08:05.189
+whether or not it's hovering<font color="#E5E5E5"> over each</font>
+
+149
+00:08:01.800 --> 00:08:08.819
+button to do<font color="#E5E5E5"> the hover effect and the</font>
+
+150
+00:08:05.189 --> 00:08:11.278
+clicking<font color="#E5E5E5"> but you know maybe I can</font><font color="#CCCCCC"> do</font>
+
+151
+00:08:08.819 --> 00:08:14.669
+that just<font color="#E5E5E5"> once for all of the buttons</font>
+
+152
+00:08:11.278 --> 00:08:18.478
+and end up with a piece of<font color="#E5E5E5"> code</font><font color="#CCCCCC"> that's</font>
+
+153
+00:08:14.668 --> 00:08:23.698
+much simpler<font color="#E5E5E5"> and more reusable</font><font color="#CCCCCC"> but I can</font>
+
+154
+00:08:18.478 --> 00:08:25.408
+use to<font color="#E5E5E5"> really easily</font><font color="#CCCCCC"> you know add these</font>
+
+155
+00:08:23.699 --> 00:08:28.590
+four buttons<font color="#E5E5E5"> and then as many extra</font>
+
+156
+00:08:25.408 --> 00:08:30.478
+buttons<font color="#CCCCCC"> as I wanted in the future so</font>
+
+157
+00:08:28.589 --> 00:08:37.379
+<font color="#E5E5E5">that's going</font><font color="#CCCCCC"> to be our aim to create</font><font color="#E5E5E5"> a</font>
+
+158
+00:08:30.478 --> 00:08:42.360
+reusable<font color="#E5E5E5"> button class let's start by</font>
+
+159
+00:08:37.379 --> 00:08:45.720
+thinking about the<font color="#CCCCCC"> design of this this</font>
+
+160
+00:08:42.360 --> 00:08:47.519
+class we're<font color="#E5E5E5"> gonna want so we're gonna</font>
+
+161
+00:08:45.720 --> 00:08:50.110
+want some attributes and we're gonna
+
+162
+00:08:47.519 --> 00:08:51.990
+<font color="#E5E5E5">want some methods</font>
+
+163
+00:08:50.110 --> 00:08:55.330
+[Music]
+
+164
+00:08:51.990 --> 00:09:00.990
+so let's start<font color="#E5E5E5"> with</font><font color="#CCCCCC"> just the</font><font color="#E5E5E5"> the name</font>
+
+165
+00:08:55.330 --> 00:09:06.759
+button<font color="#E5E5E5"> seems like a reasonable name for</font>
+
+166
+00:09:00.990 --> 00:09:09.039
+for this class and<font color="#E5E5E5"> I'm gonna just put in</font>
+
+167
+00:09:06.759 --> 00:09:19.889
+that<font color="#CCCCCC"> rough</font><font color="#E5E5E5"> sort of structure so we know</font>
+
+168
+00:09:09.039 --> 00:09:33.129
+what we're talking<font color="#CCCCCC"> about if</font><font color="#E5E5E5"> our name</font>
+
+169
+00:09:19.889 --> 00:09:36.909
+attributes<font color="#E5E5E5"> and our methods so what are</font>
+
+170
+00:09:33.129 --> 00:09:42.610
+the things that<font color="#E5E5E5"> we need this</font>
+
+171
+00:09:36.909 --> 00:09:45.939
+there's button<font color="#E5E5E5"> to be able</font><font color="#CCCCCC"> to do well we</font>
+
+172
+00:09:42.610 --> 00:09:47.860
+need<font color="#E5E5E5"> it</font><font color="#CCCCCC"> to well if you think about</font><font color="#E5E5E5"> the</font>
+
+173
+00:09:45.940 --> 00:09:49.720
+ones in<font color="#E5E5E5"> our example they had a few like</font>
+
+174
+00:09:47.860 --> 00:09:53.320
+bits and pieces there that we can kind
+
+175
+00:09:49.720 --> 00:09:57.399
+<font color="#E5E5E5">of assume we already had we noticed</font>
+
+176
+00:09:53.320 --> 00:10:04.260
+<font color="#E5E5E5">each one had a unique label so we want</font>
+
+177
+00:09:57.399 --> 00:10:04.259
+to add<font color="#CCCCCC"> a label which is gonna be a</font>
+
+178
+00:10:04.440 --> 00:10:16.360
+string they also had a position<font color="#E5E5E5"> so we</font>
+
+179
+00:10:13.149 --> 00:10:22.740
+should include<font color="#CCCCCC"> X&Y</font><font color="#E5E5E5"> coordinates for the</font>
+
+180
+00:10:16.360 --> 00:10:25.740
+position<font color="#E5E5E5"> and both of those are gonna be</font>
+
+181
+00:10:22.740 --> 00:10:25.740
+numbers
+
+182
+00:10:34.529 --> 00:10:39.839
+that's probably all<font color="#E5E5E5"> we need like if you</font>
+
+183
+00:10:37.389 --> 00:10:44.409
+wanted to you could<font color="#CCCCCC"> go ahead</font><font color="#E5E5E5"> and</font><font color="#CCCCCC"> include</font>
+
+184
+00:10:39.840 --> 00:10:46.420
+like width and height<font color="#E5E5E5"> and you know we</font>
+
+185
+00:10:44.409 --> 00:10:50.769
+could go all<font color="#CCCCCC"> out</font><font color="#E5E5E5"> if we wanted and think</font>
+
+186
+00:10:46.419 --> 00:10:54.839
+about like colors<font color="#CCCCCC"> and all that but I'm</font>
+
+187
+00:10:50.769 --> 00:10:57.909
+kind of just gonna gonna stick with
+
+188
+00:10:54.840 --> 00:11:00.720
+these three because I<font color="#CCCCCC"> think those are</font>
+
+189
+00:10:57.909 --> 00:11:02.799
+probably<font color="#E5E5E5"> like the most important for</font>
+
+190
+00:11:00.720 --> 00:11:04.720
+<font color="#CCCCCC">replicating what</font><font color="#E5E5E5"> we have on there for</font>
+
+191
+00:11:02.799 --> 00:11:07.990
+width<font color="#E5E5E5"> and height and stuff</font><font color="#CCCCCC"> I can just</font>
+
+192
+00:11:04.720 --> 00:11:09.670
+hard code that for now and<font color="#CCCCCC"> maybe update</font>
+
+193
+00:11:07.990 --> 00:11:13.350
+my code later on if I want to be able<font color="#E5E5E5"> to</font>
+
+194
+00:11:09.669 --> 00:11:18.429
+<font color="#CCCCCC">customize the size of the buttons so</font>
+
+195
+00:11:13.350 --> 00:11:22.589
+<font color="#CCCCCC">then we have the methods</font><font color="#E5E5E5"> and really I</font>
+
+196
+00:11:18.429 --> 00:11:25.329
+<font color="#CCCCCC">think there's there's</font><font color="#E5E5E5"> only one</font>
+
+197
+00:11:22.589 --> 00:11:29.010
+particular<font color="#E5E5E5"> method that we need to</font>
+
+198
+00:11:25.330 --> 00:11:30.370
+include in here and that's<font color="#E5E5E5"> gonna be</font>
+
+199
+00:11:29.009 --> 00:11:35.799
+whether or not
+
+200
+00:11:30.370 --> 00:11:42.990
+it contains a particular<font color="#E5E5E5"> point so it</font>
+
+201
+00:11:35.799 --> 00:11:49.949
+contains point<font color="#E5E5E5"> and that's gonna take an</font>
+
+202
+00:11:42.990 --> 00:11:56.110
+X and/or Y and it's gonna<font color="#CCCCCC"> return a</font>
+
+203
+00:11:49.950 --> 00:11:59.290
+boolean value<font color="#E5E5E5"> so this is a sort of way</font>
+
+204
+00:11:56.110 --> 00:12:01.240
+<font color="#E5E5E5">of this doesn't</font><font color="#CCCCCC"> actually do anything</font><font color="#E5E5E5"> to</font>
+
+205
+00:11:59.289 --> 00:12:03.969
+<font color="#CCCCCC">our button but we're asking it a</font>
+
+206
+00:12:01.240 --> 00:12:05.799
+<font color="#E5E5E5">question and getting a value back so</font>
+
+207
+00:12:03.970 --> 00:12:09.070
+we're saying to the button if we were to
+
+208
+00:12:05.799 --> 00:12:13.359
+call this does the<font color="#E5E5E5"> button contain the</font>
+
+209
+00:12:09.070 --> 00:12:15.280
+point<font color="#CCCCCC"> XY as in like is this point within</font>
+
+210
+00:12:13.360 --> 00:12:18.190
+<font color="#E5E5E5">the range of the rectangle of</font><font color="#CCCCCC"> the button</font>
+
+211
+00:12:15.279 --> 00:12:22.720
+<font color="#CCCCCC">yes on it and we'll</font><font color="#E5E5E5"> get a boolean true</font>
+
+212
+00:12:18.190 --> 00:12:24.040
+<font color="#CCCCCC">or false</font><font color="#E5E5E5"> telling us</font><font color="#CCCCCC"> that and actually</font>
+
+213
+00:12:22.720 --> 00:12:27.399
+<font color="#CCCCCC">you know we could take</font><font color="#E5E5E5"> this one step</font>
+
+214
+00:12:24.039 --> 00:12:30.250
+further if<font color="#CCCCCC"> you</font><font color="#E5E5E5"> wanted and simplify to</font>
+
+215
+00:12:27.399 --> 00:12:37.409
+give it give us an additional<font color="#E5E5E5"> method</font>
+
+216
+00:12:30.250 --> 00:12:37.409
+called say contains<font color="#CCCCCC"> mouse</font>
+
+217
+00:12:38.450 --> 00:12:45.170
+which we could<font color="#E5E5E5"> just use to like cool</font>
+
+218
+00:12:42.339 --> 00:12:48.950
+<font color="#CCCCCC">contains point with Mouse X mouse Y</font><font color="#E5E5E5"> is a</font>
+
+219
+00:12:45.169 --> 00:12:52.000
+sort of convenience thing<font color="#E5E5E5"> to just say</font>
+
+220
+00:12:48.950 --> 00:12:54.740
+save us a<font color="#CCCCCC"> little</font><font color="#E5E5E5"> bit of time</font>
+
+221
+00:12:52.000 --> 00:12:58.129
+the only other method that<font color="#CCCCCC"> I know we're</font>
+
+222
+00:12:54.740 --> 00:13:00.829
+gonna<font color="#CCCCCC"> need is the constructor and this</font>
+
+223
+00:12:58.129 --> 00:13:03.889
+is the thing that's<font color="#E5E5E5"> going</font><font color="#CCCCCC"> to</font><font color="#E5E5E5"> set up all</font>
+
+224
+00:13:00.828 --> 00:13:05.838
+the<font color="#E5E5E5"> information for our button so the</font>
+
+225
+00:13:03.889 --> 00:13:07.399
+constructor<font color="#E5E5E5"> is the thing</font><font color="#CCCCCC"> that gives it</font>
+
+226
+00:13:05.839 --> 00:13:15.589
+all of those attributes to start off
+
+227
+00:13:07.399 --> 00:13:17.659
+with and I'm doing<font color="#E5E5E5"> that one in green</font>
+
+228
+00:13:15.589 --> 00:13:20.240
+because<font color="#E5E5E5"> it's all my pen stopped working</font>
+
+229
+00:13:17.659 --> 00:13:22.879
+oh well<font color="#E5E5E5"> doing that</font><font color="#CCCCCC"> one in green because</font>
+
+230
+00:13:20.240 --> 00:13:27.919
+<font color="#E5E5E5">it's kind of a a little</font><font color="#CCCCCC"> bit</font><font color="#E5E5E5"> of a special</font>
+
+231
+00:13:22.879 --> 00:13:39.278
+one<font color="#CCCCCC"> so this</font><font color="#E5E5E5"> is it this is the class</font>
+
+232
+00:13:27.919 --> 00:13:43.099
+<font color="#E5E5E5">design for our</font><font color="#CCCCCC"> album we've</font><font color="#E5E5E5"> got the name</font>
+
+233
+00:13:39.278 --> 00:13:46.129
+we've got the attributes<font color="#E5E5E5"> of a label</font><font color="#CCCCCC"> and</font>
+
+234
+00:13:43.100 --> 00:13:49.579
+<font color="#E5E5E5">the position and then we've got these</font>
+
+235
+00:13:46.129 --> 00:13:51.828
+few<font color="#CCCCCC"> methods</font><font color="#E5E5E5"> really really like not</font>
+
+236
+00:13:49.578 --> 00:13:54.019
+really doing<font color="#E5E5E5"> an awful lot just some ways</font>
+
+237
+00:13:51.828 --> 00:13:57.769
+of asking<font color="#E5E5E5"> the button if the mouse</font><font color="#CCCCCC"> is</font>
+
+238
+00:13:54.019 --> 00:14:01.100
+inside it<font color="#E5E5E5"> maybe later on we to add some</font>
+
+239
+00:13:57.769 --> 00:14:03.230
+<font color="#E5E5E5">other methods for like changing how it</font>
+
+240
+00:14:01.100 --> 00:14:08.959
+looks<font color="#CCCCCC"> or that</font><font color="#E5E5E5"> sort of thing but for now</font>
+
+241
+00:14:03.230 --> 00:14:12.759
+this<font color="#CCCCCC"> is</font><font color="#E5E5E5"> probably all we need so let's</font>
+
+242
+00:14:08.958 --> 00:14:15.289
+<font color="#E5E5E5">try and kick this off</font><font color="#CCCCCC"> I'm gonna</font><font color="#E5E5E5"> start</font>
+
+243
+00:14:12.759 --> 00:14:19.338
+<font color="#CCCCCC">I've got my terminal</font><font color="#E5E5E5"> and my editor up</font>
+
+244
+00:14:15.289 --> 00:14:24.169
+side<font color="#CCCCCC"> by side here</font><font color="#E5E5E5"> and I'm gonna start by</font>
+
+245
+00:14:19.339 --> 00:14:27.140
+<font color="#CCCCCC">just going</font><font color="#E5E5E5"> to my</font><font color="#CCCCCC"> project folder</font><font color="#E5E5E5"> you it</font>
+
+246
+00:14:24.169 --> 00:14:33.289
+might<font color="#E5E5E5"> be on</font><font color="#CCCCCC"> your desktop for me mine</font>
+
+247
+00:14:27.139 --> 00:14:37.899
+lives in here and creating a new<font color="#E5E5E5"> folder</font>
+
+248
+00:14:33.289 --> 00:14:37.899
+<font color="#CCCCCC">for this project</font><font color="#E5E5E5"> so I'm</font><font color="#CCCCCC"> going to call it</font>
+
+249
+00:14:39.730 --> 00:14:49.740
+rubbish
+
+250
+00:14:42.278 --> 00:14:55.240
+sound board and I can<font color="#E5E5E5"> CD</font>
+
+251
+00:14:49.740 --> 00:15:04.210
+okay and I'm also<font color="#E5E5E5"> going to set this up</font>
+
+252
+00:14:55.240 --> 00:15:07.659
+as a git repository<font color="#CCCCCC"> so get in it and</font><font color="#E5E5E5"> the</font>
+
+253
+00:15:04.210 --> 00:15:12.490
+two files<font color="#E5E5E5"> that I</font><font color="#CCCCCC"> need for creating a new</font>
+
+254
+00:15:07.659 --> 00:15:15.100
+<font color="#CCCCCC">p5 sketch by my index dot HTML and my</font>
+
+255
+00:15:12.490 --> 00:15:20.889
+sketch<font color="#CCCCCC"> digest</font><font color="#E5E5E5"> so what I'm going to do is</font>
+
+256
+00:15:15.100 --> 00:15:26.769
+in<font color="#E5E5E5"> my editor</font><font color="#CCCCCC"> I'm going to open up a</font>
+
+257
+00:15:20.889 --> 00:15:33.069
+folder<font color="#E5E5E5"> and find find my rubbish</font><font color="#CCCCCC"> Chambord</font>
+
+258
+00:15:26.769 --> 00:15:38.579
+<font color="#E5E5E5">project here there we go and create</font>
+
+259
+00:15:33.070 --> 00:16:06.430
+<font color="#E5E5E5">those two files add index dot HTML and</font>
+
+260
+00:15:38.580 --> 00:16:11.080
+sketch dot<font color="#E5E5E5"> yes close this window</font><font color="#CCCCCC"> okay so</font>
+
+261
+00:16:06.429 --> 00:16:14.469
+I know that<font color="#E5E5E5"> one of the places but I can</font>
+
+262
+00:16:11.080 --> 00:16:17.050
+find the HTML<font color="#E5E5E5"> for</font><font color="#CCCCCC"> a new sketch</font><font color="#E5E5E5"> because I</font>
+
+263
+00:16:14.470 --> 00:16:21.519
+can't remember<font color="#E5E5E5"> it</font><font color="#CCCCCC"> rubbing my head is on</font>
+
+264
+00:16:17.049 --> 00:16:25.779
+<font color="#CCCCCC">github for the day one workshop from</font>
+
+265
+00:16:21.519 --> 00:16:31.809
+last week<font color="#E5E5E5"> so I'm just gonna go on to get</font>
+
+266
+00:16:25.779 --> 00:16:38.519
+book and find that link<font color="#CCCCCC"> Launchpad week</font>
+
+267
+00:16:31.809 --> 00:16:38.519
+<font color="#CCCCCC">three programming and here we are</font>
+
+268
+00:16:39.570 --> 00:16:45.010
+it should be under Part C here<font color="#CCCCCC"> we are</font>
+
+269
+00:16:41.830 --> 00:16:47.860
+index dot HTML so I can<font color="#E5E5E5"> just copy paste</font>
+
+270
+00:16:45.009 --> 00:16:50.129
+<font color="#E5E5E5">the code</font><font color="#CCCCCC"> here into my index dot HTML and</font>
+
+271
+00:16:47.860 --> 00:16:55.629
+I'm going<font color="#CCCCCC"> to change the title to be</font>
+
+272
+00:16:50.129 --> 00:16:58.360
+rubbish sound board<font color="#E5E5E5"> there we go</font>
+
+273
+00:16:55.629 --> 00:17:02.708
+if I hit<font color="#E5E5E5"> save now</font><font color="#CCCCCC"> this should all be</font>
+
+274
+00:16:58.360 --> 00:17:04.568
+working<font color="#E5E5E5"> properly to get this going I'm</font>
+
+275
+00:17:02.708 --> 00:17:07.688
+not actually<font color="#E5E5E5"> gonna worry about serve or</font>
+
+276
+00:17:04.568 --> 00:17:15.808
+MPN<font color="#E5E5E5"> style or anything like that I'm just</font>
+
+277
+00:17:07.689 --> 00:17:20.470
+gonna open<font color="#E5E5E5"> up finder and oh there we go</font>
+
+278
+00:17:15.808 --> 00:17:23.709
+in my<font color="#CCCCCC"> protects folder</font><font color="#E5E5E5"> I'm gonna find my</font>
+
+279
+00:17:20.470 --> 00:17:27.939
+<font color="#CCCCCC">rubber to stand</font><font color="#E5E5E5"> board and just open</font>
+
+280
+00:17:23.709 --> 00:17:29.860
+index.html<font color="#CCCCCC"> with</font><font color="#E5E5E5"> Google Chrome because</font><font color="#CCCCCC"> I</font>
+
+281
+00:17:27.939 --> 00:17:32.110
+want<font color="#E5E5E5"> to use Chrome for this because I</font>
+
+282
+00:17:29.859 --> 00:17:34.359
+know that<font color="#CCCCCC"> Chrome</font><font color="#E5E5E5"> is sometimes like</font>
+
+283
+00:17:32.109 --> 00:17:36.519
+easier to work<font color="#CCCCCC"> with and has nicer</font>
+
+284
+00:17:34.359 --> 00:17:40.269
+development tools<font color="#E5E5E5"> so there we go we have</font>
+
+285
+00:17:36.519 --> 00:17:49.900
+<font color="#CCCCCC">our completely blank page now</font><font color="#E5E5E5"> so that's</font>
+
+286
+00:17:40.269 --> 00:17:54.519
+all<font color="#E5E5E5"> good okay</font><font color="#CCCCCC"> now we</font><font color="#E5E5E5"> can start writing</font>
+
+287
+00:17:49.900 --> 00:18:01.000
+<font color="#E5E5E5">our sketch so I'm</font><font color="#CCCCCC"> gonna start</font><font color="#E5E5E5"> with just</font>
+
+288
+00:17:54.519 --> 00:18:05.079
+<font color="#CCCCCC">some very sort of normal p5e stuff we</font>
+
+289
+00:18:01.000 --> 00:18:10.390
+want our<font color="#CCCCCC"> setup</font><font color="#E5E5E5"> function I'm gonna create</font>
+
+290
+00:18:05.079 --> 00:18:11.798
+a canvas<font color="#E5E5E5"> of 400 by 400 which is I think</font>
+
+291
+00:18:10.390 --> 00:18:14.259
+<font color="#E5E5E5">the size that has basically been the</font>
+
+292
+00:18:11.798 --> 00:18:16.480
+standard<font color="#E5E5E5"> that we've used now and then we</font>
+
+293
+00:18:14.259 --> 00:18:19.089
+want our draw function<font color="#E5E5E5"> and in here I'm</font>
+
+294
+00:18:16.480 --> 00:18:25.960
+gonna draw a background of a sort of
+
+295
+00:18:19.089 --> 00:18:28.779
+light gray<font color="#E5E5E5"> maybe 220 out of 255 probably</font>
+
+296
+00:18:25.960 --> 00:18:30.940
+is gonna be a reasonable color so let's
+
+297
+00:18:28.779 --> 00:18:41.609
+go refresh<font color="#E5E5E5"> this now yeah this looks all</font>
+
+298
+00:18:30.940 --> 00:18:45.820
+<font color="#CCCCCC">good</font><font color="#E5E5E5"> okay so when it comes to creating</font>
+
+299
+00:18:41.609 --> 00:18:46.959
+my<font color="#CCCCCC"> ball and my ball class and starting</font>
+
+300
+00:18:45.819 --> 00:18:48.730
+to do sorry
+
+301
+00:18:46.960 --> 00:18:50.669
+button when it<font color="#E5E5E5"> comes to creating my</font>
+
+302
+00:18:48.730 --> 00:18:55.200
+button class and working with this
+
+303
+00:18:50.669 --> 00:18:58.509
+typically<font color="#E5E5E5"> it's a good idea to create</font>
+
+304
+00:18:55.200 --> 00:19:01.720
+right your new classes in separate files
+
+305
+00:18:58.509 --> 00:19:07.779
+<font color="#CCCCCC">just to keep things nice and</font><font color="#E5E5E5"> tidy so I'm</font>
+
+306
+00:19:01.720 --> 00:19:09.019
+gonna<font color="#E5E5E5"> open up</font><font color="#CCCCCC"> my file explorer add a new</font>
+
+307
+00:19:07.779 --> 00:19:11.990
+file
+
+308
+00:19:09.019 --> 00:19:15.579
+I'm gonna call<font color="#E5E5E5"> it button with a capital</font>
+
+309
+00:19:11.990 --> 00:19:15.579
+<font color="#E5E5E5">B</font><font color="#CCCCCC"> Jess</font>
+
+310
+00:19:18.730 --> 00:19:27.799
+okay so now I can<font color="#E5E5E5"> start</font><font color="#CCCCCC"> actually writing</font>
+
+311
+00:19:24.130 --> 00:19:29.600
+<font color="#E5E5E5">object-oriented JavaScript now there's a</font>
+
+312
+00:19:27.799 --> 00:19:32.419
+few bits<font color="#E5E5E5"> and pieces</font><font color="#CCCCCC"> that make up</font><font color="#E5E5E5"> a class</font>
+
+313
+00:19:29.599 --> 00:19:35.149
+in JavaScript and just like variables
+
+314
+00:19:32.420 --> 00:19:43.490
+<font color="#E5E5E5">and</font><font color="#CCCCCC"> just like functions</font><font color="#E5E5E5"> they start with</font>
+
+315
+00:19:35.150 --> 00:19:47.269
+the word class<font color="#E5E5E5"> so class button and then</font>
+
+316
+00:19:43.490 --> 00:19:53.960
+a pair<font color="#CCCCCC"> of curly braces for the contents</font>
+
+317
+00:19:47.269 --> 00:19:57.799
+<font color="#E5E5E5">of the button then inside here</font><font color="#CCCCCC"> is where</font>
+
+318
+00:19:53.960 --> 00:20:00.470
+we write all of our methods now
+
+319
+00:19:57.799 --> 00:20:02.210
+the methods are basically<font color="#E5E5E5"> functions and</font>
+
+320
+00:20:00.470 --> 00:20:04.069
+you can think of<font color="#E5E5E5"> how they're written as</font>
+
+321
+00:20:02.210 --> 00:20:06.860
+almost<font color="#E5E5E5"> like writing a</font><font color="#CCCCCC"> function but not</font>
+
+322
+00:20:04.069 --> 00:20:09.319
+quite right<font color="#CCCCCC"> so if we think about if we</font>
+
+323
+00:20:06.859 --> 00:20:12.889
+<font color="#E5E5E5">wanted</font><font color="#CCCCCC"> to write the special constructor</font>
+
+324
+00:20:09.319 --> 00:20:15.849
+function that's<font color="#E5E5E5"> the</font><font color="#CCCCCC"> one that sets up the</font>
+
+325
+00:20:12.890 --> 00:20:21.040
+button and creates<font color="#E5E5E5"> all</font><font color="#CCCCCC"> of</font><font color="#E5E5E5"> the attributes</font>
+
+326
+00:20:15.849 --> 00:20:27.079
+<font color="#CCCCCC">we might start by writing function</font>
+
+327
+00:20:21.039 --> 00:20:30.159
+constructor but this actually<font color="#E5E5E5"> isn't</font>
+
+328
+00:20:27.079 --> 00:20:33.079
+quite<font color="#E5E5E5"> right because we're inside a class</font>
+
+329
+00:20:30.160 --> 00:20:34.970
+<font color="#E5E5E5">javascript knows that we're gonna have a</font>
+
+330
+00:20:33.079 --> 00:20:37.789
+bunch<font color="#E5E5E5"> of</font><font color="#CCCCCC"> methods in here bunch of</font>
+
+331
+00:20:34.970 --> 00:20:42.049
+functions so<font color="#CCCCCC"> we don't actually</font><font color="#E5E5E5"> need this</font>
+
+332
+00:20:37.789 --> 00:20:44.690
+<font color="#E5E5E5">function keyword at the start we</font><font color="#CCCCCC"> can</font>
+
+333
+00:20:42.049 --> 00:20:48.529
+just say constructor<font color="#E5E5E5"> any inputs which</font>
+
+334
+00:20:44.690 --> 00:20:50.720
+for now<font color="#E5E5E5"> we're</font><font color="#CCCCCC"> not having any and the the</font>
+
+335
+00:20:48.529 --> 00:20:54.619
+body of the function<font color="#E5E5E5"> which for</font><font color="#CCCCCC"> now I'm</font>
+
+336
+00:20:50.720 --> 00:21:00.339
+<font color="#CCCCCC">just</font><font color="#E5E5E5"> gonna say a console dot log</font><font color="#CCCCCC"> two</font><font color="#E5E5E5"> so</font>
+
+337
+00:20:54.619 --> 00:21:00.339
+<font color="#E5E5E5">we can</font><font color="#CCCCCC"> show it's working we made button</font>
+
+338
+00:21:03.069 --> 00:21:09.980
+<font color="#CCCCCC">okay back in our sketch</font><font color="#E5E5E5"> we could maybe</font>
+
+339
+00:21:08.269 --> 00:21:13.869
+if we wanted to<font color="#CCCCCC"> start trying to</font><font color="#E5E5E5"> use our</font>
+
+340
+00:21:09.980 --> 00:21:18.289
+button already so once you have<font color="#E5E5E5"> a class</font>
+
+341
+00:21:13.869 --> 00:21:21.739
+<font color="#CCCCCC">which for us is this button</font><font color="#E5E5E5"> class here</font>
+
+342
+00:21:18.289 --> 00:21:24.909
+the way that you create objects<font color="#E5E5E5"> from</font>
+
+343
+00:21:21.740 --> 00:21:29.599
+that class is with this special keyword
+
+344
+00:21:24.910 --> 00:21:34.670
+new so you say new<font color="#E5E5E5"> and then the name of</font>
+
+345
+00:21:29.599 --> 00:21:36.709
+<font color="#CCCCCC">the</font><font color="#E5E5E5"> class and then just like calling a</font>
+
+346
+00:21:34.670 --> 00:21:39.950
+<font color="#CCCCCC">function you use parentheses for any</font>
+
+347
+00:21:36.710 --> 00:21:42.680
+inputs<font color="#CCCCCC"> I want to take the result of this</font>
+
+348
+00:21:39.950 --> 00:21:45.319
+which is<font color="#CCCCCC"> going</font><font color="#E5E5E5"> to be our actual button</font>
+
+349
+00:21:42.680 --> 00:21:48.769
+<font color="#CCCCCC">object</font><font color="#E5E5E5"> the specific button that we</font>
+
+350
+00:21:45.319 --> 00:21:52.609
+create<font color="#E5E5E5"> from calling new button and save</font>
+
+351
+00:21:48.769 --> 00:21:58.629
+that in a variable<font color="#CCCCCC"> let's make this</font><font color="#E5E5E5"> one</font>
+
+352
+00:21:52.609 --> 00:22:02.659
+be the<font color="#E5E5E5"> dog okay</font>
+
+353
+00:21:58.630 --> 00:22:05.870
+so if I save<font color="#CCCCCC"> this now and flip back</font><font color="#E5E5E5"> over</font>
+
+354
+00:22:02.660 --> 00:22:09.440
+<font color="#E5E5E5">to Chrome then when I run the page</font>
+
+355
+00:22:05.869 --> 00:22:13.219
+<font color="#E5E5E5">nothing</font><font color="#CCCCCC"> really seems</font><font color="#E5E5E5"> to happen and if I</font>
+
+356
+00:22:09.440 --> 00:22:14.960
+<font color="#E5E5E5">open up the inspector and</font><font color="#CCCCCC"> go on the</font>
+
+357
+00:22:13.220 --> 00:22:18.680
+console<font color="#CCCCCC"> we're gonna see</font><font color="#E5E5E5"> this error here</font>
+
+358
+00:22:14.960 --> 00:22:22.900
+<font color="#E5E5E5">uncaught reference error button is not</font>
+
+359
+00:22:18.680 --> 00:22:25.430
+defined<font color="#E5E5E5"> in sketch dot J's line</font><font color="#CCCCCC"> one</font><font color="#E5E5E5"> and</font>
+
+360
+00:22:22.900 --> 00:22:27.890
+what it's saying there is it<font color="#E5E5E5"> doesn't</font>
+
+361
+00:22:25.430 --> 00:22:29.930
+<font color="#E5E5E5">know what button is even though we've</font>
+
+362
+00:22:27.890 --> 00:22:31.960
+written it in the class over here<font color="#E5E5E5"> it</font>
+
+363
+00:22:29.930 --> 00:22:35.269
+<font color="#E5E5E5">doesn't know what we're talking</font><font color="#CCCCCC"> about</font>
+
+364
+00:22:31.960 --> 00:22:38.329
+the way that we teach it is by linking
+
+365
+00:22:35.269 --> 00:22:40.400
+<font color="#E5E5E5">both of these files together</font><font color="#CCCCCC"> in index</font>
+
+366
+00:22:38.329 --> 00:22:41.629
+dot HTML<font color="#E5E5E5"> you might have noticed if</font>
+
+367
+00:22:40.400 --> 00:22:44.630
+you've read through<font color="#E5E5E5"> this we've got these</font>
+
+368
+00:22:41.630 --> 00:22:48.520
+two script tags<font color="#E5E5E5"> one of them is including</font>
+
+369
+00:22:44.630 --> 00:22:51.170
+<font color="#CCCCCC">some where</font><font color="#E5E5E5"> CloudFlare and then p5.js</font><font color="#CCCCCC"> and</font>
+
+370
+00:22:48.519 --> 00:22:52.359
+the other one is<font color="#CCCCCC"> just a link to our</font>
+
+371
+00:22:51.170 --> 00:22:56.420
+sketch<font color="#CCCCCC"> DOJ's</font>
+
+372
+00:22:52.359 --> 00:22:58.939
+so we can include our button here by
+
+373
+00:22:56.420 --> 00:23:02.029
+adding<font color="#CCCCCC"> another script tag</font><font color="#E5E5E5"> but it needs</font>
+
+374
+00:22:58.940 --> 00:23:06.680
+<font color="#E5E5E5">to come before sketch dot yes because</font>
+
+375
+00:23:02.029 --> 00:23:08.539
+<font color="#E5E5E5">sketch relies on button so the button</font>
+
+376
+00:23:06.680 --> 00:23:13.490
+has<font color="#CCCCCC"> to exist</font><font color="#E5E5E5"> before the code in sketch</font>
+
+377
+00:23:08.539 --> 00:23:17.119
+runs if<font color="#E5E5E5"> I save that now and switch back</font>
+
+378
+00:23:13.490 --> 00:23:20.000
+<font color="#CCCCCC">to Chrome then we get</font><font color="#E5E5E5"> our we made a</font>
+
+379
+00:23:17.119 --> 00:23:22.159
+button alert<font color="#E5E5E5"> and console and we can also</font>
+
+380
+00:23:20.000 --> 00:23:25.460
+actually start playing<font color="#E5E5E5"> around a little</font>
+
+381
+00:23:22.160 --> 00:23:28.310
+<font color="#E5E5E5">bit with some things in here</font><font color="#CCCCCC"> like if I</font>
+
+382
+00:23:25.460 --> 00:23:31.190
+take it type in book button then the
+
+383
+00:23:28.309 --> 00:23:34.099
+<font color="#E5E5E5">console is</font><font color="#CCCCCC"> going to tell us</font><font color="#E5E5E5"> that it is a</font>
+
+384
+00:23:31.190 --> 00:23:36.740
+and there's no other<font color="#CCCCCC"> information inside</font>
+
+385
+00:23:34.099 --> 00:23:37.730
+<font color="#E5E5E5">it that's just this proto thing but we</font>
+
+386
+00:23:36.740 --> 00:23:38.960
+don't<font color="#CCCCCC"> need to worry about that because</font>
+
+387
+00:23:37.730 --> 00:23:45.289
+it's sort<font color="#E5E5E5"> of how JavaScript works</font>
+
+388
+00:23:38.960 --> 00:23:47.740
+internally so we can also<font color="#E5E5E5"> use button</font>
+
+389
+00:23:45.289 --> 00:23:49.789
+itself to refer<font color="#CCCCCC"> to</font><font color="#E5E5E5"> our new class and</font>
+
+390
+00:23:47.740 --> 00:24:01.250
+maybe we could<font color="#E5E5E5"> even make some new ones</font>
+
+391
+00:23:49.789 --> 00:24:01.609
+<font color="#E5E5E5">in the console</font><font color="#CCCCCC"> you want it</font><font color="#E5E5E5"> to there we</font>
+
+392
+00:24:01.250 --> 00:24:03.230
+go
+
+393
+00:24:01.609 --> 00:24:05.689
+another button<font color="#E5E5E5"> and</font><font color="#CCCCCC"> we get our</font>
+
+394
+00:24:03.230 --> 00:24:08.720
+comfortable message logged out<font color="#CCCCCC"> just the</font>
+
+395
+00:24:05.690 --> 00:24:11.930
+same<font color="#CCCCCC"> because</font><font color="#E5E5E5"> every</font><font color="#CCCCCC"> single time we run</font>
+
+396
+00:24:08.720 --> 00:24:17.870
+new button the contents of this
+
+397
+00:24:11.930 --> 00:24:19.910
+constructor function gets run so let's
+
+398
+00:24:17.869 --> 00:24:21.949
+take a look at our<font color="#E5E5E5"> class diagram we've</font>
+
+399
+00:24:19.910 --> 00:24:25.610
+got a few bits<font color="#E5E5E5"> and pieces here we've got</font>
+
+400
+00:24:21.950 --> 00:24:27.440
+the<font color="#E5E5E5"> label which</font><font color="#CCCCCC"> is a string and then the</font>
+
+401
+00:24:25.609 --> 00:24:33.529
+x and y coordinates<font color="#E5E5E5"> which are both</font>
+
+402
+00:24:27.440 --> 00:24:36.019
+numbers<font color="#CCCCCC"> and in order to</font><font color="#E5E5E5"> start using</font>
+
+403
+00:24:33.529 --> 00:24:38.240
+these to get actually<font color="#E5E5E5"> get these into</font><font color="#CCCCCC"> our</font>
+
+404
+00:24:36.019 --> 00:24:41.210
+class in<font color="#E5E5E5"> our code we need to add them in</font>
+
+405
+00:24:38.240 --> 00:24:47.059
+the constructor so I'm going<font color="#CCCCCC"> to remove</font>
+
+406
+00:24:41.210 --> 00:24:51.440
+our<font color="#E5E5E5"> console log for now and I'm gonna</font>
+
+407
+00:24:47.059 --> 00:24:55.849
+<font color="#E5E5E5">make it so that label x and y get given</font>
+
+408
+00:24:51.440 --> 00:25:05.390
+to the button<font color="#E5E5E5"> as parameters arguments</font>
+
+409
+00:24:55.849 --> 00:25:05.990
+inputs to the constructor so for my
+
+410
+00:25:05.390 --> 00:25:14.300
+inputs
+
+411
+00:25:05.990 --> 00:25:17.569
+I want the label on X and I want Y and
+
+412
+00:25:14.299 --> 00:25:35.680
+again<font color="#CCCCCC"> I'm just gonna console.log those</font>
+
+413
+00:25:17.569 --> 00:25:35.679
+values label<font color="#CCCCCC"> X Y</font>
+
+414
+00:25:37.519 --> 00:25:42.329
+now I'm just<font color="#E5E5E5"> gonna add</font><font color="#CCCCCC"> a</font><font color="#E5E5E5"> little bit</font><font color="#CCCCCC"> of</font>
+
+415
+00:25:39.539 --> 00:25:50.039
+<font color="#E5E5E5">another message at the top saying what</font>
+
+416
+00:25:42.329 --> 00:25:58.230
+we're doing<font color="#CCCCCC"> so if we go and run this</font>
+
+417
+00:25:50.039 --> 00:25:59.519
+code<font color="#CCCCCC"> now what we</font><font color="#E5E5E5"> should see is well</font>
+
+418
+00:25:58.230 --> 00:26:01.110
+actually we're going<font color="#CCCCCC"> to see anything</font>
+
+419
+00:25:59.519 --> 00:26:04.019
+<font color="#CCCCCC">right now</font><font color="#E5E5E5"> because</font><font color="#CCCCCC"> our button isn't</font>
+
+420
+00:26:01.109 --> 00:26:05.459
+getting any inputs passed to it yet<font color="#E5E5E5"> so</font>
+
+421
+00:26:04.019 --> 00:26:07.980
+we can go<font color="#E5E5E5"> and check</font><font color="#CCCCCC"> that if we go</font>
+
+422
+00:26:05.460 --> 00:26:11.519
+refresh<font color="#E5E5E5"> the page so</font><font color="#CCCCCC"> making any button</font>
+
+423
+00:26:07.980 --> 00:26:15.900
+and right now<font color="#E5E5E5"> label x and y our inputs</font>
+
+424
+00:26:11.519 --> 00:26:18.450
+are all undefined if we go<font color="#CCCCCC"> and sketch</font>
+
+425
+00:26:15.900 --> 00:26:26.730
+guess we can add<font color="#E5E5E5"> these in let's say</font>
+
+426
+00:26:18.450 --> 00:26:29.130
+we'll<font color="#CCCCCC"> be dog</font><font color="#E5E5E5"> and loops and the X see my</font>
+
+427
+00:26:26.730 --> 00:26:32.880
+editor is helpfully<font color="#E5E5E5"> come up with some</font>
+
+428
+00:26:29.130 --> 00:26:39.150
+hints<font color="#E5E5E5"> for me the x value can</font><font color="#CCCCCC"> be a number</font>
+
+429
+00:26:32.880 --> 00:26:44.070
+so let's<font color="#E5E5E5"> make</font><font color="#CCCCCC"> it 10</font><font color="#E5E5E5"> and 10 so if I save</font>
+
+430
+00:26:39.150 --> 00:26:46.350
+<font color="#CCCCCC">that now and refresh</font><font color="#E5E5E5"> then there we go</font>
+
+431
+00:26:44.069 --> 00:26:53.909
+<font color="#E5E5E5">making a new button our inputs are</font>
+
+432
+00:26:46.349 --> 00:26:56.579
+coming<font color="#E5E5E5"> through to get logged out so how</font>
+
+433
+00:26:53.910 --> 00:26:59.160
+do we<font color="#CCCCCC"> actually turn these inputs to our</font>
+
+434
+00:26:56.579 --> 00:27:02.460
+constructor into attributes that we can
+
+435
+00:26:59.160 --> 00:27:05.250
+use well we need to go<font color="#E5E5E5"> back</font><font color="#CCCCCC"> to that</font>
+
+436
+00:27:02.460 --> 00:27:06.509
+special<font color="#E5E5E5"> this keyword</font><font color="#CCCCCC"> that we were</font>
+
+437
+00:27:05.250 --> 00:27:11.190
+talking<font color="#CCCCCC"> about</font><font color="#E5E5E5"> a little</font><font color="#CCCCCC"> bit at the</font>
+
+438
+00:27:06.509 --> 00:27:16.890
+<font color="#CCCCCC">beginning of</font><font color="#E5E5E5"> this</font><font color="#CCCCCC"> video so this refers</font>
+
+439
+00:27:11.190 --> 00:27:18.330
+to the<font color="#CCCCCC"> current object so it's the</font><font color="#E5E5E5"> button</font>
+
+440
+00:27:16.890 --> 00:27:20.820
+<font color="#E5E5E5">that we're</font><font color="#CCCCCC"> making right</font><font color="#E5E5E5"> now in the</font>
+
+441
+00:27:18.329 --> 00:27:23.069
+concert in the<font color="#E5E5E5"> constructor and in other</font>
+
+442
+00:27:20.819 --> 00:27:27.359
+<font color="#CCCCCC">methods it will be the</font><font color="#E5E5E5"> button that the</font>
+
+443
+00:27:23.069 --> 00:27:32.490
+method was called<font color="#E5E5E5"> on so we can say this</font>
+
+444
+00:27:27.359 --> 00:27:36.289
+dot label equals label so this is almost
+
+445
+00:27:32.490 --> 00:27:38.519
+<font color="#E5E5E5">like creating a variable</font><font color="#CCCCCC"> on the class</font>
+
+446
+00:27:36.289 --> 00:27:40.740
+called label<font color="#E5E5E5"> you can tell</font><font color="#CCCCCC"> us on the</font>
+
+447
+00:27:38.519 --> 00:27:43.410
+<font color="#CCCCCC">class on</font><font color="#E5E5E5"> the object rather because of</font>
+
+448
+00:27:40.740 --> 00:27:46.230
+<font color="#E5E5E5">the this keyword and taking the value</font>
+
+449
+00:27:43.410 --> 00:27:47.640
+from<font color="#CCCCCC"> that we were given in the</font>
+
+450
+00:27:46.230 --> 00:27:51.380
+constructor
+
+451
+00:27:47.640 --> 00:28:03.060
+and putting it in there so<font color="#E5E5E5"> oops</font>
+
+452
+00:27:51.380 --> 00:28:06.380
+<font color="#E5E5E5">can do the same with X&Y now and I think</font>
+
+453
+00:28:03.059 --> 00:28:12.299
+<font color="#CCCCCC">just to show what's going on</font><font color="#E5E5E5"> I'm gonna</font>
+
+454
+00:28:06.380 --> 00:28:15.360
+console.log<font color="#E5E5E5"> this at the end so we can</font>
+
+455
+00:28:12.299 --> 00:28:21.569
+see what the value<font color="#CCCCCC"> of this is so let's</font>
+
+456
+00:28:15.359 --> 00:28:24.149
+save that<font color="#E5E5E5"> and go and run</font><font color="#CCCCCC"> our code</font><font color="#E5E5E5"> okay</font>
+
+457
+00:28:21.569 --> 00:28:29.129
+so we have our<font color="#E5E5E5"> same</font><font color="#CCCCCC"> consult logs from</font>
+
+458
+00:28:24.150 --> 00:28:31.710
+before but we also now have<font color="#E5E5E5"> the place</font>
+
+459
+00:28:29.130 --> 00:28:33.570
+where we logged out<font color="#E5E5E5"> this we can see it's</font>
+
+460
+00:28:31.710 --> 00:28:35.460
+a button<font color="#E5E5E5"> but now I've actually got some</font>
+
+461
+00:28:33.569 --> 00:28:38.939
+<font color="#CCCCCC">information we can see it's a</font><font color="#E5E5E5"> button</font>
+
+462
+00:28:35.460 --> 00:28:45.569
+with a label<font color="#E5E5E5"> dog an exposition of</font><font color="#CCCCCC"> ten</font>
+
+463
+00:28:38.940 --> 00:28:48.600
+and a Y position<font color="#E5E5E5"> of</font><font color="#CCCCCC"> ten so actually if</font>
+
+464
+00:28:45.569 --> 00:28:50.609
+we refer back to our class diagram now
+
+465
+00:28:48.599 --> 00:28:52.859
+we've done<font color="#E5E5E5"> like more than half we've</font>
+
+466
+00:28:50.609 --> 00:28:55.439
+done<font color="#E5E5E5"> we've got the name bits order we've</font>
+
+467
+00:28:52.859 --> 00:28:58.199
+got classical button<font color="#E5E5E5"> and we've added all</font>
+
+468
+00:28:55.440 --> 00:29:02.070
+<font color="#E5E5E5">three attributes</font><font color="#CCCCCC"> the label the x</font>
+
+469
+00:28:58.200 --> 00:29:04.640
+position and the<font color="#E5E5E5"> y position</font><font color="#CCCCCC"> oh we've</font>
+
+470
+00:29:02.069 --> 00:29:09.809
+done<font color="#E5E5E5"> a constructor as well I guess</font>
+
+471
+00:29:04.640 --> 00:29:17.040
+anyway<font color="#E5E5E5"> I'm going to remove these console</font>
+
+472
+00:29:09.809 --> 00:29:20.700
+door locks and I'm also actually<font color="#E5E5E5"> going</font>
+
+473
+00:29:17.039 --> 00:29:21.720
+to commit<font color="#E5E5E5"> my code at this point and</font>
+
+474
+00:29:20.700 --> 00:29:24.049
+maybe<font color="#CCCCCC"> should've done that a little</font><font color="#E5E5E5"> bit</font>
+
+475
+00:29:21.720 --> 00:29:24.049
+<font color="#E5E5E5">earlier</font>
+
+476
+00:29:45.269 --> 00:29:52.329
+<font color="#E5E5E5">okay</font><font color="#CCCCCC"> hopefully you've been following</font>
+
+477
+00:29:49.089 --> 00:29:54.399
+<font color="#CCCCCC">along with</font><font color="#E5E5E5"> this and pausing the button</font>
+
+478
+00:29:52.329 --> 00:29:57.220
+sorry pausing the video where<font color="#E5E5E5"> you need</font>
+
+479
+00:29:54.400 --> 00:29:59.440
+to but if you haven't<font color="#CCCCCC"> been</font><font color="#E5E5E5"> doing</font><font color="#CCCCCC"> that so</font>
+
+480
+00:29:57.220 --> 00:30:03.039
+far<font color="#CCCCCC"> now it's probably a</font><font color="#E5E5E5"> really good time</font>
+
+481
+00:29:59.440 --> 00:30:05.470
+to hit pause<font color="#E5E5E5"> or maybe even rewind it</font>
+
+482
+00:30:03.039 --> 00:30:07.509
+rewind a little bit<font color="#E5E5E5"> and make sure we're</font>
+
+483
+00:30:05.470 --> 00:30:08.799
+both at the same place<font color="#E5E5E5"> because you</font>
+
+484
+00:30:07.509 --> 00:30:12.190
+should<font color="#E5E5E5"> be following along</font><font color="#CCCCCC"> with this it's</font>
+
+485
+00:30:08.799 --> 00:30:15.220
+good practice<font color="#E5E5E5"> so something that I've</font>
+
+486
+00:30:12.190 --> 00:30:21.840
+<font color="#E5E5E5">realized</font><font color="#CCCCCC"> actually is we missed off one</font>
+
+487
+00:30:15.220 --> 00:30:25.720
+of<font color="#E5E5E5"> the methods in our class diagram</font>
+
+488
+00:30:21.839 --> 00:30:27.939
+we've got a way of<font color="#E5E5E5"> checking if the</font>
+
+489
+00:30:25.720 --> 00:30:30.670
+button<font color="#E5E5E5"> contains a particular point or if</font>
+
+490
+00:30:27.940 --> 00:30:31.870
+it's being hovered by the mouse but we
+
+491
+00:30:30.670 --> 00:30:36.660
+didn't<font color="#E5E5E5"> actually have</font><font color="#CCCCCC"> a way of</font><font color="#E5E5E5"> getting</font>
+
+492
+00:30:31.869 --> 00:30:36.659
+<font color="#E5E5E5">our button to draw itself to the screen</font>
+
+493
+00:30:36.930 --> 00:30:43.990
+<font color="#E5E5E5">you know we could if we</font><font color="#CCCCCC"> wanted to write</font>
+
+494
+00:30:40.349 --> 00:30:46.149
+our own<font color="#E5E5E5"> code in</font><font color="#CCCCCC"> the draw method</font><font color="#E5E5E5"> to draw</font>
+
+495
+00:30:43.990 --> 00:30:47.650
+each of these buttons<font color="#E5E5E5"> out but it would</font>
+
+496
+00:30:46.150 --> 00:30:49.960
+<font color="#E5E5E5">be better if we could just tell the</font>
+
+497
+00:30:47.650 --> 00:30:53.080
+button to draw<font color="#E5E5E5"> itself and it would</font>
+
+498
+00:30:49.960 --> 00:30:55.750
+handle<font color="#E5E5E5"> it for us so we're gonna add a</font>
+
+499
+00:30:53.079 --> 00:30:57.519
+draw method<font color="#CCCCCC"> in here that doesn't</font><font color="#E5E5E5"> take</font>
+
+500
+00:30:55.750 --> 00:31:01.089
+any<font color="#E5E5E5"> parameters it just draws</font><font color="#CCCCCC"> the</font>
+
+501
+00:30:57.519 --> 00:31:03.750
+contents of the button so I'm<font color="#E5E5E5"> actually</font>
+
+502
+00:31:01.089 --> 00:31:07.539
+gonna start<font color="#E5E5E5"> in sketched a dress by</font>
+
+503
+00:31:03.750 --> 00:31:10.329
+modifying<font color="#E5E5E5"> it</font><font color="#CCCCCC"> to use this new method</font><font color="#E5E5E5"> I'm</font>
+
+504
+00:31:07.539 --> 00:31:15.819
+gonna say<font color="#E5E5E5"> dog</font>
+
+505
+00:31:10.329 --> 00:31:20.470
+button dot draw so<font color="#E5E5E5"> I'm using the dot to</font>
+
+506
+00:31:15.819 --> 00:31:23.799
+access information on the<font color="#CCCCCC"> the dog button</font>
+
+507
+00:31:20.470 --> 00:31:25.269
+and I'm using the<font color="#E5E5E5"> parentheses to tell</font><font color="#CCCCCC"> it</font>
+
+508
+00:31:23.799 --> 00:31:29.950
+<font color="#CCCCCC">that I'm expecting to call this as a</font>
+
+509
+00:31:25.269 --> 00:31:32.170
+function so whenever you see a function
+
+510
+00:31:29.950 --> 00:31:34.360
+call with a dot<font color="#CCCCCC"> like this you can</font><font color="#E5E5E5"> think</font>
+
+511
+00:31:32.170 --> 00:31:37.720
+of<font color="#E5E5E5"> it</font><font color="#CCCCCC"> as a little</font><font color="#E5E5E5"> bit</font><font color="#CCCCCC"> of an instruction</font>
+
+512
+00:31:34.359 --> 00:31:42.399
+so I'm saying<font color="#E5E5E5"> to button draw I'm telling</font>
+
+513
+00:31:37.720 --> 00:31:45.670
+the dog button to draw<font color="#E5E5E5"> itself if I save</font>
+
+514
+00:31:42.400 --> 00:31:46.960
+<font color="#E5E5E5">this and run the code now then I should</font>
+
+515
+00:31:45.670 --> 00:31:49.180
+get some errors<font color="#CCCCCC"> because we have an</font>
+
+516
+00:31:46.960 --> 00:31:51.700
+implemented draw yeah there we go
+
+517
+00:31:49.180 --> 00:31:55.320
+<font color="#CCCCCC">uncaught type error dog button blood</font>
+
+518
+00:31:51.700 --> 00:31:55.319
+draw is not a function
+
+519
+00:31:57.839 --> 00:32:06.539
+so we can go in and add our draw method
+
+520
+00:32:03.180 --> 00:32:08.340
+on button<font color="#E5E5E5"> and because this is</font><font color="#CCCCCC"> only</font>
+
+521
+00:32:06.539 --> 00:32:09.960
+concerned with button we don't have to
+
+522
+00:32:08.339 --> 00:32:13.949
+worry<font color="#E5E5E5"> about any of the other aspects of</font>
+
+523
+00:32:09.960 --> 00:32:16.410
+drawing our scene so just like we did
+
+524
+00:32:13.950 --> 00:32:18.059
+<font color="#CCCCCC">with our constructor</font><font color="#E5E5E5"> we're gonna write a</font>
+
+525
+00:32:16.410 --> 00:32:21.029
+<font color="#E5E5E5">little bit like</font><font color="#CCCCCC"> we'd write a function</font>
+
+526
+00:32:18.059 --> 00:32:24.629
+<font color="#E5E5E5">but without the word function so the</font>
+
+527
+00:32:21.029 --> 00:32:26.129
+name<font color="#E5E5E5"> any inputs between parameters and</font>
+
+528
+00:32:24.630 --> 00:32:29.820
+we don't have any so we're<font color="#CCCCCC"> just gonna</font>
+
+529
+00:32:26.130 --> 00:32:35.450
+leave<font color="#E5E5E5"> it blank</font><font color="#CCCCCC"> and then</font><font color="#E5E5E5"> the curly braces</font>
+
+530
+00:32:29.819 --> 00:32:42.359
+for<font color="#E5E5E5"> the body or</font><font color="#CCCCCC"> the contents of</font><font color="#E5E5E5"> our</font>
+
+531
+00:32:35.450 --> 00:32:45.330
+method and I want us to<font color="#E5E5E5"> draw just</font><font color="#CCCCCC"> a</font>
+
+532
+00:32:42.359 --> 00:32:52.259
+rectangle oops
+
+533
+00:32:45.329 --> 00:32:55.349
+and all<font color="#E5E5E5"> of that is I want the rectangle</font>
+
+534
+00:32:52.259 --> 00:32:57.809
+to be so<font color="#CCCCCC"> that X unwind</font><font color="#E5E5E5"> position of the</font>
+
+535
+00:32:55.349 --> 00:33:01.169
+rectangle<font color="#CCCCCC"> I want to be the</font><font color="#E5E5E5"> X</font><font color="#CCCCCC"> unwind</font>
+
+536
+00:32:57.809 --> 00:33:06.359
+<font color="#E5E5E5">position of the button so I need to</font>
+
+537
+00:33:01.170 --> 00:33:09.539
+refer to the<font color="#E5E5E5"> current object so the</font>
+
+538
+00:33:06.359 --> 00:33:13.649
+specific button that we've created from
+
+539
+00:33:09.539 --> 00:33:15.930
+<font color="#E5E5E5">this class so I do that with this I want</font>
+
+540
+00:33:13.650 --> 00:33:20.570
+<font color="#E5E5E5">to know the X property so the x</font>
+
+541
+00:33:15.930 --> 00:33:24.330
+coordinate<font color="#E5E5E5"> so</font><font color="#CCCCCC"> I can do this</font><font color="#E5E5E5"> dot X so and</font>
+
+542
+00:33:20.569 --> 00:33:26.460
+the same for y<font color="#E5E5E5"> I start Y and I'm just</font>
+
+543
+00:33:24.329 --> 00:33:28.949
+gonna choose<font color="#E5E5E5"> a couple values for the</font>
+
+544
+00:33:26.460 --> 00:33:34.980
+width and<font color="#E5E5E5"> a height I guess a hundred</font>
+
+545
+00:33:28.950 --> 00:33:39.110
+pixels wide<font color="#E5E5E5"> and 30 pixels tall so just</font>
+
+546
+00:33:34.980 --> 00:33:42.480
+reading<font color="#E5E5E5"> this through we're saying the a</font>
+
+547
+00:33:39.109 --> 00:33:46.619
+button<font color="#E5E5E5"> knows how to draw itself and to</font>
+
+548
+00:33:42.480 --> 00:33:49.740
+draw itself<font color="#E5E5E5"> it was</font><font color="#CCCCCC"> a rectangle at this</font>
+
+549
+00:33:46.619 --> 00:33:56.729
+dot X this<font color="#E5E5E5"> to Y where this is the</font>
+
+550
+00:33:49.740 --> 00:33:59.130
+current object position and then we give
+
+551
+00:33:56.730 --> 00:34:01.650
+it<font color="#E5E5E5"> this hard-coded width and height so</font>
+
+552
+00:33:59.130 --> 00:34:04.380
+if I save this<font color="#CCCCCC"> and go back over here</font><font color="#E5E5E5"> and</font>
+
+553
+00:34:01.650 --> 00:34:06.050
+run<font color="#E5E5E5"> now then sure</font><font color="#CCCCCC"> enough</font><font color="#E5E5E5"> we're actually</font>
+
+554
+00:34:04.380 --> 00:34:07.680
+<font color="#E5E5E5">starting to get</font>
+
+555
+00:34:06.049 --> 00:34:09.000
+[Music]
+
+556
+00:34:07.680 --> 00:34:12.480
+something that looks<font color="#E5E5E5"> a little bit like a</font>
+
+557
+00:34:09.000 --> 00:34:14.639
+<font color="#E5E5E5">button showing over here now the cool</font>
+
+558
+00:34:12.480 --> 00:34:17.340
+thing<font color="#E5E5E5"> about this is</font><font color="#CCCCCC"> because it's an</font>
+
+559
+00:34:14.639 --> 00:34:18.989
+object<font color="#E5E5E5"> we can still type of button in</font>
+
+560
+00:34:17.340 --> 00:34:22.019
+our console<font color="#E5E5E5"> and get something that we</font>
+
+561
+00:34:18.989 --> 00:34:24.809
+can inspect<font color="#E5E5E5"> we can actually change it</font>
+
+562
+00:34:22.019 --> 00:34:28.829
+here as well<font color="#CCCCCC"> so maybe I</font><font color="#E5E5E5"> want to see what</font>
+
+563
+00:34:24.809 --> 00:34:32.159
+happens if I change<font color="#E5E5E5"> X to 100 oh the</font>
+
+564
+00:34:28.829 --> 00:34:36.509
+button moves over and I can do the same
+
+565
+00:34:32.159 --> 00:34:39.480
+with Wi-Fi<font color="#CCCCCC"> one so that's</font><font color="#E5E5E5"> kind of cool</font>
+
+566
+00:34:36.510 --> 00:34:42.270
+this is a pretty<font color="#E5E5E5"> nice way of testing</font>
+
+567
+00:34:39.480 --> 00:34:44.340
+<font color="#E5E5E5">whether or not like your object is doing</font>
+
+568
+00:34:42.269 --> 00:34:46.139
+what you expect<font color="#E5E5E5"> it</font><font color="#CCCCCC"> to just opening</font><font color="#E5E5E5"> up</font>
+
+569
+00:34:44.340 --> 00:34:48.169
+<font color="#E5E5E5">the console and playing around</font><font color="#CCCCCC"> and</font>
+
+570
+00:34:46.139 --> 00:34:53.639
+seeing<font color="#E5E5E5"> what happens interacting</font><font color="#CCCCCC"> with it</font>
+
+571
+00:34:48.168 --> 00:34:57.480
+<font color="#CCCCCC">very directly okay back over here I want</font>
+
+572
+00:34:53.639 --> 00:35:00.659
+to<font color="#E5E5E5"> add a label and I know that to do</font>
+
+573
+00:34:57.480 --> 00:35:02.820
+this I<font color="#E5E5E5"> need the text method</font><font color="#CCCCCC"> in</font><font color="#E5E5E5"> p5 but I</font>
+
+574
+00:35:00.659 --> 00:35:05.429
+I<font color="#E5E5E5"> can't actually remember the</font><font color="#CCCCCC"> order that</font>
+
+575
+00:35:02.820 --> 00:35:11.280
+the the inputs go for it I'm just going
+
+576
+00:35:05.429 --> 00:35:18.779
+to<font color="#E5E5E5"> go</font><font color="#CCCCCC"> on the p5 reference I'm gonna use</font>
+
+577
+00:35:11.280 --> 00:35:24.150
+command F to search for text and here we
+
+578
+00:35:18.780 --> 00:35:26.550
+go<font color="#CCCCCC"> text I know</font><font color="#E5E5E5"> this is like a few other</font>
+
+579
+00:35:24.150 --> 00:35:28.950
+things<font color="#CCCCCC"> here like text align text leading</font>
+
+580
+00:35:26.550 --> 00:35:31.920
+do not that<font color="#E5E5E5"> is size style with I might</font>
+
+581
+00:35:28.949 --> 00:35:35.489
+check some of those out<font color="#CCCCCC"> later but</font><font color="#E5E5E5"> here</font>
+
+582
+00:35:31.920 --> 00:35:38.519
+we<font color="#E5E5E5"> go text words and then</font><font color="#CCCCCC"> two numbers so</font>
+
+583
+00:35:35.489 --> 00:35:41.549
+I'm guessing that's gonna be yeah here
+
+584
+00:35:38.519 --> 00:35:49.500
+we<font color="#E5E5E5"> go the string and the x-coordinate</font>
+
+585
+00:35:41.550 --> 00:35:52.800
+<font color="#CCCCCC">and y-coordinate okay so let's try text</font>
+
+586
+00:35:49.500 --> 00:35:54.809
+and the string<font color="#E5E5E5"> I want also careful here</font>
+
+587
+00:35:52.800 --> 00:35:56.850
+because<font color="#E5E5E5"> my editor has automatically</font>
+
+588
+00:35:54.809 --> 00:35:58.759
+completed<font color="#E5E5E5"> this to use a capital letter</font>
+
+589
+00:35:56.849 --> 00:36:01.920
+for some reason and I didn't want that
+
+590
+00:35:58.760 --> 00:36:06.750
+<font color="#CCCCCC">so make sure that</font><font color="#E5E5E5"> you change that to</font>
+
+591
+00:36:01.920 --> 00:36:09.300
+lowercase<font color="#E5E5E5"> it's a text and I want the</font>
+
+592
+00:36:06.750 --> 00:36:15.269
+actual value the stuff<font color="#CCCCCC"> too sharp to</font><font color="#E5E5E5"> be</font>
+
+593
+00:36:09.300 --> 00:36:21.140
+the label and for<font color="#E5E5E5"> X&Y</font><font color="#CCCCCC"> I'm not really</font>
+
+594
+00:36:15.269 --> 00:36:25.829
+sure like where this gets drawn
+
+595
+00:36:21.139 --> 00:36:28.728
+so I'm just<font color="#CCCCCC"> gonna</font><font color="#E5E5E5"> try this 2x and</font><font color="#CCCCCC"> mr.wai</font>
+
+596
+00:36:25.829 --> 00:36:32.579
+so the current<font color="#E5E5E5"> XY position of the button</font>
+
+597
+00:36:28.728 --> 00:36:36.768
+and I'll just adjust it<font color="#E5E5E5"> from there</font><font color="#CCCCCC"> and</font>
+
+598
+00:36:32.579 --> 00:36:42.150
+<font color="#E5E5E5">try and get it</font><font color="#CCCCCC"> right so this dot X this</font>
+
+599
+00:36:36.768 --> 00:36:43.798
+<font color="#CCCCCC">door I so draw</font><font color="#E5E5E5"> text where of like this</font>
+
+600
+00:36:42.150 --> 00:36:45.298
+<font color="#CCCCCC">to</font><font color="#E5E5E5"> label whatever the value of label is</font>
+
+601
+00:36:43.798 --> 00:36:50.639
+<font color="#E5E5E5">at this</font><font color="#CCCCCC"> do I exist</font>
+
+602
+00:36:45.298 --> 00:36:55.108
+why<font color="#E5E5E5"> ok let's save that</font><font color="#CCCCCC"> and we can come</font>
+
+603
+00:36:50.639 --> 00:36:58.949
+back<font color="#E5E5E5"> over here</font><font color="#CCCCCC"> fresh the page</font><font color="#E5E5E5"> and</font><font color="#CCCCCC"> okay</font>
+
+604
+00:36:55.108 --> 00:37:01.048
+<font color="#E5E5E5">so we've got</font><font color="#CCCCCC"> our</font><font color="#E5E5E5"> text label showing up</font>
+
+605
+00:36:58.949 --> 00:37:05.608
+but it's<font color="#E5E5E5"> not really in</font><font color="#CCCCCC"> a position I</font>
+
+606
+00:37:01.048 --> 00:37:07.679
+would<font color="#E5E5E5"> want it to be maybe we can just</font>
+
+607
+00:37:05.608 --> 00:37:10.679
+<font color="#E5E5E5">let's start by</font><font color="#CCCCCC"> trying</font><font color="#E5E5E5"> to move it down</font><font color="#CCCCCC"> a</font>
+
+608
+00:37:07.679 --> 00:37:12.239
+little<font color="#E5E5E5"> bit so it's</font><font color="#CCCCCC"> more central</font><font color="#E5E5E5"> and then</font>
+
+609
+00:37:10.679 --> 00:37:16.409
+maybe we'll try<font color="#E5E5E5"> and figure out if we can</font>
+
+610
+00:37:12.239 --> 00:37:18.809
+<font color="#CCCCCC">move it along as well so I can move it</font>
+
+611
+00:37:16.409 --> 00:37:21.659
+down<font color="#CCCCCC"> by just making Y a bit bigger so I</font>
+
+612
+00:37:18.809 --> 00:37:27.180
+<font color="#E5E5E5">can add some value</font><font color="#CCCCCC"> to it maybe</font><font color="#E5E5E5"> like 10</font>
+
+613
+00:37:21.659 --> 00:37:31.248
+pixels let's see how that<font color="#CCCCCC"> looks okay</font>
+
+614
+00:37:27.179 --> 00:37:40.288
+maybe that's a bit better but<font color="#CCCCCC"> not</font><font color="#E5E5E5"> much</font>
+
+615
+00:37:31.248 --> 00:37:42.718
+<font color="#CCCCCC">let's maybe add a</font><font color="#E5E5E5"> few more</font><font color="#CCCCCC"> 20 okay</font>
+
+616
+00:37:40.289 --> 00:37:47.940
+that's roughly centered vertically so
+
+617
+00:37:42.719 --> 00:37:49.559
+I'm kind of happy with<font color="#E5E5E5"> that and maybe so</font>
+
+618
+00:37:47.940 --> 00:37:55.409
+<font color="#E5E5E5">I guess I could</font><font color="#CCCCCC"> use the same approach</font>
+
+619
+00:37:49.559 --> 00:37:58.619
+<font color="#CCCCCC">for centering</font><font color="#E5E5E5"> it horizontally so I could</font>
+
+620
+00:37:55.409 --> 00:38:00.690
+just like add some values<font color="#CCCCCC"> to it until</font><font color="#E5E5E5"> it</font>
+
+621
+00:37:58.619 --> 00:38:07.920
+<font color="#E5E5E5">looks about right but the problem</font><font color="#CCCCCC"> with</font>
+
+622
+00:38:00.690 --> 00:38:14.309
+doing that<font color="#CCCCCC"> is if the label was really</font>
+
+623
+00:38:07.920 --> 00:38:16.409
+long then it's gonna be<font color="#CCCCCC"> a different</font><font color="#E5E5E5"> size</font>
+
+624
+00:38:14.309 --> 00:38:20.880
+<font color="#E5E5E5">so if I nudged along it's still gonna be</font>
+
+625
+00:38:16.409 --> 00:38:22.440
+off<font color="#CCCCCC"> center but maybe I can</font><font color="#E5E5E5"> use this</font><font color="#CCCCCC"> text</font>
+
+626
+00:38:20.880 --> 00:38:24.660
+<font color="#CCCCCC">align thing that I saw on the p5</font>
+
+627
+00:38:22.440 --> 00:38:26.249
+reference because<font color="#CCCCCC"> that seems like maybe</font>
+
+628
+00:38:24.659 --> 00:38:31.048
+I could<font color="#E5E5E5"> align it in like the center of</font>
+
+629
+00:38:26.248 --> 00:38:34.549
+<font color="#E5E5E5">the</font><font color="#CCCCCC"> button or</font><font color="#E5E5E5"> something so okay yeah it</font>
+
+630
+00:38:31.048 --> 00:38:38.179
+looks like<font color="#CCCCCC"> I can call text-align:center</font>
+
+631
+00:38:34.550 --> 00:38:39.830
+and that might help<font color="#E5E5E5"> so I'm just gonna</font>
+
+632
+00:38:38.179 --> 00:38:41.139
+<font color="#CCCCCC">probably paste this into my code and see</font>
+
+633
+00:38:39.829 --> 00:38:45.380
+what<font color="#E5E5E5"> happens</font>
+
+634
+00:38:41.139 --> 00:38:47.029
+save that<font color="#E5E5E5"> back over here you see here</font>
+
+635
+00:38:45.380 --> 00:38:49.369
+<font color="#E5E5E5">how I actually like using this</font><font color="#CCCCCC"> record</font>
+
+636
+00:38:47.030 --> 00:38:51.290
+<font color="#E5E5E5">and</font><font color="#CCCCCC"> just changing stuff</font><font color="#E5E5E5"> is a really nice</font>
+
+637
+00:38:49.369 --> 00:38:55.549
+way of like checking<font color="#E5E5E5"> your code and like</font>
+
+638
+00:38:51.289 --> 00:38:57.590
+seeing how it's working<font color="#E5E5E5"> for</font><font color="#CCCCCC"> you</font><font color="#E5E5E5"> okay</font>
+
+639
+00:38:55.550 --> 00:38:59.900
+that made it worse<font color="#CCCCCC"> I think what it's</font>
+
+640
+00:38:57.590 --> 00:39:02.260
+doing<font color="#E5E5E5"> my guess I'm going to check it</font>
+
+641
+00:38:59.900 --> 00:39:05.829
+again by<font color="#E5E5E5"> making the label really long</font>
+
+642
+00:39:02.260 --> 00:39:09.050
+<font color="#E5E5E5">yeah so it's it's centering it around</font>
+
+643
+00:39:05.829 --> 00:39:13.069
+that<font color="#E5E5E5"> x-coordinate which is okay I come</font>
+
+644
+00:39:09.050 --> 00:39:16.250
+<font color="#E5E5E5">up with</font><font color="#CCCCCC"> that</font><font color="#E5E5E5"> so I know that</font><font color="#CCCCCC"> if the width</font>
+
+645
+00:39:13.070 --> 00:39:18.260
+is a hundred pixels then I can make<font color="#E5E5E5"> this</font>
+
+646
+00:39:16.250 --> 00:39:23.139
+centered by adding<font color="#E5E5E5"> half of</font><font color="#CCCCCC"> a hundred</font>
+
+647
+00:39:18.260 --> 00:39:23.140
+<font color="#E5E5E5">pixels to the X which would be</font><font color="#CCCCCC"> fifty</font>
+
+648
+00:39:24.550 --> 00:39:27.440
+awesome
+
+649
+00:39:25.730 --> 00:39:30.679
+that looks good<font color="#E5E5E5"> and if I make</font><font color="#CCCCCC"> it really</font>
+
+650
+00:39:27.440 --> 00:39:37.369
+<font color="#E5E5E5">long then it still looks reasonable cool</font>
+
+651
+00:39:30.679 --> 00:39:39.559
+what if I make<font color="#CCCCCC"> it like</font><font color="#E5E5E5"> okay</font><font color="#CCCCCC"> what goes</font>
+
+652
+00:39:37.369 --> 00:39:46.219
+off the edges<font color="#E5E5E5"> but I am really care about</font>
+
+653
+00:39:39.559 --> 00:39:48.920
+<font color="#E5E5E5">that</font><font color="#CCCCCC"> that's</font><font color="#E5E5E5"> okay that's</font><font color="#CCCCCC"> um I can just</font>
+
+654
+00:39:46.219 --> 00:39:51.289
+refresh okay<font color="#E5E5E5"> cool</font>
+
+655
+00:39:48.920 --> 00:39:58.070
+this seems like<font color="#E5E5E5"> a pretty reasonable</font>
+
+656
+00:39:51.289 --> 00:40:02.650
+<font color="#E5E5E5">start we've added our draw method I'm</font>
+
+657
+00:39:58.070 --> 00:40:06.980
+gonna commit my changes<font color="#E5E5E5"> before I move on</font>
+
+658
+00:40:02.650 --> 00:40:09.950
+so happen all let's<font color="#E5E5E5"> just check what's</font>
+
+659
+00:40:06.980 --> 00:40:11.300
+going on there cool the modified button
+
+660
+00:40:09.949 --> 00:40:24.039
+and modified sketch that's<font color="#E5E5E5"> what we did</font>
+
+661
+00:40:11.300 --> 00:40:24.039
+<font color="#E5E5E5">and</font><font color="#CCCCCC"> you</font><font color="#E5E5E5"> can commit now</font><font color="#CCCCCC"> button to screen</font>
+
+662
+00:40:27.309 --> 00:40:33.949
+the cool thing that<font color="#E5E5E5"> we can do at this</font>
+
+663
+00:40:30.110 --> 00:40:36.559
+<font color="#E5E5E5">point is we can already start to see how</font>
+
+664
+00:40:33.949 --> 00:40:37.609
+we would reuse the button<font color="#E5E5E5"> if I go back</font>
+
+665
+00:40:36.559 --> 00:40:40.579
+to sketch<font color="#E5E5E5"> to</font><font color="#CCCCCC"> Jess</font>
+
+666
+00:40:37.610 --> 00:40:41.840
+then I can create<font color="#CCCCCC"> a</font><font color="#E5E5E5"> new button in the</font>
+
+667
+00:40:40.579 --> 00:40:47.769
+same way I'm<font color="#CCCCCC"> just</font><font color="#E5E5E5"> going</font><font color="#CCCCCC"> to copy paste</font>
+
+668
+00:40:41.840 --> 00:40:50.680
+<font color="#E5E5E5">this line and change a bit</font><font color="#CCCCCC"> cat fun</font>
+
+669
+00:40:47.769 --> 00:40:57.739
+<font color="#E5E5E5">change the label to cat change the</font>
+
+670
+00:40:50.679 --> 00:41:07.279
+position 20 and if I tell that one<font color="#CCCCCC"> to</font>
+
+671
+00:40:57.739 --> 00:41:13.359
+draw as well then I should see a second
+
+672
+00:41:07.280 --> 00:41:15.530
+button<font color="#E5E5E5"> on my screen awesome open cat bun</font>
+
+673
+00:41:13.360 --> 00:41:19.940
+there's all the information<font color="#CCCCCC"> for dog</font>
+
+674
+00:41:15.530 --> 00:41:23.600
+button and there's all the<font color="#CCCCCC"> information</font>
+
+675
+00:41:19.940 --> 00:41:26.440
+for cat<font color="#CCCCCC"> button and</font><font color="#E5E5E5"> just same</font><font color="#CCCCCC"> as usual I</font>
+
+676
+00:41:23.599 --> 00:41:30.279
+can change all this stuff to<font color="#E5E5E5"> make it</font>
+
+677
+00:41:26.440 --> 00:41:35.539
+<font color="#CCCCCC">whatever I want which is kind of cool</font>
+
+678
+00:41:30.280 --> 00:41:38.300
+so referring back to<font color="#E5E5E5"> our class diagram</font>
+
+679
+00:41:35.539 --> 00:41:44.690
+now we're making<font color="#E5E5E5"> some pretty reasonable</font>
+
+680
+00:41:38.300 --> 00:41:46.519
+<font color="#E5E5E5">progress we've got our attributes we've</font>
+
+681
+00:41:44.690 --> 00:41:47.869
+got our constructor<font color="#CCCCCC"> and</font><font color="#E5E5E5"> there's also a</font>
+
+682
+00:41:46.519 --> 00:41:50.690
+draw method<font color="#CCCCCC"> that we forgot to include</font>
+
+683
+00:41:47.869 --> 00:41:53.500
+down here that we've done as well the
+
+684
+00:41:50.690 --> 00:41:56.750
+<font color="#E5E5E5">next thing that I'm gonna add is this</font>
+
+685
+00:41:53.500 --> 00:42:01.570
+contains point method<font color="#E5E5E5"> because I want to</font>
+
+686
+00:41:56.750 --> 00:42:01.570
+<font color="#E5E5E5">get that little hover effect working so</font>
+
+687
+00:42:01.599 --> 00:42:11.449
+let's<font color="#E5E5E5"> start by adding a</font><font color="#CCCCCC"> new method</font>
+
+688
+00:42:06.469 --> 00:42:13.730
+contains point and this method is gonna
+
+689
+00:42:11.449 --> 00:42:20.509
+actually take<font color="#E5E5E5"> some inputs so it's gonna</font>
+
+690
+00:42:13.730 --> 00:42:22.579
+<font color="#E5E5E5">take an x position and a</font><font color="#CCCCCC"> Y position and</font>
+
+691
+00:42:20.510 --> 00:42:25.430
+we're gonna do some comparisons<font color="#E5E5E5"> with</font>
+
+692
+00:42:22.579 --> 00:42:33.259
+those and hopefully<font color="#CCCCCC"> at some point return</font>
+
+693
+00:42:25.429 --> 00:42:35.358
+a true or a false<font color="#E5E5E5"> to run let us know you</font>
+
+694
+00:42:33.260 --> 00:42:37.339
+know<font color="#CCCCCC"> whether or</font><font color="#E5E5E5"> let us know whether or</font>
+
+695
+00:42:35.358 --> 00:42:39.318
+<font color="#E5E5E5">not the button contains a point</font>
+
+696
+00:42:37.338 --> 00:42:41.058
+and before we go in with<font color="#E5E5E5"> the code</font><font color="#CCCCCC"> I want</font>
+
+697
+00:42:39.318 --> 00:42:47.630
+<font color="#CCCCCC">to spend a moment just talking about how</font>
+
+698
+00:42:41.059 --> 00:42:51.019
+we're gonna figure this out<font color="#CCCCCC"> okay so we</font>
+
+699
+00:42:47.630 --> 00:42:54.559
+have a button and it looks kind of like
+
+700
+00:42:51.018 --> 00:42:56.409
+<font color="#E5E5E5">this and often</font><font color="#CCCCCC"> what I find is there's</font>
+
+701
+00:42:54.559 --> 00:43:01.430
+like<font color="#E5E5E5"> a label on it</font>
+
+702
+00:42:56.409 --> 00:43:04.759
+well I often<font color="#E5E5E5"> find when I'm doing code</font>
+
+703
+00:43:01.429 --> 00:43:06.768
+stuff<font color="#E5E5E5"> is drawing something out makes</font>
+
+704
+00:43:04.759 --> 00:43:10.278
+things a lot<font color="#CCCCCC"> easier for me to understand</font>
+
+705
+00:43:06.768 --> 00:43:13.699
+<font color="#E5E5E5">so first of all something that's useful</font>
+
+706
+00:43:10.278 --> 00:43:15.978
+to think about<font color="#E5E5E5"> here's the</font><font color="#CCCCCC"> information</font>
+
+707
+00:43:13.699 --> 00:43:21.139
+that I have about<font color="#E5E5E5"> this button so we've</font>
+
+708
+00:43:15.978 --> 00:43:24.409
+got<font color="#E5E5E5"> that X Y coordinates which is this</font>
+
+709
+00:43:21.139 --> 00:43:30.940
+<font color="#CCCCCC">position here</font><font color="#E5E5E5"> and we've also got the</font>
+
+710
+00:43:24.409 --> 00:43:39.978
+width and<font color="#E5E5E5"> the</font><font color="#CCCCCC"> height which are this and</font>
+
+711
+00:43:30.940 --> 00:43:43.969
+<font color="#E5E5E5">this and those are all under the idea of</font>
+
+712
+00:43:39.978 --> 00:43:50.179
+like<font color="#E5E5E5"> this like the the current the</font>
+
+713
+00:43:43.969 --> 00:44:00.349
+<font color="#CCCCCC">current object thingy we also have our</font>
+
+714
+00:43:50.179 --> 00:44:04.278
+input<font color="#CCCCCC"> X and</font><font color="#E5E5E5"> y and that's gonna be maybe</font>
+
+715
+00:44:00.349 --> 00:44:07.269
+a position here or position here<font color="#E5E5E5"> or a</font>
+
+716
+00:44:04.278 --> 00:44:13.608
+position<font color="#E5E5E5"> here or here or</font><font color="#CCCCCC"> whatever it is</font>
+
+717
+00:44:07.268 --> 00:44:16.818
+<font color="#E5E5E5">and the ones that are inside this box we</font>
+
+718
+00:44:13.608 --> 00:44:19.068
+<font color="#E5E5E5">want to return true for and the ones</font>
+
+719
+00:44:16.818 --> 00:44:20.900
+<font color="#E5E5E5">that are outside the</font><font color="#CCCCCC"> box</font><font color="#E5E5E5"> we want to</font>
+
+720
+00:44:19.068 --> 00:44:26.239
+return false
+
+721
+00:44:20.900 --> 00:44:30.278
+for and the rough sort of algorithm<font color="#E5E5E5"> that</font>
+
+722
+00:44:26.239 --> 00:44:38.298
+<font color="#E5E5E5">we use for this is we say let's look at</font>
+
+723
+00:44:30.278 --> 00:44:41.630
+this<font color="#E5E5E5"> line and this line and say anything</font>
+
+724
+00:44:38.298 --> 00:44:43.759
+<font color="#E5E5E5">that's outside</font><font color="#CCCCCC"> of</font><font color="#E5E5E5"> there we don't we</font>
+
+725
+00:44:41.630 --> 00:44:47.579
+<font color="#E5E5E5">don't want and anything</font><font color="#CCCCCC"> that's outside</font>
+
+726
+00:44:43.759 --> 00:44:51.838
+<font color="#E5E5E5">of there we also don't want</font>
+
+727
+00:44:47.579 --> 00:45:02.759
+and then we say let's look at different
+
+728
+00:44:51.838 --> 00:45:06.328
+<font color="#E5E5E5">color this line and this line and say</font>
+
+729
+00:45:02.759 --> 00:45:08.639
+anything<font color="#CCCCCC"> that's</font><font color="#E5E5E5"> outside</font><font color="#CCCCCC"> of there</font><font color="#E5E5E5"> we</font>
+
+730
+00:45:06.329 --> 00:45:11.700
+don't<font color="#E5E5E5"> want and anything that's</font><font color="#CCCCCC"> outside</font>
+
+731
+00:45:08.639 --> 00:45:16.139
+of<font color="#E5E5E5"> there we don't want and what we're</font>
+
+732
+00:45:11.699 --> 00:45:17.968
+left<font color="#CCCCCC"> with is just</font><font color="#E5E5E5"> the region inside</font><font color="#CCCCCC"> the</font>
+
+733
+00:45:16.139 --> 00:45:23.219
+box inside<font color="#CCCCCC"> the</font><font color="#E5E5E5"> button that we care about</font>
+
+734
+00:45:17.969 --> 00:45:27.150
+<font color="#CCCCCC">so the bits</font><font color="#E5E5E5"> of</font><font color="#CCCCCC"> information that we need</font>
+
+735
+00:45:23.219 --> 00:45:33.989
+are the<font color="#E5E5E5"> coordinates for these lines the</font>
+
+736
+00:45:27.150 --> 00:45:42.289
+green lines and the purple lines so the
+
+737
+00:45:33.989 --> 00:45:45.798
+green<font color="#CCCCCC"> one is we've got the left and</font>
+
+738
+00:45:42.289 --> 00:45:52.249
+that's just the<font color="#E5E5E5"> x-coordinate of the box</font>
+
+739
+00:45:45.798 --> 00:45:59.608
+<font color="#E5E5E5">our blue X and we've also got the right</font>
+
+740
+00:45:52.248 --> 00:46:03.588
+side and that's<font color="#E5E5E5"> a little</font><font color="#CCCCCC"> bit different</font>
+
+741
+00:45:59.608 --> 00:46:09.358
+<font color="#CCCCCC">we</font><font color="#E5E5E5"> need</font><font color="#CCCCCC"> to take X</font><font color="#E5E5E5"> into account for that</font>
+
+742
+00:46:03.588 --> 00:46:12.349
+<font color="#CCCCCC">but also</font><font color="#E5E5E5"> include the width of the box so</font>
+
+743
+00:46:09.358 --> 00:46:23.969
+the coordinate of this<font color="#E5E5E5"> Green Line</font><font color="#CCCCCC"> here</font>
+
+744
+00:46:12.349 --> 00:46:26.818
+is<font color="#E5E5E5"> the left plus the width of the box</font>
+
+745
+00:46:23.969 --> 00:46:29.338
+and then for our ones in purple we can
+
+746
+00:46:26.818 --> 00:46:40.159
+do the<font color="#E5E5E5"> same thing so we would have the</font>
+
+747
+00:46:29.338 --> 00:46:42.748
+top here's<font color="#CCCCCC"> Y and the bottom is</font><font color="#E5E5E5"> y plus</font>
+
+748
+00:46:40.159 --> 00:46:48.858
+the height of the button
+
+749
+00:46:42.748 --> 00:46:54.448
+so it's this position<font color="#E5E5E5"> plus this arrow</font>
+
+750
+00:46:48.858 --> 00:46:58.219
+gets us<font color="#E5E5E5"> this so this</font><font color="#CCCCCC"> is</font><font color="#E5E5E5"> what we want to</font>
+
+751
+00:46:54.449 --> 00:46:58.219
+<font color="#E5E5E5">translate into code</font>
+
+752
+00:46:58.949 --> 00:47:09.239
+so how can<font color="#E5E5E5"> we translate</font><font color="#CCCCCC"> that into code</font>
+
+753
+00:47:04.619 --> 00:47:11.819
+well we figured out that<font color="#E5E5E5"> we needed those</font>
+
+754
+00:47:09.239 --> 00:47:16.779
+[Music]
+
+755
+00:47:11.820 --> 00:47:19.660
+top left bottom right things so I'm
+
+756
+00:47:16.780 --> 00:47:22.900
+<font color="#E5E5E5">gonna create variables each of those so</font>
+
+757
+00:47:19.659 --> 00:47:25.889
+left was just<font color="#CCCCCC"> this</font><font color="#E5E5E5"> two x</font><font color="#CCCCCC"> the x</font>
+
+758
+00:47:22.900 --> 00:47:31.420
+coordinate of the current button and
+
+759
+00:47:25.889 --> 00:47:39.609
+right<font color="#E5E5E5"> was mr. X plus the width which is</font>
+
+760
+00:47:31.420 --> 00:47:43.510
+<font color="#E5E5E5">a hundred then the top is this top Y and</font>
+
+761
+00:47:39.610 --> 00:47:49.210
+the bottom<font color="#E5E5E5"> is this</font><font color="#CCCCCC"> 2y</font><font color="#E5E5E5"> plus the height</font>
+
+762
+00:47:43.510 --> 00:47:53.920
+which<font color="#CCCCCC"> is thirty now I need to</font><font color="#E5E5E5"> think</font>
+
+763
+00:47:49.210 --> 00:47:56.889
+<font color="#E5E5E5">about those two ranges so we can say</font>
+
+764
+00:47:53.920 --> 00:47:58.780
+<font color="#CCCCCC">create</font><font color="#E5E5E5"> variables for both of those</font><font color="#CCCCCC"> two</font>
+
+765
+00:47:56.889 --> 00:48:10.029
+say whether or not<font color="#CCCCCC"> we're in</font><font color="#E5E5E5"> those ranges</font>
+
+766
+00:47:58.780 --> 00:48:19.780
+so if we if it<font color="#E5E5E5"> the position is in the</font>
+
+767
+00:48:10.030 --> 00:48:25.480
+horizontal range then that means<font color="#E5E5E5"> that X</font>
+
+768
+00:48:19.780 --> 00:48:28.630
+is to<font color="#CCCCCC"> the left of the left think so</font>
+
+769
+00:48:25.480 --> 00:48:30.940
+left<font color="#CCCCCC"> will be smaller no sorry X is to</font>
+
+770
+00:48:28.630 --> 00:48:35.500
+the<font color="#CCCCCC"> right of the</font><font color="#E5E5E5"> left coordinate so left</font>
+
+771
+00:48:30.940 --> 00:48:38.110
+is smaller<font color="#CCCCCC"> than</font><font color="#E5E5E5"> X and also X is to the</font>
+
+772
+00:48:35.500 --> 00:48:41.559
+left of<font color="#E5E5E5"> the right coordinate so X is</font>
+
+773
+00:48:38.110 --> 00:48:44.320
+smaller than right<font color="#E5E5E5"> so we're saying it's</font>
+
+774
+00:48:41.559 --> 00:48:48.960
+in the horizontal<font color="#CCCCCC"> range</font><font color="#E5E5E5"> if X is bigger</font>
+
+775
+00:48:44.320 --> 00:48:53.940
+than left<font color="#E5E5E5"> and X is less</font><font color="#CCCCCC"> than right</font><font color="#E5E5E5"> and</font>
+
+776
+00:48:48.960 --> 00:49:06.970
+same<font color="#E5E5E5"> thing the vertical is the tick</font>
+
+777
+00:48:53.940 --> 00:49:08.920
+range my and<font color="#E5E5E5"> okay</font><font color="#CCCCCC"> and we know</font><font color="#E5E5E5"> that</font>
+
+778
+00:49:06.969 --> 00:49:12.339
+<font color="#E5E5E5">ultimately</font>
+
+779
+00:49:08.920 --> 00:49:15.130
+the button<font color="#E5E5E5"> contains this XY point and</font>
+
+780
+00:49:12.340 --> 00:49:18.820
+remember<font color="#CCCCCC"> here this x and y are the</font>
+
+781
+00:49:15.130 --> 00:49:21.690
+inputs to<font color="#E5E5E5"> this method not the x and y of</font>
+
+782
+00:49:18.820 --> 00:49:26.559
+the button<font color="#E5E5E5"> that's the list of x</font>
+
+783
+00:49:21.690 --> 00:49:27.970
+coordinates<font color="#CCCCCC"> and we can say that the</font>
+
+784
+00:49:26.559 --> 00:49:32.380
+answer<font color="#CCCCCC"> to</font><font color="#E5E5E5"> this question so</font><font color="#CCCCCC"> we always</font>
+
+785
+00:49:27.969 --> 00:49:35.709
+<font color="#E5E5E5">return the answer</font><font color="#CCCCCC"> when</font><font color="#E5E5E5"> we have a return</font>
+
+786
+00:49:32.380 --> 00:49:38.079
+the<font color="#CCCCCC"> output</font><font color="#E5E5E5"> and we have a function or a</font>
+
+787
+00:49:35.710 --> 00:49:42.090
+method that<font color="#E5E5E5"> has</font><font color="#CCCCCC"> some output is whether</font>
+
+788
+00:49:38.079 --> 00:49:50.889
+or not<font color="#E5E5E5"> it is in a horizontal range and</font>
+
+789
+00:49:42.090 --> 00:49:53.079
+it is in the vertical<font color="#E5E5E5"> range now</font><font color="#CCCCCC"> I</font>
+
+790
+00:49:50.889 --> 00:49:58.779
+actually know if this works<font color="#CCCCCC"> I have no</font>
+
+791
+00:49:53.079 --> 00:50:04.480
+idea but<font color="#E5E5E5"> I can maybe test it if I flip</font>
+
+792
+00:49:58.780 --> 00:50:06.850
+over to my console<font color="#E5E5E5"> and try it out so if</font>
+
+793
+00:50:04.480 --> 00:50:09.909
+i<font color="#E5E5E5"> refresh the</font><font color="#CCCCCC"> page here</font><font color="#E5E5E5"> and</font><font color="#CCCCCC"> I should be</font>
+
+794
+00:50:06.849 --> 00:50:13.839
+<font color="#E5E5E5">able to say book button and ask if it</font>
+
+795
+00:50:09.909 --> 00:50:17.319
+contains some points<font color="#E5E5E5"> so maybe I know</font>
+
+796
+00:50:13.840 --> 00:50:21.010
+that here<font color="#CCCCCC"> zero</font><font color="#E5E5E5"> zero is the bright like</font>
+
+797
+00:50:17.320 --> 00:50:23.289
+in the top top left of the thing<font color="#E5E5E5"> so it</font>
+
+798
+00:50:21.010 --> 00:50:30.790
+shouldn't say yes first so it doesn't
+
+799
+00:50:23.289 --> 00:50:33.130
+contain zero zero<font color="#CCCCCC"> sauce okay and maybe</font>
+
+800
+00:50:30.789 --> 00:50:35.079
+we<font color="#CCCCCC"> can ask somewhere we know it does</font>
+
+801
+00:50:33.130 --> 00:50:39.789
+contain it<font color="#CCCCCC"> so maybe we know it's at</font>
+
+802
+00:50:35.079 --> 00:50:41.710
+position 10 10 here but maybe at like 20
+
+803
+00:50:39.789 --> 00:50:48.099
+20<font color="#CCCCCC"> is</font><font color="#E5E5E5"> going to be just</font><font color="#CCCCCC"> inside the button</font>
+
+804
+00:50:41.710 --> 00:50:54.519
+so it should be<font color="#E5E5E5"> true for 2020 and</font><font color="#CCCCCC"> there</font>
+
+805
+00:50:48.099 --> 00:50:57.369
+we go true now<font color="#E5E5E5"> it would take me quite</font><font color="#CCCCCC"> a</font>
+
+806
+00:50:54.519 --> 00:50:59.050
+while to go and test<font color="#E5E5E5"> like a bunch of</font>
+
+807
+00:50:57.369 --> 00:51:01.150
+<font color="#E5E5E5">different points all</font><font color="#CCCCCC"> over this button</font>
+
+808
+00:50:59.050 --> 00:51:04.410
+<font color="#E5E5E5">but</font><font color="#CCCCCC"> one way</font><font color="#E5E5E5"> that I can maybe do that</font>
+
+809
+00:51:01.150 --> 00:51:06.579
+quickly<font color="#CCCCCC"> is by implementing that hover</font>
+
+810
+00:51:04.409 --> 00:51:09.909
+<font color="#CCCCCC">then if I</font><font color="#E5E5E5"> just move my mouse about a</font>
+
+811
+00:51:06.579 --> 00:51:16.179
+bunch I'm<font color="#E5E5E5"> gonna see whether or not it</font>
+
+812
+00:51:09.909 --> 00:51:20.250
+hovers at the right time or not so I can
+
+813
+00:51:16.179 --> 00:51:22.690
+do that<font color="#E5E5E5"> by changing</font><font color="#CCCCCC"> the fill color so</font>
+
+814
+00:51:20.250 --> 00:51:24.400
+first of all I'm actually<font color="#E5E5E5"> before</font><font color="#CCCCCC"> I</font>
+
+815
+00:51:22.690 --> 00:51:27.278
+before I go and change the fill color in
+
+816
+00:51:24.400 --> 00:51:29.829
+here<font color="#E5E5E5"> I'm gonna look back</font><font color="#CCCCCC"> of this diagram</font>
+
+817
+00:51:27.278 --> 00:51:33.909
+<font color="#CCCCCC">and add in this convenience like</font>
+
+818
+00:51:29.829 --> 00:51:35.890
+contains<font color="#E5E5E5"> mouse mouse method so we're</font>
+
+819
+00:51:33.909 --> 00:51:42.009
+gonna have a method<font color="#E5E5E5"> that uses another</font>
+
+820
+00:51:35.889 --> 00:51:46.449
+method so contains<font color="#CCCCCC"> Mouse</font><font color="#E5E5E5"> doesn't take</font>
+
+821
+00:51:42.009 --> 00:51:53.969
+any inputs and what it does is it<font color="#CCCCCC"> just</font>
+
+822
+00:51:46.449 --> 00:51:58.058
+returns this dot<font color="#E5E5E5"> contains point now sex</font>
+
+823
+00:51:53.969 --> 00:52:00.578
+<font color="#E5E5E5">that's why so we're gonna say when we do</font>
+
+824
+00:51:58.059 --> 00:52:02.440
+contains<font color="#CCCCCC"> mouse</font><font color="#E5E5E5"> that means get</font><font color="#CCCCCC"> the</font>
+
+825
+00:52:00.579 --> 00:52:06.670
+current coordinates of the mouse x<font color="#E5E5E5"> and y</font>
+
+826
+00:52:02.440 --> 00:52:07.920
+and check if this this current button
+
+827
+00:52:06.670 --> 00:52:15.278
+that we're<font color="#CCCCCC"> talking</font><font color="#E5E5E5"> about right now</font>
+
+828
+00:52:07.920 --> 00:52:20.318
+<font color="#E5E5E5">contains the point</font><font color="#CCCCCC"> Mouse</font><font color="#E5E5E5"> X</font><font color="#CCCCCC"> Mouse</font><font color="#E5E5E5"> Y so</font>
+
+829
+00:52:15.278 --> 00:52:23.768
+over here in my<font color="#E5E5E5"> rectangle</font><font color="#CCCCCC"> I can probably</font>
+
+830
+00:52:20.318 --> 00:52:32.639
+change<font color="#E5E5E5"> the color</font><font color="#CCCCCC"> with Phil</font><font color="#E5E5E5"> I don't want</font>
+
+831
+00:52:23.768 --> 00:52:37.449
+<font color="#E5E5E5">file this Phil Phil there we go and</font>
+
+832
+00:52:32.639 --> 00:52:42.250
+maybe I want<font color="#CCCCCC"> to start</font><font color="#E5E5E5"> off like usually</font>
+
+833
+00:52:37.449 --> 00:52:46.058
+at sort of lightish<font color="#E5E5E5"> gray maybe like 2:00</font>
+
+834
+00:52:42.250 --> 00:52:49.960
+<font color="#E5E5E5">2:30</font><font color="#CCCCCC"> let's see how that</font><font color="#E5E5E5"> looks</font>
+
+835
+00:52:46.059 --> 00:52:52.690
+<font color="#CCCCCC">oh ok so my background went to that</font>
+
+836
+00:52:49.960 --> 00:52:55.048
+<font color="#CCCCCC">lightish</font><font color="#E5E5E5"> gray but</font><font color="#CCCCCC"> I think it's changed a</font>
+
+837
+00:52:52.690 --> 00:52:57.639
+kind<font color="#E5E5E5"> of the text as well so I'm gonna</font>
+
+838
+00:52:55.048 --> 00:53:01.809
+change the fill of<font color="#E5E5E5"> the text back to</font>
+
+839
+00:52:57.639 --> 00:53:08.170
+black which is<font color="#CCCCCC"> zero there we go</font><font color="#E5E5E5"> that's</font>
+
+840
+00:53:01.809 --> 00:53:11.079
+better that's better<font color="#CCCCCC"> okay so I know I</font>
+
+841
+00:53:08.170 --> 00:53:12.579
+can<font color="#CCCCCC"> change the fill with this thing</font><font color="#E5E5E5"> but</font>
+
+842
+00:53:11.079 --> 00:53:15.910
+<font color="#E5E5E5">now I need to make</font><font color="#CCCCCC"> a decision every</font>
+
+843
+00:53:12.579 --> 00:53:19.059
+<font color="#CCCCCC">single time</font><font color="#E5E5E5"> we come to draw out</font><font color="#CCCCCC"> the</font>
+
+844
+00:53:15.909 --> 00:53:22.389
+contents of the button as to what filled
+
+845
+00:53:19.059 --> 00:53:25.180
+to use so as I'm<font color="#E5E5E5"> running as I need to</font>
+
+846
+00:53:22.389 --> 00:53:31.598
+make a decision<font color="#CCCCCC"> I need you if statement</font>
+
+847
+00:53:25.179 --> 00:53:33.899
+and my question here is if this contains
+
+848
+00:53:31.599 --> 00:53:33.900
+<font color="#E5E5E5">maps</font>
+
+849
+00:53:35.280 --> 00:53:41.640
+and we can see<font color="#E5E5E5"> is telling us</font><font color="#CCCCCC"> that the</font>
+
+850
+00:53:38.400 --> 00:53:44.269
+result of that is a boolean so if this
+
+851
+00:53:41.639 --> 00:53:48.629
+if the current button contains<font color="#E5E5E5"> an else</font>
+
+852
+00:53:44.269 --> 00:53:54.090
+then I'm gonna fill<font color="#E5E5E5"> 255 because that's</font>
+
+853
+00:53:48.630 --> 00:54:03.300
+white otherwise<font color="#CCCCCC"> our fill from</font><font color="#E5E5E5"> before</font><font color="#CCCCCC"> I</font>
+
+854
+00:53:54.090 --> 00:54:05.640
+like<font color="#E5E5E5"> gray so if this contains</font><font color="#CCCCCC"> mouse</font><font color="#E5E5E5"> set</font>
+
+855
+00:54:03.300 --> 00:54:07.920
+the fill color to white<font color="#E5E5E5"> otherwise set</font>
+
+856
+00:54:05.639 --> 00:54:09.809
+the fill color to light<font color="#E5E5E5"> gray and draw a</font>
+
+857
+00:54:07.920 --> 00:54:12.180
+rectangle<font color="#CCCCCC"> and once we're done set the</font>
+
+858
+00:54:09.809 --> 00:54:18.059
+fill<font color="#E5E5E5"> power back to black so we can draw</font>
+
+859
+00:54:12.179 --> 00:54:21.019
+the text<font color="#E5E5E5"> let's test this and there we go</font>
+
+860
+00:54:18.059 --> 00:54:23.549
+awesome<font color="#CCCCCC"> so we've got</font><font color="#E5E5E5"> our buttons</font>
+
+861
+00:54:21.019 --> 00:54:25.920
+<font color="#E5E5E5">changing color when we hover them now</font>
+
+862
+00:54:23.550 --> 00:54:28.620
+<font color="#E5E5E5">I'm not actually that into this like</font>
+
+863
+00:54:25.920 --> 00:54:31.200
+dark<font color="#E5E5E5"> gray thing so I'm gonna maybe like</font>
+
+864
+00:54:28.619 --> 00:54:35.940
+change<font color="#E5E5E5"> the normal color to white</font><font color="#CCCCCC"> and</font>
+
+865
+00:54:31.199 --> 00:54:39.869
+this one - maybe<font color="#E5E5E5"> like light sky-blue</font><font color="#CCCCCC"> I</font>
+
+866
+00:54:35.940 --> 00:54:41.940
+know<font color="#E5E5E5"> just from reading the p55 reference</font>
+
+867
+00:54:39.869 --> 00:54:47.219
+<font color="#E5E5E5">you can use some of these like color</font>
+
+868
+00:54:41.940 --> 00:54:49.349
+names<font color="#CCCCCC"> when you're writing your writing</font>
+
+869
+00:54:47.219 --> 00:54:52.769
+your fill colors and I know that<font color="#CCCCCC"> light</font>
+
+870
+00:54:49.349 --> 00:54:55.650
+<font color="#CCCCCC">sky-blue is a color that exists and I</font>
+
+871
+00:54:52.769 --> 00:54:57.840
+quite like<font color="#E5E5E5"> I mean it's kind of ugly but</font>
+
+872
+00:54:55.650 --> 00:55:01.309
+like it's better than<font color="#E5E5E5"> these like</font>
+
+873
+00:54:57.840 --> 00:55:06.420
+<font color="#E5E5E5">rubbishy grades we've been using okay</font>
+
+874
+00:55:01.309 --> 00:55:10.529
+so we've<font color="#E5E5E5"> got some buttons</font><font color="#CCCCCC"> and we've got</font>
+
+875
+00:55:06.420 --> 00:55:14.909
+our hover effect<font color="#E5E5E5"> so we are coming along</font>
+
+876
+00:55:10.530 --> 00:55:19.380
+<font color="#CCCCCC">pretty well</font><font color="#E5E5E5"> the final thing is I think</font>
+
+877
+00:55:14.909 --> 00:55:22.409
+<font color="#E5E5E5">to have it so</font><font color="#CCCCCC"> that when we click our</font>
+
+878
+00:55:19.380 --> 00:55:29.130
+buttons actually<font color="#E5E5E5"> do something</font><font color="#CCCCCC"> actually</font>
+
+879
+00:55:22.409 --> 00:55:31.940
+<font color="#E5E5E5">show us the the noise that that our</font>
+
+880
+00:55:29.130 --> 00:55:36.119
+<font color="#E5E5E5">animals make in our rubbish</font><font color="#CCCCCC"> town</font><font color="#E5E5E5"> board</font>
+
+881
+00:55:31.940 --> 00:55:41.000
+and actually I'm not<font color="#E5E5E5"> going to make any</font>
+
+882
+00:55:36.119 --> 00:55:48.789
+<font color="#CCCCCC">changes inside button for this</font><font color="#E5E5E5"> because</font>
+
+883
+00:55:41.000 --> 00:55:53.110
+I've made this class button a generic
+
+884
+00:55:48.789 --> 00:55:55.420
+but and all of the stuff<font color="#CCCCCC"> we put</font><font color="#E5E5E5"> in</font><font color="#CCCCCC"> him</font>
+
+885
+00:55:53.110 --> 00:55:58.840
+at the moment<font color="#CCCCCC"> could apply</font><font color="#E5E5E5"> to any button</font>
+
+886
+00:55:55.420 --> 00:56:01.960
+that does anything<font color="#E5E5E5"> and if I add the</font>
+
+887
+00:55:58.840 --> 00:56:03.789
+stuff that makes it make animal<font color="#CCCCCC"> noises</font>
+
+888
+00:56:01.960 --> 00:56:06.970
+<font color="#CCCCCC">then like</font><font color="#E5E5E5"> that's suddenly</font><font color="#CCCCCC"> a</font><font color="#E5E5E5"> very</font>
+
+889
+00:56:03.789 --> 00:56:08.860
+specific type<font color="#CCCCCC"> of button and it means I</font>
+
+890
+00:56:06.969 --> 00:56:10.209
+<font color="#E5E5E5">won't be able to reuse</font><font color="#CCCCCC"> it as easily</font><font color="#E5E5E5"> in</font>
+
+891
+00:56:08.860 --> 00:56:11.829
+other places<font color="#E5E5E5"> of my</font><font color="#CCCCCC"> coat</font>
+
+892
+00:56:10.210 --> 00:56:13.389
+I'd be like adding a button<font color="#E5E5E5"> to like</font>
+
+893
+00:56:11.829 --> 00:56:16.420
+close<font color="#E5E5E5"> the app and</font><font color="#CCCCCC"> it suddenly</font><font color="#E5E5E5"> make it</font>
+
+894
+00:56:13.389 --> 00:56:18.159
+animal noises<font color="#E5E5E5"> that's not what I want so</font>
+
+895
+00:56:16.420 --> 00:56:23.010
+I'm actually going to<font color="#E5E5E5"> just go back to my</font>
+
+896
+00:56:18.159 --> 00:56:25.239
+sketch<font color="#E5E5E5"> touch yes and make the changes to</font>
+
+897
+00:56:23.010 --> 00:56:30.400
+make<font color="#CCCCCC"> the</font><font color="#E5E5E5"> button show that animal noises</font>
+
+898
+00:56:25.239 --> 00:56:32.019
+<font color="#E5E5E5">in here so to do that I need to add</font>
+
+899
+00:56:30.400 --> 00:56:36.840
+another<font color="#E5E5E5"> one of these special functions</font>
+
+900
+00:56:32.019 --> 00:56:42.789
+that<font color="#E5E5E5"> p5 knows about which is</font><font color="#CCCCCC"> mouse</font>
+
+901
+00:56:36.840 --> 00:56:44.559
+pressed and<font color="#E5E5E5"> mouth pressed is one that</font>
+
+902
+00:56:42.789 --> 00:56:47.170
+will get cooled<font color="#E5E5E5"> whenever the mouse is</font>
+
+903
+00:56:44.559 --> 00:56:48.880
+clicked<font color="#CCCCCC"> and just to</font><font color="#E5E5E5"> demonstrate I'm</font>
+
+904
+00:56:47.170 --> 00:56:53.110
+going to add a console<font color="#E5E5E5"> dot log in here</font>
+
+905
+00:56:48.880 --> 00:56:55.090
+<font color="#CCCCCC">it says clicked and let's</font><font color="#E5E5E5"> just include</font>
+
+906
+00:56:53.110 --> 00:56:59.650
+the mouse<font color="#CCCCCC"> coordinates as well</font><font color="#E5E5E5"> just to</font>
+
+907
+00:56:55.090 --> 00:57:03.579
+just<font color="#E5E5E5"> to</font><font color="#CCCCCC"> show what's happening so back</font>
+
+908
+00:56:59.650 --> 00:57:08.470
+over<font color="#E5E5E5"> here</font><font color="#CCCCCC"> now wherever I click I'm gonna</font>
+
+909
+00:57:03.579 --> 00:57:17.440
+get my clicked<font color="#CCCCCC"> message</font><font color="#E5E5E5"> and the</font>
+
+910
+00:57:08.469 --> 00:57:19.119
+coordinates of<font color="#CCCCCC"> maps so we have some</font>
+
+911
+00:57:17.440 --> 00:57:22.329
+decisions<font color="#CCCCCC"> to make when</font><font color="#E5E5E5"> our mouse is</font>
+
+912
+00:57:19.119 --> 00:57:26.079
+pressed<font color="#CCCCCC"> we need to decide whether or not</font>
+
+913
+00:57:22.329 --> 00:57:27.549
+<font color="#E5E5E5">to make our own voice and the way that</font>
+
+914
+00:57:26.079 --> 00:57:29.529
+we can do that<font color="#E5E5E5"> is with an if statement</font>
+
+915
+00:57:27.550 --> 00:57:31.930
+<font color="#E5E5E5">as usual</font><font color="#CCCCCC"> women making</font><font color="#E5E5E5"> decisions</font><font color="#CCCCCC"> and</font>
+
+916
+00:57:29.530 --> 00:57:35.950
+we're going<font color="#E5E5E5"> to ask first of all we're</font>
+
+917
+00:57:31.929 --> 00:57:38.379
+gonna ask<font color="#E5E5E5"> the dog button if it contains</font>
+
+918
+00:57:35.949 --> 00:57:40.239
+the<font color="#E5E5E5"> current position</font><font color="#CCCCCC"> of the mouse same</font>
+
+919
+00:57:38.380 --> 00:57:43.360
+as we did<font color="#E5E5E5"> when</font><font color="#CCCCCC"> we came to hovering</font><font color="#E5E5E5"> and</font>
+
+920
+00:57:40.239 --> 00:57:45.339
+if it does we're going to use an alert
+
+921
+00:57:43.360 --> 00:57:47.920
+and alert is a special function in
+
+922
+00:57:45.340 --> 00:57:51.510
+<font color="#CCCCCC">JavaScript that just in</font><font color="#E5E5E5"> the browser pops</font>
+
+923
+00:57:47.920 --> 00:57:53.710
+up a dialog box<font color="#E5E5E5"> with some text in it</font>
+
+924
+00:57:51.510 --> 00:57:59.530
+hello woof
+
+925
+00:57:53.710 --> 00:58:02.610
+and same for<font color="#CCCCCC"> our cat button if cat</font>
+
+926
+00:57:59.530 --> 00:58:05.999
+button contains<font color="#E5E5E5"> Mouse</font>
+
+927
+00:58:02.610 --> 00:58:05.999
+[Music]
+
+928
+00:58:09.659 --> 00:58:19.989
+<font color="#E5E5E5">then we can alert the cat noise save</font>
+
+929
+00:58:16.150 --> 00:58:21.809
+that refresh the page<font color="#E5E5E5"> and we have our</font>
+
+930
+00:58:19.989 --> 00:58:25.809
+<font color="#E5E5E5">hover buttons</font><font color="#CCCCCC"> and when</font><font color="#E5E5E5"> we click the dog</font>
+
+931
+00:58:21.809 --> 00:58:30.480
+it says woof<font color="#CCCCCC"> and when we</font><font color="#E5E5E5"> click the cat</font>
+
+932
+00:58:25.809 --> 00:58:33.039
+it says<font color="#CCCCCC"> Meowth</font><font color="#E5E5E5"> truly the</font><font color="#CCCCCC"> pinnacle of</font>
+
+933
+00:58:30.480 --> 00:58:36.519
+digital innovation here with this
+
+934
+00:58:33.039 --> 00:58:38.710
+rubbish<font color="#CCCCCC"> animal sound</font><font color="#E5E5E5"> board but hopefully</font>
+
+935
+00:58:36.518 --> 00:58:44.558
+this<font color="#E5E5E5"> gives</font><font color="#CCCCCC"> you</font><font color="#E5E5E5"> a little bit</font><font color="#CCCCCC"> of an</font><font color="#E5E5E5"> idea</font>
+
+936
+00:58:38.710 --> 00:58:47.769
+of how we<font color="#E5E5E5"> can</font><font color="#CCCCCC"> use classes to make our</font>
+
+937
+00:58:44.559 --> 00:58:51.160
+code much more reusable<font color="#E5E5E5"> than it would be</font>
+
+938
+00:58:47.768 --> 00:58:52.899
+otherwise<font color="#E5E5E5"> and hopefully as well</font><font color="#CCCCCC"> I</font>
+
+939
+00:58:51.159 --> 00:58:56.889
+actually find that classes make things
+
+940
+00:58:52.900 --> 00:58:59.470
+fairly<font color="#E5E5E5"> easy to read like this contains</font>
+
+941
+00:58:56.889 --> 00:59:02.588
+<font color="#CCCCCC">Mouse method and being able to write</font>
+
+942
+00:58:59.469 --> 00:59:06.009
+<font color="#E5E5E5">things down</font><font color="#CCCCCC"> here like if dhoka button</font>
+
+943
+00:59:02.588 --> 00:59:09.278
+contains<font color="#CCCCCC"> Mouse alert</font><font color="#E5E5E5"> woof then like it's</font>
+
+944
+00:59:06.009 --> 00:59:10.929
+<font color="#E5E5E5">very like clear almost English like</font>
+
+945
+00:59:09.278 --> 00:59:12.998
+language that we use when we're writing
+
+946
+00:59:10.929 --> 00:59:14.649
+<font color="#E5E5E5">our code which means it's gonna</font><font color="#CCCCCC"> be</font>
+
+947
+00:59:12.998 --> 00:59:16.929
+really<font color="#CCCCCC"> easy</font><font color="#E5E5E5"> for someone else to come and</font>
+
+948
+00:59:14.650 --> 00:59:21.480
+<font color="#E5E5E5">read this and kind of understand</font>
+
+949
+00:59:16.929 --> 00:59:24.518
+hopefully more<font color="#E5E5E5"> or less what's going on</font>
+
+950
+00:59:21.480 --> 00:59:26.108
+<font color="#CCCCCC">now I'd like you</font><font color="#E5E5E5"> to add a couple more</font>
+
+951
+00:59:24.518 --> 00:59:29.318
+buttons<font color="#E5E5E5"> so you shouldn't</font><font color="#CCCCCC"> actually need</font>
+
+952
+00:59:26.108 --> 00:59:32.048
+to change<font color="#CCCCCC"> the button</font><font color="#E5E5E5"> class at all just</font>
+
+953
+00:59:29.318 --> 00:59:36.400
+reuse this here<font color="#E5E5E5"> making</font><font color="#CCCCCC"> sure</font><font color="#E5E5E5"> we draw each</font>
+
+954
+00:59:32.048 --> 00:59:39.038
+one and add the if<font color="#CCCCCC"> any alert and if</font>
+
+955
+00:59:36.400 --> 00:59:42.450
+<font color="#CCCCCC">you're fencing or planting an extra</font>
+
+956
+00:59:39.039 --> 00:59:45.759
+challenge maybe see if you can use an
+
+957
+00:59:42.449 --> 00:59:48.338
+array of<font color="#E5E5E5"> buttons</font><font color="#CCCCCC"> because we can add</font>
+
+958
+00:59:45.759 --> 00:59:50.079
+buttons<font color="#E5E5E5"> to arrays to</font><font color="#CCCCCC"> eliminate the</font>
+
+959
+00:59:48.338 --> 00:59:50.588
+repetition of calling draw draw draw
+
+960
+00:59:50.079 --> 00:59:53.528
+draw
+
+961
+00:59:50.588 --> 00:59:56.679
+and having this repeated if contains
+
+962
+00:59:53.528 --> 00:59:58.659
+<font color="#E5E5E5">Mouse alert structure</font><font color="#CCCCCC"> every single</font>
+
+963
+00:59:56.679 --> 01:00:00.308
+<font color="#E5E5E5">button that you add that would be</font>
+
+964
+00:59:58.659 --> 01:00:04.538
+interesting to<font color="#E5E5E5"> see if you could if you</font>
+
+965
+01:00:00.309 --> 01:00:06.210
+could<font color="#CCCCCC"> figure</font><font color="#E5E5E5"> that</font><font color="#CCCCCC"> out I hope</font><font color="#E5E5E5"> this has</font>
+
+966
+01:00:04.539 --> 01:00:09.369
+been useful<font color="#CCCCCC"> I hope you've been carrying</font>
+
+967
+01:00:06.210 --> 01:00:11.230
+in following<font color="#E5E5E5"> along with this and like</font>
+
+968
+01:00:09.369 --> 01:00:12.660
+pausing<font color="#E5E5E5"> it as you go and all that sort</font>
+
+969
+01:00:11.230 --> 01:00:16.739
+of<font color="#E5E5E5"> stuff</font>
+
+970
+01:00:12.659 --> 01:00:19.798
+please go and vote<font color="#E5E5E5"> on slack I would have</font>
+
+971
+01:00:16.739 --> 01:00:22.528
+set up a vote on the link to<font color="#CCCCCC"> this as to</font>
+
+972
+01:00:19.798 --> 01:00:26.969
+<font color="#CCCCCC">like whether</font><font color="#E5E5E5"> or not like this was</font>
+
+973
+01:00:22.528 --> 01:00:29.728
+particularly helpful so yeah I would
+
+974
+01:00:26.969 --> 01:00:31.880
+<font color="#E5E5E5">love to see whether or</font><font color="#CCCCCC"> not</font><font color="#E5E5E5"> this is</font>
+
+975
+01:00:29.728 --> 01:00:35.399
+something<font color="#E5E5E5"> you</font><font color="#CCCCCC"> think we should do more of</font>
+
+976
+01:00:31.880 --> 01:00:37.199
+<font color="#E5E5E5">or not maybe maybe this was just rubbish</font>
+
+977
+01:00:35.400 --> 01:00:38.338
+<font color="#E5E5E5">and that's okay too</font>
+
+978
+01:00:37.199 --> 01:00:40.709
+if it's<font color="#E5E5E5"> rubbish we're gonna do it again</font>
+
+979
+01:00:38.338 --> 01:00:46.768
+<font color="#E5E5E5">which is fine because this is quite a</font>
+
+980
+01:00:40.708 --> 01:00:47.368
+lot better so yeah anyway<font color="#E5E5E5"> I don't know</font>
+
+981
+01:00:46.768 --> 01:00:49.258
+do<font color="#CCCCCC"> I</font>
+
+982
+01:00:47.369 --> 01:00:51.209
+am i a youtuber now do I have to tell
+
+983
+01:00:49.259 --> 01:00:52.978
+<font color="#E5E5E5">you</font><font color="#CCCCCC"> all to</font><font color="#E5E5E5"> like and subscribe</font><font color="#CCCCCC"> probably</font>
+
+984
+01:00:51.208 --> 01:00:55.469
+not<font color="#E5E5E5"> that sounds like a horrible thing to</font>
+
+985
+01:00:52.978 --> 01:00:57.088
+<font color="#E5E5E5">do I'm</font><font color="#CCCCCC"> just gonna stop the video</font><font color="#E5E5E5"> like</font>
+
+986
+01:00:55.469 --> 01:00:59.688
+really abruptly maybe like halfway
+
+987
+01:00:57.088 --> 01:00:59.688
+<font color="#E5E5E5">through</font><font color="#CCCCCC"> a sin</font>
+

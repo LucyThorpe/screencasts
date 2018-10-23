@@ -73,7 +73,10 @@
 <body>
   <article>
     <h1>Object Oriented JS!</h1>
-    <video id="vid" src="https://s3-eu-west-1.amazonaws.com/storage.spacedog.tech/ada/rendered.mp4" controls></video>
+    <video id="vid" controls>
+      <source src="https://s3-eu-west-1.amazonaws.com/storage.spacedog.tech/ada/rendered.mp4" type="video/mp4">
+      <track label="English" kind="subtitles" srclang="en" src="captions.vtt" default>
+    </video>
     <div class="speedControls">
       <button type="button" data-value="1">Speed: 1x</button>
       <button type="button" data-value="1.25">Speed: 1.25x</button>
@@ -83,7 +86,7 @@
   </article>
   <aside>
     <h2>Ask a question</h2>
-    <form id="question-form" target="_blank" action="https://formbotapp.com/TFAJuThcT9RquzpSJrM7WMBg/oo-js-tutorial"
+    <form id="question-form" target="_blank" action="https://formbotapp.com/sA1qokNoTE1Wrz6xhDaLNoTp/oo-js-tutorial"
       method="POST">
       <label>
         Your name: <span style="opacity: 0.6">(optional)</span>
