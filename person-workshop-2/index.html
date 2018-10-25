@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Person Workshop 2 - TDDing a Person Class</title>
+  <link href="https://fonts.googleapis.com/css?family=Titillium+Web" rel="stylesheet">
+  <style>
+    *, *::before, *::after {
+      box-sizing: border-box;
+    }
+    body {
+      background: #666;
+      color: white;
+      font-size: 16px;
+      font-family: 'Titillium Web', sans-serif;
+    }
+    article {
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 300px;
+      bottom: 0;
+    }
+    aside {
+      position: absolute;
+      top: 0;
+      right: 0;
+      width: 300px;
+      bottom: 0;
+      padding: 1em;
+    }
+
+    input, textarea, button {
+      font: inherit;
+      color: inherit;
+      background: rgba(255, 255, 255, 0.1);
+      border: 1px solid white;
+      padding: 0.5em;
+      display: block;
+      width: 100%;
+    }
+
+    label {
+      display: block;
+      margin-bottom: 1em;
+    }
+
+    button {
+      margin-top: 1em;
+      cursor: pointer;
+    }
+    button:hover {
+      background: rgba(255, 255, 255, 0.2);
+    }
+
+    h1 {
+      text-align: center;
+    }
+
+    video {
+      width: 100%;
+    }
+
+    .speedControls {
+      display: flex;
+    }
+    .speedControls button:not(:first-child) {
+      border-left: none;
+    }
+  </style>
+</head>
+
+<body>
+  <article>
+    <h1>Person Workshop 2 - TDDing a Person Class</h1>
+    <video id="vid" controls>
+      <source src="part2-compressed.mp4" type="video/mp4">
+      <source src="http://c.danny.is/a4e166f5d0d2/part2-compressed.mp4" type="video/mp4">
+      <track label="English" kind="subtitles" srclang="en" src="captions.vtt" default>
+    </video>
+    <div class="speedControls">
+      <button type="button" data-value="1">Speed: 1x</button>
+      <button type="button" data-value="1.25">Speed: 1.25x</button>
+      <button type="button" data-value="1.5">Speed: 1.5x</button>
+      <button type="button" data-value="2">Speed: 2x</button>
+    </div>
+  </article>
+  <aside>
+    <h2>Ask a question</h2>
+    <form id="question-form" target="_blank" action="https://formbotapp.com/sA1qokNoTE1Wrz6xhDaLNoTp/person-workshop-2"
+      method="POST">
+      <label>
+        Your name: <span style="opacity: 0.6">(optional)</span>
+        <input type="text" name="name">
+      </label>
+      <input type="hidden" name="video_time" value="00:00">
+      <label>
+        Your question:
+        <textarea name="message" required></textarea>
+      </label>
+      <input type="submit" value="Ask">
+    </form>
+  </aside>
+
+  <script>
+    var video = document.querySelector('#vid')
+    var form = document.querySelector('#question-form')
+    var videoTimeField = form.querySelector('[name=video_time]')
+
+    form.addEventListener('submit', function (event) {
+      video.pause();
+      var time = video.currentTime;
+      var hours = Math.floor(time / 3600)
+      var minutes = Math.floor((time - (hours * 3600)) / 60);
+      var seconds = Math.floor(time - (hours * 3600) - (minutes * 60));
+      var formatted = hours + ':' + minutes + ':' + seconds;
+      videoTimeField.value = formatted
+    })
+
+    var speedButtonContainer = document.querySelector('.speedControls');
+    speedButtonContainer.addEventListener('click', function (event) {
+      const target = event.target;
+      const dataValue = target.getAttribute('data-value');
+      console.log({ target, dataValue })
+      if (dataValue) {
+        video.playbackRate = Number(dataValue);
+      }
+    })
+  </script>
+</body>
+
+</html>
