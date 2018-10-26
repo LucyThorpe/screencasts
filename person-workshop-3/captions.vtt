@@ -1,0 +1,1170 @@
+WEBVTT
+
+1
+00:00:01.490 --> 00:00:08.250
+cool so<font color="#E5E5E5"> hopefully we finished off the</font>
+
+2
+00:00:05.450 --> 00:00:09.990
+person class now<font color="#CCCCCC"> we've</font><font color="#E5E5E5"> got a bunch of</font>
+
+3
+00:00:08.250 --> 00:00:11.638
+new stuff<font color="#CCCCCC"> going on in</font><font color="#E5E5E5"> here right</font><font color="#CCCCCC"> so we</font>
+
+4
+00:00:09.990 --> 00:00:14.039
+<font color="#CCCCCC">should have</font><font color="#E5E5E5"> like that</font><font color="#CCCCCC"> ad phone method</font>
+
+5
+00:00:11.638 --> 00:00:15.899
+and print details method and stuff<font color="#E5E5E5"> what</font>
+
+6
+00:00:14.039 --> 00:00:18.989
+we're going<font color="#CCCCCC"> to do now is go on and have</font>
+
+7
+00:00:15.900 --> 00:00:20.689
+a look<font color="#CCCCCC"> at building a second class so so</font>
+
+8
+00:00:18.989 --> 00:00:23.309
+far we've got<font color="#CCCCCC"> like</font><font color="#E5E5E5"> this person class</font>
+
+9
+00:00:20.689 --> 00:00:25.079
+that we've built and what we want<font color="#E5E5E5"> to do</font>
+
+10
+00:00:23.309 --> 00:00:27.209
+is we want<font color="#CCCCCC"> to add a new</font><font color="#E5E5E5"> class which is</font>
+
+11
+00:00:25.079 --> 00:00:29.189
+an address book and<font color="#E5E5E5"> this is going to</font>
+
+12
+00:00:27.210 --> 00:00:32.910
+store all<font color="#CCCCCC"> of</font><font color="#E5E5E5"> the people that we make</font>
+
+13
+00:00:29.189 --> 00:00:34.320
+okay<font color="#E5E5E5"> so let's go through</font><font color="#CCCCCC"> this process</font>
+
+14
+00:00:32.909 --> 00:00:36.029
+and<font color="#CCCCCC"> work out like what do we</font><font color="#E5E5E5"> what</font><font color="#CCCCCC"> do we</font>
+
+15
+00:00:34.320 --> 00:00:41.159
+need<font color="#E5E5E5"> it to do right so we're gonna have</font>
+
+16
+00:00:36.030 --> 00:00:42.570
+an<font color="#CCCCCC"> address book class and let's</font><font color="#E5E5E5"> look at</font>
+
+17
+00:00:41.159 --> 00:00:44.488
+<font color="#E5E5E5">some tasks that we</font><font color="#CCCCCC"> need so first of all</font>
+
+18
+00:00:42.570 --> 00:00:47.850
+the constructor well that's pretty
+
+19
+00:00:44.488 --> 00:00:49.589
+simple<font color="#CCCCCC"> because</font><font color="#E5E5E5"> the way that the way that</font>
+
+20
+00:00:47.850 --> 00:00:50.910
+I think<font color="#E5E5E5"> we want</font><font color="#CCCCCC"> it to</font><font color="#E5E5E5"> work we don't need</font>
+
+21
+00:00:49.590 --> 00:00:55.440
+to worry about constructor<font color="#CCCCCC"> well we</font>
+
+22
+00:00:50.909 --> 00:00:58.578
+<font color="#CCCCCC">actually wanted</font><font color="#E5E5E5"> to do is basically work</font>
+
+23
+00:00:55.439 --> 00:01:02.209
+like this<font color="#E5E5E5"> so we can</font><font color="#CCCCCC"> set up</font><font color="#E5E5E5"> a new person</font>
+
+24
+00:00:58.579 --> 00:01:02.210
+say person<font color="#E5E5E5"> one</font>
+
+25
+00:01:07.188 --> 00:01:11.398
+how do we<font color="#E5E5E5"> do this Joe and then what was</font>
+
+26
+00:01:11.099 --> 00:01:19.109
+it
+
+27
+00:01:11.399 --> 00:01:20.640
+surname and then<font color="#E5E5E5"> a date of</font><font color="#CCCCCC"> birth and</font>
+
+28
+00:01:19.109 --> 00:01:22.649
+then we've<font color="#E5E5E5"> got that new person</font><font color="#CCCCCC"> or we</font>
+
+29
+00:01:20.640 --> 00:01:24.329
+want<font color="#E5E5E5"> to be able to do and this is like</font>
+
+30
+00:01:22.649 --> 00:01:30.688
+the new stuff<font color="#E5E5E5"> we need to write we want</font>
+
+31
+00:01:24.328 --> 00:01:37.288
+to be able<font color="#E5E5E5"> to make an address book or</font>
+
+32
+00:01:30.688 --> 00:01:38.368
+let's call<font color="#E5E5E5"> it book right and we don't</font>
+
+33
+00:01:37.289 --> 00:01:39.689
+<font color="#CCCCCC">need to give anything to</font><font color="#E5E5E5"> construct it</font>
+
+34
+00:01:38.368 --> 00:01:41.159
+for this so we<font color="#E5E5E5"> want to be able to set</font>
+
+35
+00:01:39.688 --> 00:01:42.538
+that<font color="#E5E5E5"> up and then what we basically want</font>
+
+36
+00:01:41.159 --> 00:01:44.939
+<font color="#E5E5E5">to be able to do is we want</font><font color="#CCCCCC"> to be able</font>
+
+37
+00:01:42.539 --> 00:01:45.810
+<font color="#CCCCCC">to call an ADD method on this book so</font>
+
+38
+00:01:44.938 --> 00:01:48.359
+you want to be able to say something
+
+39
+00:01:45.810 --> 00:01:51.118
+<font color="#CCCCCC">like book don't add and then we want</font><font color="#E5E5E5"> to</font>
+
+40
+00:01:48.359 --> 00:01:52.739
+be<font color="#CCCCCC"> able to pass</font><font color="#E5E5E5"> into</font><font color="#CCCCCC"> here our person</font>
+
+41
+00:01:51.118 --> 00:01:53.700
+that we<font color="#E5E5E5"> created now I'm going to go back</font>
+
+42
+00:01:52.739 --> 00:01:54.959
+<font color="#CCCCCC">over this in a</font><font color="#E5E5E5"> minute we're going</font><font color="#CCCCCC"> to</font>
+
+43
+00:01:53.700 --> 00:01:56.099
+<font color="#E5E5E5">write</font><font color="#CCCCCC"> some tests and everything</font><font color="#E5E5E5"> but to</font>
+
+44
+00:01:54.959 --> 00:01:58.500
+give you<font color="#E5E5E5"> an idea of what we want to make</font>
+
+45
+00:01:56.099 --> 00:02:00.989
+<font color="#E5E5E5">we want to be able to pass that person</font>
+
+46
+00:01:58.500 --> 00:02:04.920
+into<font color="#E5E5E5"> here and then we want</font><font color="#CCCCCC"> to</font><font color="#E5E5E5"> be</font><font color="#CCCCCC"> able to</font>
+
+47
+00:02:00.989 --> 00:02:08.219
+call book<font color="#CCCCCC"> dot entries and we</font><font color="#E5E5E5"> want to get</font>
+
+48
+00:02:04.920 --> 00:02:09.959
+back from it<font color="#CCCCCC"> an array with all of these</font>
+
+49
+00:02:08.219 --> 00:02:12.509
+person<font color="#E5E5E5"> objects so in this case it would</font>
+
+50
+00:02:09.959 --> 00:02:16.799
+<font color="#CCCCCC">have</font><font color="#E5E5E5"> just just one person object like in</font>
+
+51
+00:02:12.509 --> 00:02:18.120
+here<font color="#E5E5E5"> okay so this is</font><font color="#CCCCCC"> like what we're</font>
+
+52
+00:02:16.799 --> 00:02:20.430
+building<font color="#CCCCCC"> and if you imagine this is like</font>
+
+53
+00:02:18.120 --> 00:02:24.090
+<font color="#E5E5E5">a class diagram we've basically got one</font>
+
+54
+00:02:20.430 --> 00:02:25.769
+attribute<font color="#E5E5E5"> which is entries so that's</font>
+
+55
+00:02:24.090 --> 00:02:27.780
+like<font color="#E5E5E5"> attribute property on</font><font color="#CCCCCC"> it and then</font>
+
+56
+00:02:25.769 --> 00:02:30.599
+we've got<font color="#E5E5E5"> one</font><font color="#CCCCCC"> method an</font><font color="#E5E5E5"> interest</font><font color="#CCCCCC"> method</font>
+
+57
+00:02:27.780 --> 00:02:33.090
+which is<font color="#E5E5E5"> add and that</font><font color="#CCCCCC"> takes a person</font>
+
+58
+00:02:30.599 --> 00:02:35.098
+object<font color="#CCCCCC"> okay and we don't care about</font><font color="#E5E5E5"> the</font>
+
+59
+00:02:33.090 --> 00:02:39.870
+return value for it so that's<font color="#E5E5E5"> what we're</font>
+
+60
+00:02:35.098 --> 00:02:44.608
+going<font color="#CCCCCC"> to</font><font color="#E5E5E5"> try and build now so tasks wise</font>
+
+61
+00:02:39.870 --> 00:02:46.680
+we need to create the class and then we
+
+62
+00:02:44.609 --> 00:02:49.769
+<font color="#E5E5E5">also need to</font><font color="#CCCCCC"> set up this entries thing</font>
+
+63
+00:02:46.680 --> 00:02:54.120
+with like an initial value<font color="#E5E5E5"> so it needs</font>
+
+64
+00:02:49.769 --> 00:02:59.579
+<font color="#E5E5E5">to have entries that should be which</font>
+
+65
+00:02:54.120 --> 00:03:02.939
+should be an array and then the second
+
+66
+00:02:59.579 --> 00:03:11.460
+<font color="#E5E5E5">task that we've got is to add a add</font>
+
+67
+00:03:02.939 --> 00:03:14.129
+method which takes<font color="#E5E5E5"> a a person</font><font color="#CCCCCC"> object</font>
+
+68
+00:03:11.460 --> 00:03:17.010
+cool<font color="#CCCCCC"> so let's work</font><font color="#E5E5E5"> through that then</font>
+
+69
+00:03:14.129 --> 00:03:21.069
+<font color="#E5E5E5">okay let's start with</font><font color="#CCCCCC"> this first thing</font>
+
+70
+00:03:17.009 --> 00:03:24.009
+<font color="#E5E5E5">what</font><font color="#CCCCCC"> we need to do is we need to create</font>
+
+71
+00:03:21.069 --> 00:03:25.810
+a test for this<font color="#E5E5E5"> address book now we</font>
+
+72
+00:03:24.009 --> 00:03:27.699
+could go over<font color="#CCCCCC"> into our person testing</font>
+
+73
+00:03:25.810 --> 00:03:31.240
+<font color="#E5E5E5">and we could like add another describe</font>
+
+74
+00:03:27.699 --> 00:03:33.519
+thing down the bottom but<font color="#E5E5E5"> this file is</font>
+
+75
+00:03:31.240 --> 00:03:34.840
+called person test is and if you had a
+
+76
+00:03:33.520 --> 00:03:36.010
+<font color="#E5E5E5">really big project with loads of classes</font>
+
+77
+00:03:34.840 --> 00:03:37.810
+we wouldn't want to put<font color="#CCCCCC"> them all in one</font>
+
+78
+00:03:36.009 --> 00:03:39.549
+file<font color="#CCCCCC"> so what we're going</font><font color="#E5E5E5"> to do</font><font color="#CCCCCC"> instead</font>
+
+79
+00:03:37.810 --> 00:03:49.060
+is<font color="#E5E5E5"> we're going to add a new file called</font>
+
+80
+00:03:39.550 --> 00:03:50.439
+<font color="#CCCCCC">address book dot test ojs and this is</font>
+
+81
+00:03:49.060 --> 00:03:51.699
+<font color="#E5E5E5">going to contain the</font><font color="#CCCCCC"> test for</font><font color="#E5E5E5"> our</font><font color="#CCCCCC"> jess</font>
+
+82
+00:03:50.439 --> 00:03:54.669
+<font color="#CCCCCC">book so we can keep them</font><font color="#E5E5E5"> kind of</font>
+
+83
+00:03:51.699 --> 00:03:56.679
+separate<font color="#CCCCCC"> I'm just going to</font><font color="#E5E5E5"> go and copy</font>
+
+84
+00:03:54.669 --> 00:04:00.429
+<font color="#E5E5E5">and</font><font color="#CCCCCC"> paste this top stuff here okay</font>
+
+85
+00:03:56.680 --> 00:04:05.740
+<font color="#CCCCCC">getting</font><font color="#E5E5E5"> chai in and all that so that we</font>
+
+86
+00:04:00.430 --> 00:04:07.510
+<font color="#E5E5E5">can put it in our just book and then I'm</font>
+
+87
+00:04:05.740 --> 00:04:12.129
+also going<font color="#E5E5E5"> to copy and paste this first</font>
+
+88
+00:04:07.509 --> 00:04:14.489
+<font color="#CCCCCC">described thing here and put</font><font color="#E5E5E5"> that down</font>
+
+89
+00:04:12.129 --> 00:04:14.490
+here
+
+90
+00:04:16.540 --> 00:04:23.500
+and this wants to<font color="#E5E5E5"> be</font><font color="#CCCCCC"> a just book</font><font color="#E5E5E5"> so now</font>
+
+91
+00:04:22.089 --> 00:04:27.369
+<font color="#CCCCCC">we need</font><font color="#E5E5E5"> to start thinking about the</font>
+
+92
+00:04:23.500 --> 00:04:29.889
+tests we want so we probably<font color="#E5E5E5"> want</font><font color="#CCCCCC"> to</font>
+
+93
+00:04:27.370 --> 00:04:35.410
+<font color="#E5E5E5">test the</font><font color="#CCCCCC"> initializes properly so let's</font>
+
+94
+00:04:29.889 --> 00:04:40.120
+just say it initializes<font color="#E5E5E5"> properly and</font>
+
+95
+00:04:35.410 --> 00:04:41.350
+then we want to basically there's not
+
+96
+00:04:40.120 --> 00:04:45.250
+much to do<font color="#CCCCCC"> in here</font><font color="#E5E5E5"> we want to say</font>
+
+97
+00:04:41.350 --> 00:04:50.230
+<font color="#CCCCCC">something like book equals new address</font>
+
+98
+00:04:45.250 --> 00:04:55.029
+book<font color="#E5E5E5"> and then we want to just check that</font>
+
+99
+00:04:50.230 --> 00:04:58.120
+book entries is a empty<font color="#E5E5E5"> array just like</font>
+
+100
+00:04:55.029 --> 00:05:01.479
+we did over<font color="#E5E5E5"> in the person test where we</font>
+
+101
+00:04:58.120 --> 00:05:05.079
+were checking that the<font color="#E5E5E5"> the thing here</font>
+
+102
+00:05:01.480 --> 00:05:06.490
+was in a row<font color="#E5E5E5"> okay</font>
+
+103
+00:05:05.079 --> 00:05:08.680
+so we need to turn this into an
+
+104
+00:05:06.490 --> 00:05:17.579
+expectation<font color="#CCCCCC"> okay so we</font><font color="#E5E5E5"> need to say</font>
+
+105
+00:05:08.680 --> 00:05:22.930
+expect book got entries<font color="#CCCCCC"> to deep equal</font>
+
+106
+00:05:17.579 --> 00:05:25.229
+and empty<font color="#E5E5E5"> all right so if we run that</font>
+
+107
+00:05:22.930 --> 00:05:25.230
+<font color="#E5E5E5">now</font>
+
+108
+00:05:36.120 --> 00:05:39.629
+we can see that<font color="#E5E5E5"> all of our person tests</font>
+
+109
+00:05:38.100 --> 00:05:41.040
+are still<font color="#CCCCCC"> passing but we've got a</font>
+
+110
+00:05:39.629 --> 00:05:43.500
+<font color="#E5E5E5">failure here right address book is not</font>
+
+111
+00:05:41.040 --> 00:05:49.199
+defined<font color="#E5E5E5"> which makes sense</font><font color="#CCCCCC"> so we need to</font>
+
+112
+00:05:43.500 --> 00:05:52.379
+<font color="#E5E5E5">define our address</font><font color="#CCCCCC"> book and we'll</font>
+
+113
+00:05:49.199 --> 00:05:54.780
+<font color="#E5E5E5">require that in and will require</font><font color="#CCCCCC"> a file</font>
+
+114
+00:05:52.379 --> 00:05:59.790
+<font color="#E5E5E5">that we haven't made</font><font color="#CCCCCC"> yet so that's</font><font color="#E5E5E5"> gonna</font>
+
+115
+00:05:54.779 --> 00:06:01.469
+be<font color="#E5E5E5"> models and then we</font><font color="#CCCCCC"> should call that</font>
+
+116
+00:05:59.790 --> 00:06:04.680
+file<font color="#E5E5E5"> use the same naming convention so</font>
+
+117
+00:06:01.470 --> 00:06:11.010
+<font color="#CCCCCC">we're going</font><font color="#E5E5E5"> to call it address book dot</font>
+
+118
+00:06:04.680 --> 00:06:12.329
+<font color="#E5E5E5">J yes and if we try running</font><font color="#CCCCCC"> that we get</font>
+
+119
+00:06:11.009 --> 00:06:14.610
+this big gnarly<font color="#CCCCCC"> error that we saw before</font>
+
+120
+00:06:12.329 --> 00:06:17.839
+<font color="#E5E5E5">because</font><font color="#CCCCCC"> you can't find</font><font color="#E5E5E5"> the file so we</font>
+
+121
+00:06:14.610 --> 00:06:17.840
+need to go and make<font color="#CCCCCC"> one</font>
+
+122
+00:06:23.509 --> 00:06:28.980
+cool now while we're in here<font color="#E5E5E5"> I'm kind of</font>
+
+123
+00:06:26.689 --> 00:06:30.750
+instead<font color="#E5E5E5"> of going into like doing some</font>
+
+124
+00:06:28.980 --> 00:06:31.980
+more TDD<font color="#CCCCCC"> and running the</font><font color="#E5E5E5"> test again we</font>
+
+125
+00:06:30.750 --> 00:06:33.629
+know<font color="#E5E5E5"> that we need</font><font color="#CCCCCC"> to create a class in</font>
+
+126
+00:06:31.980 --> 00:06:39.810
+<font color="#CCCCCC">here right so I might as well just do</font>
+
+127
+00:06:33.629 --> 00:06:43.110
+that now<font color="#CCCCCC"> class address</font><font color="#E5E5E5"> book and then we</font>
+
+128
+00:06:39.810 --> 00:06:52.610
+know we need<font color="#E5E5E5"> to export that so you just</font>
+
+129
+00:06:43.110 --> 00:06:52.610
+<font color="#E5E5E5">wanna module exports address book</font>
+
+130
+00:06:54.370 --> 00:07:02.329
+hopefully now if we run the tests we get
+
+131
+00:07:00.259 --> 00:07:06.079
+a fader saying that we expected
+
+132
+00:07:02.329 --> 00:07:08.990
+undefined<font color="#E5E5E5"> and actually it was we were</font>
+
+133
+00:07:06.079 --> 00:07:11.269
+expecting<font color="#E5E5E5"> a empty array so we need a</font>
+
+134
+00:07:08.990 --> 00:07:18.439
+<font color="#E5E5E5">construction here which sets up an</font><font color="#CCCCCC"> empty</font>
+
+135
+00:07:11.269 --> 00:07:20.240
+array<font color="#E5E5E5"> so we</font><font color="#CCCCCC"> need to name this right so</font>
+
+136
+00:07:18.439 --> 00:07:22.189
+in<font color="#E5E5E5"> our test if we</font><font color="#CCCCCC"> have a</font><font color="#E5E5E5"> look at the</font>
+
+137
+00:07:20.240 --> 00:07:25.100
+<font color="#E5E5E5">test</font><font color="#CCCCCC"> we expected it to be called M</font>
+
+138
+00:07:22.189 --> 00:07:28.279
+entries<font color="#CCCCCC"> that's the property</font><font color="#E5E5E5"> we need so</font>
+
+139
+00:07:25.100 --> 00:07:36.710
+we<font color="#E5E5E5"> need to say this dot entries equals</font>
+
+140
+00:07:28.279 --> 00:07:40.429
+an empty<font color="#CCCCCC"> array and we've got a green</font>
+
+141
+00:07:36.709 --> 00:07:41.750
+test for initializing properly so the
+
+142
+00:07:40.430 --> 00:07:44.629
+next thing we<font color="#CCCCCC"> need</font><font color="#E5E5E5"> to do in our</font><font color="#CCCCCC"> test is</font>
+
+143
+00:07:41.750 --> 00:07:47.839
+go back<font color="#CCCCCC"> and implement</font><font color="#E5E5E5"> this add method so</font>
+
+144
+00:07:44.629 --> 00:07:49.219
+we should write<font color="#CCCCCC"> a test</font><font color="#E5E5E5"> for</font><font color="#CCCCCC"> that and this</font>
+
+145
+00:07:47.839 --> 00:07:51.889
+<font color="#E5E5E5">needs a</font><font color="#CCCCCC"> bit more setup if you</font><font color="#E5E5E5"> think</font>
+
+146
+00:07:49.220 --> 00:07:54.530
+about<font color="#E5E5E5"> the four phase testing right we</font>
+
+147
+00:07:51.889 --> 00:07:57.168
+<font color="#E5E5E5">set</font><font color="#CCCCCC"> up actually</font><font color="#E5E5E5"> execute the thing verify</font>
+
+148
+00:07:54.529 --> 00:07:58.639
+it work<font color="#E5E5E5"> correctly in this this test the</font>
+
+149
+00:07:57.168 --> 00:08:00.829
+<font color="#E5E5E5">only setup is creating the address book</font>
+
+150
+00:07:58.639 --> 00:08:02.599
+<font color="#CCCCCC">okay in fact</font><font color="#E5E5E5"> that's also in this case</font>
+
+151
+00:08:00.829 --> 00:08:05.089
+that's<font color="#E5E5E5"> also the the action that we're</font>
+
+152
+00:08:02.600 --> 00:08:08.030
+trying<font color="#E5E5E5"> to verify right</font><font color="#CCCCCC"> but in this we</font>
+
+153
+00:08:05.089 --> 00:08:16.489
+need a bit more<font color="#E5E5E5"> setup so we're going to</font>
+
+154
+00:08:08.029 --> 00:08:19.489
+say it can add people to<font color="#E5E5E5"> the book and</font>
+
+155
+00:08:16.490 --> 00:08:20.478
+then inside the test we need to do some
+
+156
+00:08:19.490 --> 00:08:21.620
+stuff so<font color="#E5E5E5"> first of all we need to create</font>
+
+157
+00:08:20.478 --> 00:08:24.800
+<font color="#CCCCCC">the yes</font><font color="#E5E5E5"> book so</font><font color="#CCCCCC"> we've got somewhere to</font>
+
+158
+00:08:21.620 --> 00:08:26.360
+<font color="#E5E5E5">put them and what we want to do down</font>
+
+159
+00:08:24.800 --> 00:08:28.910
+<font color="#CCCCCC">here somewhere is we want to basically</font>
+
+160
+00:08:26.360 --> 00:08:31.810
+be<font color="#E5E5E5"> able to so the thing we're testing we</font>
+
+161
+00:08:28.910 --> 00:08:34.519
+want to be able<font color="#E5E5E5"> to say book dot add and</font>
+
+162
+00:08:31.810 --> 00:08:37.210
+then we want<font color="#E5E5E5"> to give it like a person in</font>
+
+163
+00:08:34.519 --> 00:08:39.439
+here<font color="#E5E5E5"> yeah like an actual person object</font>
+
+164
+00:08:37.210 --> 00:08:44.870
+and then<font color="#E5E5E5"> we need to do some sort of</font>
+
+165
+00:08:39.440 --> 00:08:46.520
+expectation<font color="#E5E5E5"> afterwards right but we</font>
+
+166
+00:08:44.870 --> 00:08:47.089
+haven't<font color="#E5E5E5"> actually got any person objects</font>
+
+167
+00:08:46.519 --> 00:08:49.730
+here at the moment
+
+168
+00:08:47.089 --> 00:08:53.230
+<font color="#E5E5E5">so we need to create a person object so</font>
+
+169
+00:08:49.730 --> 00:08:55.820
+let's just<font color="#CCCCCC"> create one called person one</font>
+
+170
+00:08:53.230 --> 00:08:57.320
+which we know how to do with<font color="#E5E5E5"> new person</font>
+
+171
+00:08:55.820 --> 00:09:01.180
+<font color="#E5E5E5">this</font><font color="#CCCCCC"> is</font><font color="#E5E5E5"> the thing we did earlier and</font>
+
+172
+00:08:57.320 --> 00:09:01.180
+<font color="#E5E5E5">let's make it Joe Bloggs</font>
+
+173
+00:09:08.659 --> 00:09:13.078
+so we're<font color="#CCCCCC"> creating a new person</font><font color="#E5E5E5"> and then</font>
+
+174
+00:09:11.190 --> 00:09:17.970
+what we can<font color="#E5E5E5"> do is we can pass that</font><font color="#CCCCCC"> new</font>
+
+175
+00:09:13.078 --> 00:09:19.620
+person<font color="#E5E5E5"> into here okay</font><font color="#CCCCCC"> and if you just</font>
+
+176
+00:09:17.970 --> 00:09:20.579
+run this test<font color="#E5E5E5"> in fact let's not run it</font>
+
+177
+00:09:19.620 --> 00:09:22.440
+<font color="#E5E5E5">yet so you don't go an expectation</font>
+
+178
+00:09:20.578 --> 00:09:29.479
+<font color="#CCCCCC">that's right like a simple expectation</font>
+
+179
+00:09:22.440 --> 00:09:32.639
+so let's say that<font color="#CCCCCC"> we expect but</font><font color="#E5E5E5"> our</font>
+
+180
+00:09:29.480 --> 00:09:35.159
+entries and<font color="#E5E5E5"> this is going</font><font color="#CCCCCC"> to</font><font color="#E5E5E5"> return</font><font color="#CCCCCC"> the</font>
+
+181
+00:09:32.639 --> 00:09:36.629
+<font color="#CCCCCC">Irate book to entries and</font><font color="#E5E5E5"> just for a</font>
+
+182
+00:09:35.159 --> 00:09:41.419
+simple test to begin<font color="#E5E5E5"> with let's just</font><font color="#CCCCCC"> say</font>
+
+183
+00:09:36.629 --> 00:09:46.220
+we expect book entries<font color="#E5E5E5"> dot length to</font>
+
+184
+00:09:41.419 --> 00:09:48.719
+equal can you guess what it should<font color="#CCCCCC"> equal</font>
+
+185
+00:09:46.220 --> 00:09:52.050
+like<font color="#E5E5E5"> one right because</font><font color="#CCCCCC"> we've put one</font>
+
+186
+00:09:48.720 --> 00:09:56.190
+person<font color="#E5E5E5"> into it and hopefully if we run</font>
+
+187
+00:09:52.049 --> 00:09:58.620
+this we'll get an interesting<font color="#E5E5E5"> failure so</font>
+
+188
+00:09:56.190 --> 00:10:00.569
+it says he a person<font color="#CCCCCC"> is not</font><font color="#E5E5E5"> defined okay</font>
+
+189
+00:09:58.620 --> 00:10:02.669
+<font color="#E5E5E5">and that's because we try</font><font color="#CCCCCC"> to</font><font color="#E5E5E5"> create a</font>
+
+190
+00:10:00.568 --> 00:10:04.649
+<font color="#E5E5E5">new person here</font><font color="#CCCCCC"> but in</font><font color="#E5E5E5"> in our test in</font>
+
+191
+00:10:02.669 --> 00:10:06.360
+our dress book<font color="#E5E5E5"> test we don't have any</font>
+
+192
+00:10:04.649 --> 00:10:08.370
+way of<font color="#E5E5E5"> actually</font><font color="#CCCCCC"> creating</font><font color="#E5E5E5"> people because</font>
+
+193
+00:10:06.360 --> 00:10:10.620
+we don't<font color="#CCCCCC"> have this person class</font>
+
+194
+00:10:08.370 --> 00:10:13.198
+available<font color="#E5E5E5"> in here so what we need</font><font color="#CCCCCC"> to do</font>
+
+195
+00:10:10.620 --> 00:10:19.730
+is we need<font color="#CCCCCC"> to</font><font color="#E5E5E5"> bring that in in the same</font>
+
+196
+00:10:13.198 --> 00:10:21.929
+<font color="#E5E5E5">way that we did in the person test okay</font>
+
+197
+00:10:19.730 --> 00:10:23.278
+so not<font color="#E5E5E5"> only are we bringing in the</font>
+
+198
+00:10:21.929 --> 00:10:25.439
+address book<font color="#CCCCCC"> but</font><font color="#E5E5E5"> because this test</font>
+
+199
+00:10:23.278 --> 00:10:27.328
+relies on<font color="#E5E5E5"> being able to create a person</font>
+
+200
+00:10:25.440 --> 00:10:29.190
+inside<font color="#E5E5E5"> the test we've also got to</font>
+
+201
+00:10:27.328 --> 00:10:36.419
+require in the person class that we
+
+202
+00:10:29.190 --> 00:10:37.500
+wrote<font color="#E5E5E5"> and</font><font color="#CCCCCC"> now we've got an error which</font>
+
+203
+00:10:36.419 --> 00:10:39.828
+<font color="#CCCCCC">is kind of more like what we wanted</font>
+
+204
+00:10:37.500 --> 00:10:42.120
+we've got<font color="#E5E5E5"> a book daddy's not a function</font>
+
+205
+00:10:39.828 --> 00:10:44.578
+which makes<font color="#E5E5E5"> sense so we head over to</font>
+
+206
+00:10:42.120 --> 00:10:48.089
+address book and add a<font color="#E5E5E5"> function here</font>
+
+207
+00:10:44.578 --> 00:10:50.909
+called<font color="#E5E5E5"> add and we know that wants to</font>
+
+208
+00:10:48.089 --> 00:10:53.910
+<font color="#E5E5E5">take a person and then a bit like we did</font>
+
+209
+00:10:50.909 --> 00:10:55.528
+<font color="#E5E5E5">with the other bit like we did with the</font>
+
+210
+00:10:53.909 --> 00:11:01.159
+emails<font color="#E5E5E5"> and the phone numbers we just</font>
+
+211
+00:10:55.528 --> 00:11:03.929
+<font color="#CCCCCC">need to say this store entries</font><font color="#E5E5E5"> dot push</font>
+
+212
+00:11:01.159 --> 00:11:08.279
+and we're going<font color="#E5E5E5"> to push</font><font color="#CCCCCC"> that person</font><font color="#E5E5E5"> into</font>
+
+213
+00:11:03.929 --> 00:11:12.699
+<font color="#E5E5E5">the entries and hopefully</font>
+
+214
+00:11:08.279 --> 00:11:14.230
+we'll get some green tests cool so this
+
+215
+00:11:12.700 --> 00:11:17.100
+implementation kind of kind<font color="#E5E5E5"> of works</font>
+
+216
+00:11:14.230 --> 00:11:20.470
+right<font color="#E5E5E5"> it meets a criteria at the moment</font>
+
+217
+00:11:17.100 --> 00:11:23.740
+<font color="#CCCCCC">but it doesn't actually confirm that</font>
+
+218
+00:11:20.470 --> 00:11:25.750
+like this<font color="#E5E5E5"> person is the thing</font><font color="#CCCCCC"> that got</font>
+
+219
+00:11:23.740 --> 00:11:26.919
+put in here<font color="#E5E5E5"> so one of the things that we</font>
+
+220
+00:11:25.750 --> 00:11:28.360
+could do is we<font color="#CCCCCC"> could leave this</font>
+
+221
+00:11:26.919 --> 00:11:30.909
+assertion saying that we expect it to
+
+222
+00:11:28.360 --> 00:11:33.730
+<font color="#E5E5E5">now have one one entry</font><font color="#CCCCCC"> in</font><font color="#E5E5E5"> the</font><font color="#CCCCCC"> phone book</font>
+
+223
+00:11:30.909 --> 00:11:36.669
+<font color="#CCCCCC">but we could also come down here</font><font color="#E5E5E5"> and ask</font>
+
+224
+00:11:33.730 --> 00:11:38.170
+like well what should<font color="#E5E5E5"> that first entry</font>
+
+225
+00:11:36.669 --> 00:11:40.959
+be<font color="#E5E5E5"> okay</font>
+
+226
+00:11:38.169 --> 00:11:43.870
+so this is<font color="#CCCCCC"> gonna get the</font><font color="#E5E5E5"> first thing in</font>
+
+227
+00:11:40.960 --> 00:11:47.259
+the entries<font color="#E5E5E5"> right and if we wanted to</font>
+
+228
+00:11:43.870 --> 00:11:49.840
+<font color="#E5E5E5">say</font><font color="#CCCCCC"> compared on first name we could we</font>
+
+229
+00:11:47.259 --> 00:11:51.189
+<font color="#E5E5E5">could actually compare the first name to</font>
+
+230
+00:11:49.840 --> 00:11:53.200
+whatever we're certain against here so
+
+231
+00:11:51.190 --> 00:11:55.300
+we could<font color="#E5E5E5"> say get the first entry in the</font>
+
+232
+00:11:53.200 --> 00:12:02.080
+<font color="#E5E5E5">address book and then look for its first</font>
+
+233
+00:11:55.299 --> 00:12:04.479
+name and expect that to<font color="#E5E5E5"> equal joke</font><font color="#CCCCCC"> and</font>
+
+234
+00:12:02.080 --> 00:12:07.120
+so we've got<font color="#E5E5E5"> kind of two expectations</font>
+
+235
+00:12:04.480 --> 00:12:08.350
+testing what's going on now there's a
+
+236
+00:12:07.120 --> 00:12:09.789
+bit of<font color="#E5E5E5"> an argument for not doing this</font>
+
+237
+00:12:08.350 --> 00:12:12.610
+because this introduces like a
+
+238
+00:12:09.789 --> 00:12:14.559
+dependency on the person class in that
+
+239
+00:12:12.610 --> 00:12:16.419
+if<font color="#E5E5E5"> we change on our person class we</font>
+
+240
+00:12:14.559 --> 00:12:19.289
+change the attribute from<font color="#E5E5E5"> first name to</font>
+
+241
+00:12:16.419 --> 00:12:21.549
+<font color="#E5E5E5">four name this test will start</font><font color="#CCCCCC"> breaking</font>
+
+242
+00:12:19.289 --> 00:12:23.139
+<font color="#E5E5E5">but he's probably cool for</font><font color="#CCCCCC"> now right so</font>
+
+243
+00:12:21.549 --> 00:12:28.929
+let's just<font color="#CCCCCC"> run those make sure it still</font>
+
+244
+00:12:23.139 --> 00:12:30.970
+works<font color="#E5E5E5"> cool</font><font color="#CCCCCC"> so this</font><font color="#E5E5E5"> might seem a little</font>
+
+245
+00:12:28.929 --> 00:12:33.819
+bit<font color="#CCCCCC"> weird this idea of passing in a</font>
+
+246
+00:12:30.970 --> 00:12:40.210
+person object<font color="#E5E5E5"> so let's talk about that</font>
+
+247
+00:12:33.820 --> 00:12:43.450
+for<font color="#E5E5E5"> a minute so it can sometimes be kind</font>
+
+248
+00:12:40.210 --> 00:12:45.759
+<font color="#CCCCCC">of weird when we first start</font><font color="#E5E5E5"> looking at</font>
+
+249
+00:12:43.450 --> 00:12:48.160
+<font color="#CCCCCC">putting stuff that aren't</font><font color="#E5E5E5"> strings or</font>
+
+250
+00:12:45.759 --> 00:12:49.689
+numbers into a race<font color="#E5E5E5"> and so far we've</font>
+
+251
+00:12:48.159 --> 00:12:50.740
+only looked at<font color="#CCCCCC"> putting strings</font><font color="#E5E5E5"> and</font>
+
+252
+00:12:49.690 --> 00:12:53.470
+numbers and<font color="#E5E5E5"> things</font><font color="#CCCCCC"> like that in a race</font>
+
+253
+00:12:50.740 --> 00:12:55.149
+<font color="#E5E5E5">so if we have a</font><font color="#CCCCCC"> look</font><font color="#E5E5E5"> at this we've got</font>
+
+254
+00:12:53.470 --> 00:12:56.710
+our kind<font color="#E5E5E5"> of entries array down here and</font>
+
+255
+00:12:55.149 --> 00:12:58.389
+we're used to seeing stuff<font color="#CCCCCC"> like this</font>
+
+256
+00:12:56.710 --> 00:13:00.460
+<font color="#E5E5E5">entries dot plus one and that's</font><font color="#CCCCCC"> going to</font>
+
+257
+00:12:58.389 --> 00:13:02.289
+put the<font color="#E5E5E5"> string one in the first box at</font>
+
+258
+00:13:00.460 --> 00:13:04.030
+here right<font color="#E5E5E5"> and if we do entries dot post</font>
+
+259
+00:13:02.289 --> 00:13:06.039
+<font color="#E5E5E5">two it will put the string two in the</font>
+
+260
+00:13:04.029 --> 00:13:08.559
+<font color="#E5E5E5">second box</font><font color="#CCCCCC"> and the same with the string</font>
+
+261
+00:13:06.039 --> 00:13:10.269
+<font color="#E5E5E5">three only now we've got kind of</font>
+
+262
+00:13:08.559 --> 00:13:13.089
+different situation<font color="#E5E5E5"> because</font><font color="#CCCCCC"> we've</font><font color="#E5E5E5"> got</font>
+
+263
+00:13:10.269 --> 00:13:17.230
+this<font color="#CCCCCC"> person class</font><font color="#E5E5E5"> which is like a</font>
+
+264
+00:13:13.090 --> 00:13:19.660
+factory for building new objects<font color="#E5E5E5"> so when</font>
+
+265
+00:13:17.230 --> 00:13:21.250
+we say<font color="#E5E5E5"> p1 equals new person and give you</font>
+
+266
+00:13:19.659 --> 00:13:23.980
+some<font color="#CCCCCC"> details</font><font color="#E5E5E5"> to the constructor</font>
+
+267
+00:13:21.250 --> 00:13:25.778
+that's going<font color="#E5E5E5"> to make a new instance from</font>
+
+268
+00:13:23.980 --> 00:13:27.250
+that factory class<font color="#CCCCCC"> okay it's going</font><font color="#E5E5E5"> to</font>
+
+269
+00:13:25.778 --> 00:13:28.750
+<font color="#E5E5E5">make a new person who's got the first</font>
+
+270
+00:13:27.250 --> 00:13:32.259
+<font color="#CCCCCC">name Danny in the surname</font><font color="#E5E5E5"> Smith and</font>
+
+271
+00:13:28.750 --> 00:13:34.059
+that's an object<font color="#E5E5E5"> of type</font><font color="#CCCCCC"> person and then</font>
+
+272
+00:13:32.259 --> 00:13:35.769
+if we call<font color="#E5E5E5"> p2 equals a new person</font><font color="#CCCCCC"> to</font>
+
+273
+00:13:34.059 --> 00:13:39.008
+give it<font color="#CCCCCC"> Angie's details we get another</font>
+
+274
+00:13:35.769 --> 00:13:41.049
+instance<font color="#E5E5E5"> of the person class and what</font>
+
+275
+00:13:39.009 --> 00:13:43.720
+<font color="#E5E5E5">this means is that if we now do entries</font>
+
+276
+00:13:41.049 --> 00:13:46.088
+<font color="#E5E5E5">push and we pass in</font><font color="#CCCCCC"> that first person</font>
+
+277
+00:13:43.720 --> 00:13:47.620
+<font color="#E5E5E5">object it's not</font><font color="#CCCCCC"> going to put a string or</font>
+
+278
+00:13:46.089 --> 00:13:49.000
+an integer or something in<font color="#E5E5E5"> that first</font>
+
+279
+00:13:47.620 --> 00:13:51.100
+box<font color="#E5E5E5"> it's actually going to move the</font>
+
+280
+00:13:49.000 --> 00:13:53.799
+<font color="#CCCCCC">object</font><font color="#E5E5E5"> Danny Smith object in there and</font>
+
+281
+00:13:51.100 --> 00:13:57.430
+if we<font color="#CCCCCC"> do entry stop push p2 it's going</font>
+
+282
+00:13:53.799 --> 00:13:59.559
+to move<font color="#CCCCCC"> Anjali into the second box</font><font color="#E5E5E5"> so</font>
+
+283
+00:13:57.429 --> 00:14:01.479
+what this<font color="#CCCCCC"> means</font><font color="#E5E5E5"> is that if</font><font color="#CCCCCC"> we write</font>
+
+284
+00:13:59.559 --> 00:14:04.268
+something<font color="#CCCCCC"> like this in other words we go</font>
+
+285
+00:14:01.480 --> 00:14:06.459
+and get the first bit of or the first
+
+286
+00:14:04.269 --> 00:14:09.060
+item in<font color="#CCCCCC"> that array that's</font><font color="#E5E5E5"> going to</font>
+
+287
+00:14:06.458 --> 00:14:11.469
+return<font color="#E5E5E5"> an actual person object and</font>
+
+288
+00:14:09.059 --> 00:14:13.299
+because it's an actual<font color="#E5E5E5"> person object it</font>
+
+289
+00:14:11.470 --> 00:14:15.610
+has methods<font color="#CCCCCC"> available on it and it has</font>
+
+290
+00:14:13.299 --> 00:14:17.229
+attributes on it<font color="#E5E5E5"> like dot first name so</font>
+
+291
+00:14:15.610 --> 00:14:20.278
+if we<font color="#E5E5E5"> run</font><font color="#CCCCCC"> this line it's going</font><font color="#E5E5E5"> to return</font>
+
+292
+00:14:17.230 --> 00:14:20.278
+<font color="#E5E5E5">and daddy's name</font>
+
