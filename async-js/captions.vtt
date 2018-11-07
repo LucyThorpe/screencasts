@@ -1,0 +1,2822 @@
+WEBVTT
+
+1
+00:00:00.589 --> 00:00:09.870
+<font color="#E5E5E5">okay this is a screencast on async</font>
+
+2
+00:00:04.589 --> 00:00:12.500
+<font color="#CCCCCC">JavaScript so sometimes we don't know</font>
+
+3
+00:00:09.869 --> 00:00:15.359
+how long<font color="#E5E5E5"> a line of code will take to run</font>
+
+4
+00:00:12.500 --> 00:00:18.210
+<font color="#E5E5E5">if you think</font><font color="#CCCCCC"> about say uploading an</font>
+
+5
+00:00:15.359 --> 00:00:19.500
+image or a video from an app like<font color="#E5E5E5"> so</font>
+
+6
+00:00:18.210 --> 00:00:20.969
+<font color="#E5E5E5">though these things might take a really</font>
+
+7
+00:00:19.500 --> 00:00:23.189
+<font color="#CCCCCC">really</font><font color="#E5E5E5"> long time</font><font color="#CCCCCC"> to run</font><font color="#E5E5E5"> or even like</font>
+
+8
+00:00:20.969 --> 00:00:24.929
+<font color="#E5E5E5">asking our user for a bit of input</font><font color="#CCCCCC"> we</font>
+
+9
+00:00:23.189 --> 00:00:28.859
+<font color="#E5E5E5">might have a line of code that says like</font>
+
+10
+00:00:24.929 --> 00:00:31.739
+upload video and like that might take
+
+11
+00:00:28.859 --> 00:00:36.179
+like like<font color="#E5E5E5"> several minutes to</font><font color="#CCCCCC"> complete</font>
+
+12
+00:00:31.739 --> 00:00:38.429
+and we don't want to have to wait around
+
+13
+00:00:36.179 --> 00:00:41.219
+<font color="#E5E5E5">for it to finish</font><font color="#CCCCCC"> before we</font><font color="#E5E5E5"> do anything</font>
+
+14
+00:00:38.429 --> 00:00:42.750
+else<font color="#CCCCCC"> like it'll be really bad if like</font>
+
+15
+00:00:41.219 --> 00:00:45.120
+the moment we<font color="#E5E5E5"> started trying to upload</font>
+
+16
+00:00:42.750 --> 00:00:47.159
+an image<font color="#E5E5E5"> like all of our app was like</font>
+
+17
+00:00:45.119 --> 00:00:49.649
+unresponsive because we couldn't<font color="#E5E5E5"> run any</font>
+
+18
+00:00:47.159 --> 00:00:51.988
+<font color="#E5E5E5">other code whilst the upload code was</font>
+
+19
+00:00:49.649 --> 00:00:55.198
+running so we we need<font color="#CCCCCC"> to be able</font><font color="#E5E5E5"> to run</font>
+
+20
+00:00:51.988 --> 00:00:57.988
+other code to like respond to like user
+
+21
+00:00:55.198 --> 00:01:01.259
+input or like respond to other things
+
+22
+00:00:57.988 --> 00:01:05.188
+happening whilst our upload is still
+
+23
+00:01:01.259 --> 00:01:06.450
+<font color="#E5E5E5">running</font><font color="#CCCCCC"> and that's a</font><font color="#E5E5E5"> little bit</font>
+
+24
+00:01:05.188 --> 00:01:09.179
+<font color="#E5E5E5">different to what we've</font><font color="#CCCCCC"> been doing so</font>
+
+25
+00:01:06.450 --> 00:01:13.200
+<font color="#CCCCCC">far so far every single</font><font color="#E5E5E5"> line of code</font>
+
+26
+00:01:09.180 --> 00:01:15.150
+that<font color="#CCCCCC"> we've written we they've been</font>
+
+27
+00:01:13.200 --> 00:01:16.439
+<font color="#CCCCCC">running</font><font color="#E5E5E5"> like one after the other with</font>
+
+28
+00:01:15.150 --> 00:01:18.478
+the exception of<font color="#E5E5E5"> like functions this</font>
+
+29
+00:01:16.438 --> 00:01:20.728
+<font color="#E5E5E5">sort of change change flow a little bit</font>
+
+30
+00:01:18.478 --> 00:01:22.859
+but even then like<font color="#E5E5E5"> each line of code</font>
+
+31
+00:01:20.728 --> 00:01:28.259
+<font color="#CCCCCC">waits for the previous one to finish</font>
+
+32
+00:01:22.859 --> 00:01:32.250
+before<font color="#E5E5E5"> it can</font><font color="#CCCCCC"> start and that's called</font>
+
+33
+00:01:28.259 --> 00:01:34.799
+synchronous programming<font color="#CCCCCC"> so each line</font>
+
+34
+00:01:32.250 --> 00:01:37.590
+runs in order<font color="#CCCCCC"> one by one and</font><font color="#E5E5E5"> we can</font>
+
+35
+00:01:34.799 --> 00:01:40.020
+<font color="#E5E5E5">describe those lines those actions</font>
+
+36
+00:01:37.590 --> 00:01:42.868
+functions whatever<font color="#E5E5E5"> they are as blocking</font>
+
+37
+00:01:40.019 --> 00:01:43.679
+so each<font color="#E5E5E5"> line blocks the next one until</font>
+
+38
+00:01:42.868 --> 00:01:47.040
+<font color="#CCCCCC">it's finished</font>
+
+39
+00:01:43.680 --> 00:01:48.270
+we can't step<font color="#E5E5E5"> start the next thing until</font>
+
+40
+00:01:47.040 --> 00:01:53.090
+<font color="#E5E5E5">the thing that we're currently blocked</font>
+
+41
+00:01:48.269 --> 00:01:56.759
+on has all like finished up in
+
+42
+00:01:53.090 --> 00:01:59.100
+<font color="#E5E5E5">asynchronous code our lines run out</font><font color="#CCCCCC"> of</font>
+
+43
+00:01:56.759 --> 00:02:02.579
+order so we don't necessarily<font color="#E5E5E5"> have to</font>
+
+44
+00:01:59.099 --> 00:02:05.339
+<font color="#E5E5E5">wait to slow things get down so we could</font>
+
+45
+00:02:02.578 --> 00:02:06.868
+also we don't<font color="#E5E5E5"> necessarily</font><font color="#CCCCCC"> have to</font><font color="#E5E5E5"> wait</font>
+
+46
+00:02:05.340 --> 00:02:09.060
+for like<font color="#E5E5E5"> really slow things to finish</font>
+
+47
+00:02:06.868 --> 00:02:12.568
+<font color="#CCCCCC">before</font><font color="#E5E5E5"> we move on so we could also</font>
+
+48
+00:02:09.060 --> 00:02:14.340
+describe that as non blocking so
+
+49
+00:02:12.568 --> 00:02:16.560
+particular<font color="#E5E5E5"> like lines of code or</font>
+
+50
+00:02:14.340 --> 00:02:19.140
+instructions<font color="#E5E5E5"> don't block each other the</font>
+
+51
+00:02:16.560 --> 00:02:21.949
+<font color="#E5E5E5">next one can start</font><font color="#CCCCCC"> running before the</font>
+
+52
+00:02:19.139 --> 00:02:24.899
+<font color="#E5E5E5">finish previous one has finished</font><font color="#CCCCCC"> now</font>
+
+53
+00:02:21.949 --> 00:02:26.548
+<font color="#CCCCCC">this is like</font><font color="#E5E5E5"> a little bit confusing and</font>
+
+54
+00:02:24.900 --> 00:02:29.519
+kind of unusual<font color="#E5E5E5"> compared to what we used</font>
+
+55
+00:02:26.549 --> 00:02:31.140
+<font color="#CCCCCC">to before</font><font color="#E5E5E5"> and don't worry we're</font><font color="#CCCCCC"> not</font>
+
+56
+00:02:29.519 --> 00:02:33.239
+gonna like be completely changing in
+
+57
+00:02:31.139 --> 00:02:36.119
+everything the majority<font color="#CCCCCC"> of your code</font>
+
+58
+00:02:33.239 --> 00:02:38.459
+will still be<font color="#E5E5E5"> synchronous but you will</font>
+
+59
+00:02:36.120 --> 00:02:42.000
+have<font color="#E5E5E5"> the occasional asynchronous</font>
+
+60
+00:02:38.459 --> 00:02:43.769
+function to allow<font color="#E5E5E5"> for things like making</font>
+
+61
+00:02:42.000 --> 00:02:45.060
+web requests<font color="#CCCCCC"> and that sort of thing</font>
+
+62
+00:02:43.769 --> 00:02:52.950
+which otherwise would take a long<font color="#CCCCCC"> time</font>
+
+63
+00:02:45.060 --> 00:02:55.739
+<font color="#CCCCCC">and node and</font><font color="#E5E5E5"> JavaScript encourage you to</font>
+
+64
+00:02:52.949 --> 00:02:58.348
+be like<font color="#E5E5E5"> async by default if you think</font>
+
+65
+00:02:55.739 --> 00:03:01.408
+back to when<font color="#CCCCCC"> we</font><font color="#E5E5E5"> did the file reading and</font>
+
+66
+00:02:58.348 --> 00:03:03.568
+<font color="#CCCCCC">marketing</font><font color="#E5E5E5"> stuff you had to do use some</font>
+
+67
+00:03:01.408 --> 00:03:07.438
+functions called like read file sync and
+
+68
+00:03:03.568 --> 00:03:10.289
+write file sync which are the
+
+69
+00:03:07.438 --> 00:03:12.628
+synchronous versions of those methods<font color="#E5E5E5"> so</font>
+
+70
+00:03:10.289 --> 00:03:14.188
+ones that block<font color="#CCCCCC"> and then they won't move</font>
+
+71
+00:03:12.628 --> 00:03:16.048
+on to the next line until that lines
+
+72
+00:03:14.188 --> 00:03:18.568
+finished<font color="#CCCCCC"> whereas the</font><font color="#E5E5E5"> normal</font><font color="#CCCCCC"> ones just</font>
+
+73
+00:03:16.049 --> 00:03:23.909
+read<font color="#CCCCCC"> fire and</font><font color="#E5E5E5"> write file are what we</font>
+
+74
+00:03:18.568 --> 00:03:25.560
+call<font color="#E5E5E5"> asynchronous so yeah not all of</font>
+
+75
+00:03:23.908 --> 00:03:26.689
+your code has<font color="#E5E5E5"> to be async just the</font>
+
+76
+00:03:25.560 --> 00:03:30.539
+things<font color="#E5E5E5"> that are</font><font color="#CCCCCC"> going to like</font>
+
+77
+00:03:26.689 --> 00:03:36.329
+potentially take an unknown<font color="#E5E5E5"> or like long</font>
+
+78
+00:03:30.539 --> 00:03:39.328
+amount of time so thinking about async
+
+79
+00:03:36.329 --> 00:03:40.680
+code in JavaScript<font color="#E5E5E5"> there's a few</font>
+
+80
+00:03:39.329 --> 00:03:44.269
+different<font color="#E5E5E5"> ways</font><font color="#CCCCCC"> that people</font><font color="#E5E5E5"> like</font><font color="#CCCCCC"> to write</font>
+
+81
+00:03:40.680 --> 00:03:46.260
+async code<font color="#E5E5E5"> three different sort of main</font>
+
+82
+00:03:44.269 --> 00:03:49.349
+things that<font color="#E5E5E5"> you're likely to come</font><font color="#CCCCCC"> across</font>
+
+83
+00:03:46.259 --> 00:03:52.048
+<font color="#E5E5E5">they were callbacks something called</font>
+
+84
+00:03:49.348 --> 00:03:53.628
+promises and the newest thing in<font color="#E5E5E5"> like</font>
+
+85
+00:03:52.049 --> 00:03:58.319
+the newest version of javascript is
+
+86
+00:03:53.628 --> 00:04:01.408
+<font color="#E5E5E5">async await syntax</font><font color="#CCCCCC"> and don't</font><font color="#E5E5E5"> worry</font><font color="#CCCCCC"> about</font>
+
+87
+00:03:58.318 --> 00:04:04.078
+<font color="#CCCCCC">what these are</font><font color="#E5E5E5"> particularly the main</font>
+
+88
+00:04:01.408 --> 00:04:06.239
+thing is that<font color="#E5E5E5"> the callbacks are like</font>
+
+89
+00:04:04.079 --> 00:04:10.139
+really<font color="#E5E5E5"> the fundamental</font><font color="#CCCCCC"> fundamental thing</font>
+
+90
+00:04:06.239 --> 00:04:12.780
+and then promises an async<font color="#CCCCCC"> await are</font>
+
+91
+00:04:10.139 --> 00:04:15.090
+sort of they're built<font color="#E5E5E5"> on top of call</font>
+
+92
+00:04:12.780 --> 00:04:17.430
+backs and they're designed<font color="#CCCCCC"> to make</font>
+
+93
+00:04:15.090 --> 00:04:19.889
+things like a little bit easier or more
+
+94
+00:04:17.430 --> 00:04:21.959
+<font color="#E5E5E5">like predictable to use but like the</font>
+
+95
+00:04:19.889 --> 00:04:24.449
+<font color="#CCCCCC">fundamental core concept behind them is</font>
+
+96
+00:04:21.959 --> 00:04:25.920
+<font color="#E5E5E5">still callbacks</font><font color="#CCCCCC"> so it's really important</font>
+
+97
+00:04:24.449 --> 00:04:27.930
+to<font color="#CCCCCC"> learn callbacks</font>
+
+98
+00:04:25.920 --> 00:04:30.120
+<font color="#CCCCCC">like understand how they work</font><font color="#E5E5E5"> before</font>
+
+99
+00:04:27.930 --> 00:04:34.470
+<font color="#CCCCCC">trying</font><font color="#E5E5E5"> to learn promises or async/await</font>
+
+100
+00:04:30.120 --> 00:04:38.819
+syntax<font color="#E5E5E5"> so we're only gonna be focusing</font>
+
+101
+00:04:34.470 --> 00:04:40.290
+on callbacks in<font color="#E5E5E5"> launchpad I do like</font>
+
+102
+00:04:38.819 --> 00:04:41.969
+encourage you to go and read<font color="#E5E5E5"> up on the</font>
+
+103
+00:04:40.290 --> 00:04:44.939
+other two<font color="#E5E5E5"> things as well like read up</font><font color="#CCCCCC"> on</font>
+
+104
+00:04:41.970 --> 00:04:47.430
+<font color="#E5E5E5">promises</font><font color="#CCCCCC"> and once you've really got a</font>
+
+105
+00:04:44.939 --> 00:04:48.089
+firm handle and promises read up on
+
+106
+00:04:47.430 --> 00:04:50.850
+<font color="#CCCCCC">async/await</font>
+
+107
+00:04:48.089 --> 00:04:52.560
+because all<font color="#CCCCCC"> of these three things</font><font color="#E5E5E5"> sort</font>
+
+108
+00:04:50.850 --> 00:04:54.780
+of build on each other promises build on
+
+109
+00:04:52.560 --> 00:04:57.720
+callbacks and<font color="#CCCCCC"> async/await</font>
+
+110
+00:04:54.779 --> 00:04:59.279
+build on<font color="#E5E5E5"> on promises and you can't</font>
+
+111
+00:04:57.720 --> 00:05:00.870
+really understand any of<font color="#E5E5E5"> them before you</font>
+
+112
+00:04:59.279 --> 00:05:06.959
+understand understood like the
+
+113
+00:05:00.870 --> 00:05:11.100
+<font color="#E5E5E5">fundamental concept behind it so what's</font>
+
+114
+00:05:06.959 --> 00:05:14.129
+a callback<font color="#CCCCCC"> a callback is a function that</font>
+
+115
+00:05:11.100 --> 00:05:17.220
+<font color="#CCCCCC">gets called to let us know where a slow</font>
+
+116
+00:05:14.129 --> 00:05:21.269
+thing has finished<font color="#CCCCCC"> so if we</font><font color="#E5E5E5"> are</font>
+
+117
+00:05:17.220 --> 00:05:24.660
+<font color="#E5E5E5">uploading our video from our app then</font>
+
+118
+00:05:21.269 --> 00:05:26.399
+we've maybe<font color="#E5E5E5"> use a callback</font><font color="#CCCCCC"> to tell us</font>
+
+119
+00:05:24.660 --> 00:05:28.920
+when<font color="#CCCCCC"> that</font><font color="#E5E5E5"> upload is complete</font><font color="#CCCCCC"> and maybe</font>
+
+120
+00:05:26.399 --> 00:05:31.889
+show<font color="#E5E5E5"> a message to the user saying oh we</font>
+
+121
+00:05:28.920 --> 00:05:35.850
+finished uploading<font color="#CCCCCC"> that's basically all</font>
+
+122
+00:05:31.889 --> 00:05:37.979
+there<font color="#E5E5E5"> is to it</font><font color="#CCCCCC"> so we're gonna look at</font>
+
+123
+00:05:35.850 --> 00:05:41.939
+<font color="#E5E5E5">this example to start off with set</font>
+
+124
+00:05:37.980 --> 00:05:43.860
+timeout<font color="#CCCCCC"> so you might have</font><font color="#E5E5E5"> seen this this</font>
+
+125
+00:05:41.939 --> 00:05:46.620
+<font color="#E5E5E5">is like one</font><font color="#CCCCCC"> of</font><font color="#E5E5E5"> the simplest ways of</font>
+
+126
+00:05:43.860 --> 00:05:51.600
+doing async stuff in JavaScript<font color="#E5E5E5"> set</font>
+
+127
+00:05:46.620 --> 00:05:54.180
+timeout<font color="#E5E5E5"> creates a something like</font><font color="#CCCCCC"> a timer</font>
+
+128
+00:05:51.600 --> 00:05:55.860
+<font color="#E5E5E5">so you give it two inputs a callback</font>
+
+129
+00:05:54.180 --> 00:06:00.420
+function<font color="#E5E5E5"> which we're gonna look at in a</font>
+
+130
+00:05:55.860 --> 00:06:02.639
+<font color="#CCCCCC">moment and a delay and the callback is</font>
+
+131
+00:06:00.420 --> 00:06:04.680
+the function to<font color="#CCCCCC"> call</font><font color="#E5E5E5"> when the timer is</font>
+
+132
+00:06:02.639 --> 00:06:07.649
+up so this<font color="#E5E5E5"> is</font><font color="#CCCCCC"> going to</font><font color="#E5E5E5"> create a timer</font>
+
+133
+00:06:04.680 --> 00:06:09.959
+for<font color="#E5E5E5"> like delay milliseconds however long</font>
+
+134
+00:06:07.649 --> 00:06:12.539
+that is<font color="#E5E5E5"> and then after that time is</font>
+
+135
+00:06:09.959 --> 00:06:16.680
+passed<font color="#E5E5E5"> it's gonna call callback so if we</font>
+
+136
+00:06:12.540 --> 00:06:20.189
+put a thousand<font color="#E5E5E5"> in the delay milliseconds</font>
+
+137
+00:06:16.680 --> 00:06:22.319
+input<font color="#E5E5E5"> then after one second because</font>
+
+138
+00:06:20.189 --> 00:06:25.230
+<font color="#E5E5E5">there's a thousand milliseconds in a</font>
+
+139
+00:06:22.319 --> 00:06:31.379
+second then our callback function<font color="#E5E5E5"> would</font>
+
+140
+00:06:25.230 --> 00:06:35.100
+<font color="#E5E5E5">get called let's have a look at this so</font>
+
+141
+00:06:31.379 --> 00:06:39.990
+I've already<font color="#E5E5E5"> got the workshop folder</font>
+
+142
+00:06:35.100 --> 00:06:45.460
+<font color="#E5E5E5">cloned and I've I've seeded into it</font>
+
+143
+00:06:39.990 --> 00:06:49.660
+and I've got it<font color="#CCCCCC"> open</font><font color="#E5E5E5"> in my editor here</font>
+
+144
+00:06:45.459 --> 00:06:52.079
+as well<font color="#E5E5E5"> and what I'm</font><font color="#CCCCCC"> going to do is just</font>
+
+145
+00:06:49.660 --> 00:06:58.840
+<font color="#E5E5E5">create a new file and I'm gonna call it</font>
+
+146
+00:06:52.079 --> 00:07:01.389
+<font color="#E5E5E5">timers test dot</font><font color="#CCCCCC"> J's I'm gonna put it in</font>
+
+147
+00:06:58.839 --> 00:07:03.009
+<font color="#E5E5E5">the main the main thing max you test</font>
+
+148
+00:07:01.389 --> 00:07:06.250
+isn't<font color="#E5E5E5"> a great name because</font><font color="#CCCCCC"> it's not</font><font color="#E5E5E5"> like</font>
+
+149
+00:07:03.009 --> 00:07:11.980
+a test file<font color="#CCCCCC"> timers experiment</font><font color="#E5E5E5"> that's</font><font color="#CCCCCC"> a</font>
+
+150
+00:07:06.250 --> 00:07:16.629
+better name and we can start to look at
+
+151
+00:07:11.980 --> 00:07:19.420
+<font color="#E5E5E5">some</font><font color="#CCCCCC"> of these some of this asynchronous</font>
+
+152
+00:07:16.629 --> 00:07:22.149
+<font color="#CCCCCC">code you look at this</font><font color="#E5E5E5"> set timeout thing</font>
+
+153
+00:07:19.420 --> 00:07:23.830
+and see what it does<font color="#E5E5E5"> so the first thing</font>
+
+154
+00:07:22.149 --> 00:07:27.879
+I'm<font color="#E5E5E5"> going to do is I'm actually going to</font>
+
+155
+00:07:23.829 --> 00:07:29.800
+write my callback function so I'm just
+
+156
+00:07:27.879 --> 00:07:49.649
+<font color="#E5E5E5">gonna make it</font><font color="#CCCCCC"> be a function called say</font>
+
+157
+00:07:29.800 --> 00:07:56.949
+hello<font color="#E5E5E5"> that says</font><font color="#CCCCCC"> hook and I can call this</font>
+
+158
+00:07:49.649 --> 00:08:02.919
+and when I run<font color="#CCCCCC"> my code now no timers</font>
+
+159
+00:07:56.949 --> 00:08:11.829
+experiment<font color="#CCCCCC"> yes I get my Hello message</font>
+
+160
+00:08:02.920 --> 00:08:14.410
+<font color="#E5E5E5">printed out in you know we can answer</font>
+
+161
+00:08:11.829 --> 00:08:27.789
+<font color="#E5E5E5">I'd like another console.log as well to</font>
+
+162
+00:08:14.410 --> 00:08:34.080
+say like this<font color="#CCCCCC"> is the scar okay so if we</font>
+
+163
+00:08:27.790 --> 00:08:38.110
+<font color="#E5E5E5">to delay saying hello by say</font><font color="#CCCCCC"> two seconds</font>
+
+164
+00:08:34.080 --> 00:08:44.350
+<font color="#E5E5E5">we could use</font><font color="#CCCCCC"> let's delete that</font><font color="#E5E5E5"> we could</font>
+
+165
+00:08:38.110 --> 00:08:48.250
+use set timeout and give it those<font color="#CCCCCC"> two</font>
+
+166
+00:08:44.350 --> 00:08:50.500
+inputs<font color="#CCCCCC"> first of all the</font><font color="#E5E5E5"> callback so you</font>
+
+167
+00:08:48.250 --> 00:08:54.570
+<font color="#E5E5E5">want us say hello function and then the</font>
+
+168
+00:08:50.500 --> 00:08:59.769
+time so two seconds<font color="#E5E5E5"> is</font><font color="#CCCCCC"> 2,000</font>
+
+169
+00:08:54.570 --> 00:09:04.750
+milliseconds<font color="#E5E5E5"> now usually when we call a</font>
+
+170
+00:08:59.769 --> 00:09:06.669
+function we we add those like
+
+171
+00:09:04.750 --> 00:09:09.549
+<font color="#CCCCCC">parentheses at the</font><font color="#E5E5E5"> ends so</font><font color="#CCCCCC"> that we would</font>
+
+172
+00:09:06.669 --> 00:09:11.259
+do<font color="#CCCCCC"> something like this</font><font color="#E5E5E5"> and we're not</font>
+
+173
+00:09:09.549 --> 00:09:12.639
+<font color="#CCCCCC">going to do that here</font><font color="#E5E5E5"> because we don't</font>
+
+174
+00:09:11.259 --> 00:09:15.069
+<font color="#E5E5E5">want to call the function</font><font color="#CCCCCC"> right away</font>
+
+175
+00:09:12.639 --> 00:09:17.980
+<font color="#E5E5E5">we're just giving the function to set</font>
+
+176
+00:09:15.070 --> 00:09:20.700
+<font color="#E5E5E5">timeout and saying like do this when</font>
+
+177
+00:09:17.980 --> 00:09:24.580
+your timer finishes so this says after
+
+178
+00:09:20.700 --> 00:09:28.600
+<font color="#E5E5E5">2,000 milliseconds run the say hello</font>
+
+179
+00:09:24.580 --> 00:09:31.830
+function so what we<font color="#CCCCCC"> should</font><font color="#E5E5E5"> see now is</font>
+
+180
+00:09:28.600 --> 00:09:36.279
+this<font color="#E5E5E5"> is the start gets printed and then</font>
+
+181
+00:09:31.830 --> 00:09:42.430
+after 2,000 milliseconds or two seconds
+
+182
+00:09:36.279 --> 00:09:45.730
+we should<font color="#CCCCCC"> say hello printed as well</font><font color="#E5E5E5"> as</font>
+
+183
+00:09:42.429 --> 00:09:48.339
+the start<font color="#E5E5E5"> and now</font><font color="#CCCCCC"> after a little</font><font color="#E5E5E5"> delay</font>
+
+184
+00:09:45.730 --> 00:09:50.759
+we get hello as well<font color="#E5E5E5"> let's just watch</font>
+
+185
+00:09:48.340 --> 00:09:50.759
+that<font color="#E5E5E5"> again</font>
+
+186
+00:09:56.950 --> 00:10:14.240
+so what if we do this<font color="#CCCCCC"> now we've got a</font>
+
+187
+00:10:10.940 --> 00:10:15.380
+consulate log<font color="#CCCCCC"> the start</font><font color="#E5E5E5"> of our program</font>
+
+188
+00:10:14.240 --> 00:10:18.759
+<font color="#E5E5E5">saying this is a</font><font color="#CCCCCC"> start</font>
+
+189
+00:10:15.379 --> 00:10:21.980
+I'll set<font color="#CCCCCC"> time out</font><font color="#E5E5E5"> saying say hello and</font>
+
+190
+00:10:18.759 --> 00:10:24.919
+then another con sort of log at the<font color="#CCCCCC"> end</font>
+
+191
+00:10:21.980 --> 00:10:27.528
+of our<font color="#E5E5E5"> program</font><font color="#CCCCCC"> I want you to like just</font>
+
+192
+00:10:24.919 --> 00:10:29.419
+<font color="#E5E5E5">take a moment and like maybe pause the</font>
+
+193
+00:10:27.528 --> 00:10:33.500
+video if<font color="#E5E5E5"> you need to I have a think</font>
+
+194
+00:10:29.419 --> 00:10:37.849
+<font color="#CCCCCC">about this and come up with</font><font color="#E5E5E5"> a bit of a</font>
+
+195
+00:10:33.500 --> 00:10:50.809
+prediction<font color="#E5E5E5"> for what you think is gonna</font>
+
+196
+00:10:37.850 --> 00:10:56.829
+get<font color="#E5E5E5"> printed out when we run this okay</font>
+
+197
+00:10:50.809 --> 00:10:56.828
+let's give it a go<font color="#E5E5E5"> see if you were right</font>
+
+198
+00:10:59.379 --> 00:11:05.088
+<font color="#CCCCCC">okay so that might not have</font><font color="#E5E5E5"> been what we</font>
+
+199
+00:11:03.320 --> 00:11:07.459
+were expecting<font color="#E5E5E5"> from just reading</font><font color="#CCCCCC"> the</font>
+
+200
+00:11:05.089 --> 00:11:09.230
+code<font color="#E5E5E5"> as is we might have thought you</font>
+
+201
+00:11:07.458 --> 00:11:11.689
+know we've got this is<font color="#E5E5E5"> the start and</font>
+
+202
+00:11:09.230 --> 00:11:13.430
+then say<font color="#E5E5E5"> hello after two seconds and</font>
+
+203
+00:11:11.690 --> 00:11:15.980
+<font color="#E5E5E5">then this is the end we maybe would have</font>
+
+204
+00:11:13.429 --> 00:11:19.429
+expected to<font color="#E5E5E5"> say see this is the start</font>
+
+205
+00:11:15.980 --> 00:11:22.399
+<font color="#E5E5E5">hello this is</font><font color="#CCCCCC"> the end but</font><font color="#E5E5E5"> instead what</font>
+
+206
+00:11:19.429 --> 00:11:24.649
+we<font color="#E5E5E5"> thought is this is the start</font><font color="#CCCCCC"> this at</font>
+
+207
+00:11:22.399 --> 00:11:28.070
+<font color="#CCCCCC">the end</font><font color="#E5E5E5"> get printed out</font><font color="#CCCCCC"> at almost</font>
+
+208
+00:11:24.649 --> 00:11:34.190
+<font color="#E5E5E5">exactly</font><font color="#CCCCCC"> the same</font><font color="#E5E5E5"> time</font><font color="#CCCCCC"> and then two</font>
+
+209
+00:11:28.070 --> 00:11:38.329
+seconds afterwards<font color="#E5E5E5"> hello gets printed on</font>
+
+210
+00:11:34.190 --> 00:11:41.300
+what this<font color="#E5E5E5"> is showing is</font><font color="#CCCCCC"> that set timeout</font>
+
+211
+00:11:38.328 --> 00:11:44.599
+is asynchronous<font color="#E5E5E5"> rather than these lines</font>
+
+212
+00:11:41.299 --> 00:11:47.240
+<font color="#E5E5E5">of code executing in order set timeout</font>
+
+213
+00:11:44.600 --> 00:11:52.159
+happens<font color="#CCCCCC"> asynchronously so</font><font color="#E5E5E5"> out of order</font>
+
+214
+00:11:47.240 --> 00:11:55.100
+with<font color="#E5E5E5"> the rest of the code</font><font color="#CCCCCC"> so what</font><font color="#E5E5E5"> this</font>
+
+215
+00:11:52.159 --> 00:11:58.100
+actually<font color="#E5E5E5"> does is it</font><font color="#CCCCCC"> prints out this is</font>
+
+216
+00:11:55.100 --> 00:12:00.680
+the start<font color="#E5E5E5"> and then it sort of creates</font>
+
+217
+00:11:58.100 --> 00:12:03.889
+this<font color="#E5E5E5"> countdown timer</font><font color="#CCCCCC"> somewhere in the</font>
+
+218
+00:12:00.679 --> 00:12:06.229
+background<font color="#E5E5E5"> inside node and then it</font>
+
+219
+00:12:03.889 --> 00:12:07.939
+prints out this is the end<font color="#E5E5E5"> and then it's</font>
+
+220
+00:12:06.230 --> 00:12:09.180
+<font color="#E5E5E5">only a little</font><font color="#CCCCCC"> bit</font><font color="#E5E5E5"> later once that</font>
+
+221
+00:12:07.940 --> 00:12:12.540
+countdown<font color="#E5E5E5"> timer has gotten</font><font color="#CCCCCC"> to</font>
+
+222
+00:12:09.179 --> 00:12:16.799
+zero<font color="#E5E5E5"> that say hello actually gets run</font>
+
+223
+00:12:12.539 --> 00:12:23.339
+and we get hello printed out so let's
+
+224
+00:12:16.799 --> 00:12:34.439
+try something else how<font color="#E5E5E5"> to say goodbye</font>
+
+225
+00:12:23.340 --> 00:12:37.800
+function and add another set timeout
+
+226
+00:12:34.440 --> 00:12:42.450
+here she<font color="#CCCCCC"> doesn't change you stand say</font>
+
+227
+00:12:37.799 --> 00:12:46.559
+this is the middle another set timeout
+
+228
+00:12:42.450 --> 00:12:48.360
+with our say goodbye<font color="#E5E5E5"> and this one I'm</font>
+
+229
+00:12:46.559 --> 00:12:50.789
+gonna set<font color="#E5E5E5"> I'm gonna set that one to</font>
+
+230
+00:12:48.360 --> 00:12:53.759
+<font color="#CCCCCC">2,000 milliseconds and</font><font color="#E5E5E5"> I'm going to</font>
+
+231
+00:12:50.789 --> 00:12:57.299
+change<font color="#E5E5E5"> us</font><font color="#CCCCCC"> pay hello to 4,000</font>
+
+232
+00:12:53.759 --> 00:13:06.750
+milliseconds<font color="#CCCCCC"> and then that's confident</font>
+
+233
+00:12:57.299 --> 00:13:09.599
+log this is the end<font color="#CCCCCC"> so again have a</font><font color="#E5E5E5"> look</font>
+
+234
+00:13:06.750 --> 00:13:13.500
+at this<font color="#E5E5E5"> code we should see five lines</font>
+
+235
+00:13:09.600 --> 00:13:15.360
+<font color="#E5E5E5">printed out this is the</font><font color="#CCCCCC"> start</font><font color="#E5E5E5"> and our</font>
+
+236
+00:13:13.500 --> 00:13:18.389
+hellos our goodbyes I'm<font color="#CCCCCC"> a little bit in</font>
+
+237
+00:13:15.360 --> 00:13:21.930
+the<font color="#E5E5E5"> N bit</font><font color="#CCCCCC"> but I want you to</font><font color="#E5E5E5"> try</font><font color="#CCCCCC"> and</font>
+
+238
+00:13:18.389 --> 00:13:24.990
+<font color="#CCCCCC">think based on</font><font color="#E5E5E5"> what</font><font color="#CCCCCC"> we just saw with set</font>
+
+239
+00:13:21.929 --> 00:13:28.079
+timeout<font color="#E5E5E5"> on say hello what you think the</font>
+
+240
+00:13:24.990 --> 00:13:29.340
+output<font color="#E5E5E5"> of this is gonna be again I'm</font>
+
+241
+00:13:28.080 --> 00:13:30.930
+<font color="#E5E5E5">gonna give you a little bit of time</font><font color="#CCCCCC"> just</font>
+
+242
+00:13:29.340 --> 00:13:34.399
+<font color="#E5E5E5">to think</font><font color="#CCCCCC"> about</font><font color="#E5E5E5"> that before</font><font color="#CCCCCC"> we run the</font>
+
+243
+00:13:30.929 --> 00:13:34.399
+code<font color="#E5E5E5"> and see what happens</font>
+
+244
+00:13:43.730 --> 00:13:45.789
+you
+
+245
+00:13:49.179 --> 00:14:03.529
+<font color="#E5E5E5">okay let's try that so we get this is</font>
+
+246
+00:14:02.000 --> 00:14:06.919
+<font color="#CCCCCC">the start</font><font color="#E5E5E5"> this is the middle this is the</font>
+
+247
+00:14:03.529 --> 00:14:09.649
+end<font color="#E5E5E5"> then after a couple of seconds</font>
+
+248
+00:14:06.919 --> 00:14:11.569
+<font color="#E5E5E5">goodbye after</font><font color="#CCCCCC"> a couple more seconds</font>
+
+249
+00:14:09.649 --> 00:14:14.269
+hello
+
+250
+00:14:11.570 --> 00:14:18.650
+so if that's<font color="#E5E5E5"> what</font><font color="#CCCCCC"> you expected then well</font>
+
+251
+00:14:14.269 --> 00:14:21.919
+done<font color="#CCCCCC"> but if not then the</font><font color="#E5E5E5"> reason for</font><font color="#CCCCCC"> that</font>
+
+252
+00:14:18.649 --> 00:14:24.379
+is again<font color="#E5E5E5"> as we run</font><font color="#CCCCCC"> through this code we</font>
+
+253
+00:14:21.919 --> 00:14:27.429
+get<font color="#E5E5E5"> this to start printed out then we</font>
+
+254
+00:14:24.379 --> 00:14:29.509
+create a timer for<font color="#CCCCCC"> four seconds and</font>
+
+255
+00:14:27.429 --> 00:14:31.729
+straight<font color="#CCCCCC"> away like</font><font color="#E5E5E5"> before</font><font color="#CCCCCC"> waiting for</font>
+
+256
+00:14:29.509 --> 00:14:34.340
+<font color="#E5E5E5">that timer to finish go on</font><font color="#CCCCCC"> this is the</font>
+
+257
+00:14:31.730 --> 00:14:36.889
+middle then we create<font color="#CCCCCC"> another timer for</font>
+
+258
+00:14:34.340 --> 00:14:38.710
+two seconds without<font color="#E5E5E5"> waiting for</font><font color="#CCCCCC"> it to</font>
+
+259
+00:14:36.889 --> 00:14:41.659
+finish<font color="#E5E5E5"> and go onto</font><font color="#CCCCCC"> this</font><font color="#E5E5E5"> is the end and</font>
+
+260
+00:14:38.710 --> 00:14:44.360
+then first of all our two second timer
+
+261
+00:14:41.659 --> 00:14:46.759
+finishes<font color="#E5E5E5"> so we get say goodbye and we</font>
+
+262
+00:14:44.360 --> 00:14:49.519
+get<font color="#CCCCCC"> goodbye printed and then our</font><font color="#E5E5E5"> four</font>
+
+263
+00:14:46.759 --> 00:14:54.080
+second timer finishes so we get hello
+
+264
+00:14:49.519 --> 00:14:57.740
+printed and this<font color="#E5E5E5"> really is the is it</font>
+
+265
+00:14:54.080 --> 00:15:00.110
+this is<font color="#E5E5E5"> the essence of async code the</font>
+
+266
+00:14:57.740 --> 00:15:02.210
+<font color="#E5E5E5">only other thing</font><font color="#CCCCCC"> that like you're likely</font>
+
+267
+00:15:00.110 --> 00:15:05.060
+to see<font color="#E5E5E5"> written quite a lot is rather</font>
+
+268
+00:15:02.210 --> 00:15:07.850
+than having named functions like this we
+
+269
+00:15:05.059 --> 00:15:10.219
+can use<font color="#E5E5E5"> anonymous functions in the same</font>
+
+270
+00:15:07.850 --> 00:15:12.409
+<font color="#E5E5E5">way that we use anonymous functions in</font>
+
+271
+00:15:10.220 --> 00:15:15.980
+our tests so instead of having say
+
+272
+00:15:12.409 --> 00:15:21.860
+goodbye here we can put the<font color="#E5E5E5"> whole</font>
+
+273
+00:15:15.980 --> 00:15:24.500
+function declaration in there<font color="#E5E5E5"> and even</font>
+
+274
+00:15:21.860 --> 00:15:27.710
+<font color="#CCCCCC">remove the</font><font color="#E5E5E5"> name so we</font><font color="#CCCCCC"> just end up with</font>
+
+275
+00:15:24.500 --> 00:15:29.870
+this function settimeout function hello
+
+276
+00:15:27.710 --> 00:15:38.540
+<font color="#E5E5E5">for</font><font color="#CCCCCC"> four seconds and then we can do the</font>
+
+277
+00:15:29.870 --> 00:15:42.440
+same with<font color="#CCCCCC"> the by using two different</font>
+
+278
+00:15:38.539 --> 00:15:43.699
+<font color="#E5E5E5">anonymous functions in here so it's up</font>
+
+279
+00:15:42.440 --> 00:15:47.090
+<font color="#CCCCCC">to you as</font><font color="#E5E5E5"> to whether</font><font color="#CCCCCC"> or not</font><font color="#E5E5E5"> you think</font>
+
+280
+00:15:43.700 --> 00:15:50.210
+<font color="#E5E5E5">this is actually easier</font><font color="#CCCCCC"> to read or not</font><font color="#E5E5E5"> I</font>
+
+281
+00:15:47.090 --> 00:15:52.780
+don't<font color="#CCCCCC"> think it is I think</font><font color="#E5E5E5"> I always try</font>
+
+282
+00:15:50.210 --> 00:15:55.220
+and<font color="#E5E5E5"> like name my callback functions or</font>
+
+283
+00:15:52.779 --> 00:15:57.319
+<font color="#E5E5E5">not always but a lot of the time I try</font>
+
+284
+00:15:55.220 --> 00:16:00.410
+<font color="#CCCCCC">and have separate named callback</font>
+
+285
+00:15:57.320 --> 00:16:01.360
+functions<font color="#E5E5E5"> but you will see them written</font>
+
+286
+00:16:00.409 --> 00:16:04.600
+<font color="#E5E5E5">like this as well and</font>
+
+287
+00:16:01.360 --> 00:16:07.629
+can be read like<font color="#E5E5E5"> this as well again</font>
+
+288
+00:16:04.600 --> 00:16:09.790
+let's just<font color="#E5E5E5"> run this again and</font><font color="#CCCCCC"> we should</font>
+
+289
+00:16:07.629 --> 00:16:13.059
+see<font color="#CCCCCC"> the output now that we've made</font><font color="#E5E5E5"> that</font>
+
+290
+00:16:09.789 --> 00:16:18.189
+<font color="#E5E5E5">little refactor is exactly the same as</font>
+
+291
+00:16:13.059 --> 00:16:21.039
+what it was before<font color="#CCCCCC"> pause the</font><font color="#E5E5E5"> video now</font>
+
+292
+00:16:18.190 --> 00:16:22.390
+and spend<font color="#E5E5E5"> a little bit of time playing</font>
+
+293
+00:16:21.039 --> 00:16:24.819
+around<font color="#E5E5E5"> with some of these things like</font>
+
+294
+00:16:22.389 --> 00:16:27.939
+what happens if you put<font color="#CCCCCC"> a set</font><font color="#E5E5E5"> timeout in</font>
+
+295
+00:16:24.820 --> 00:16:30.250
+a set timeout<font color="#E5E5E5"> or like what happens if</font>
+
+296
+00:16:27.940 --> 00:16:31.269
+you like<font color="#E5E5E5"> change</font><font color="#CCCCCC"> your order of</font><font color="#E5E5E5"> things or</font>
+
+297
+00:16:30.250 --> 00:16:42.399
+all<font color="#CCCCCC"> of</font><font color="#E5E5E5"> that sort of stuff</font>
+
+298
+00:16:31.269 --> 00:16:45.879
+just play<font color="#E5E5E5"> around a little bit so the</font>
+
+299
+00:16:42.399 --> 00:16:49.899
+next thing that<font color="#E5E5E5"> I want to do is look at</font>
+
+300
+00:16:45.879 --> 00:16:52.088
+how we get so<font color="#E5E5E5"> this is how we run code</font>
+
+301
+00:16:49.899 --> 00:16:53.620
+but<font color="#CCCCCC"> you know often with</font><font color="#E5E5E5"> these functions</font>
+
+302
+00:16:52.089 --> 00:16:56.399
+we need some<font color="#E5E5E5"> sort</font><font color="#CCCCCC"> of response from them</font>
+
+303
+00:16:53.620 --> 00:16:59.889
+as well<font color="#CCCCCC"> so I wanted to look a little bit</font>
+
+304
+00:16:56.399 --> 00:17:06.390
+how that<font color="#E5E5E5"> works</font><font color="#CCCCCC"> so I'm just gonna create</font>
+
+305
+00:16:59.889 --> 00:17:10.019
+a new file<font color="#E5E5E5"> and call it slow add</font><font color="#CCCCCC"> a s and</font>
+
+306
+00:17:06.390 --> 00:17:24.730
+we're going<font color="#CCCCCC"> to take a</font><font color="#E5E5E5"> normal function</font>
+
+307
+00:17:10.019 --> 00:17:29.889
+add<font color="#CCCCCC"> takes a B and add them together so</font>
+
+308
+00:17:24.730 --> 00:17:33.039
+we<font color="#E5E5E5"> have this we have this add function</font>
+
+309
+00:17:29.890 --> 00:17:35.770
+that<font color="#E5E5E5"> just takes two</font><font color="#CCCCCC"> inputs</font><font color="#E5E5E5"> adds them and</font>
+
+310
+00:17:33.039 --> 00:17:45.058
+returns the<font color="#CCCCCC"> result</font><font color="#E5E5E5"> so just to test</font><font color="#CCCCCC"> that</font>
+
+311
+00:17:35.769 --> 00:17:51.539
+<font color="#CCCCCC">out add 13</font><font color="#E5E5E5"> and</font><font color="#CCCCCC"> 4</font><font color="#E5E5E5"> should give us a 17</font>
+
+312
+00:17:45.058 --> 00:17:51.539
+node<font color="#E5E5E5"> store address 17 there we go</font>
+
+313
+00:17:52.349 --> 00:18:03.699
+but what would<font color="#CCCCCC"> happen if parvis was like</font>
+
+314
+00:18:01.960 --> 00:18:05.350
+something<font color="#E5E5E5"> slow part of this involve like</font>
+
+315
+00:18:03.700 --> 00:18:07.779
+a<font color="#E5E5E5"> network request</font><font color="#CCCCCC"> or something like that</font>
+
+316
+00:18:05.349 --> 00:18:10.149
+so we're gonna this<font color="#E5E5E5"> is like a little bit</font>
+
+317
+00:18:07.779 --> 00:18:13.480
+<font color="#CCCCCC">of</font><font color="#E5E5E5"> a contrived example so sorry</font><font color="#CCCCCC"> for that</font>
+
+318
+00:18:10.150 --> 00:18:17.470
+<font color="#E5E5E5">but we're gonna like change this</font><font color="#CCCCCC"> ad</font>
+
+319
+00:18:13.480 --> 00:18:19.240
+into a<font color="#CCCCCC"> slow add so add that</font><font color="#E5E5E5"> with a set</font>
+
+320
+00:18:17.470 --> 00:18:21.308
+timeout<font color="#E5E5E5"> in it that makes it take</font><font color="#CCCCCC"> two</font>
+
+321
+00:18:19.240 --> 00:18:28.509
+seconds<font color="#CCCCCC"> to</font><font color="#E5E5E5"> run</font><font color="#CCCCCC"> instead</font><font color="#E5E5E5"> of running</font>
+
+322
+00:18:21.308 --> 00:18:33.700
+instantly so let's start<font color="#E5E5E5"> off by copying</font>
+
+323
+00:18:28.509 --> 00:18:38.200
+that definition<font color="#CCCCCC"> crazy</font><font color="#E5E5E5"> mom for</font><font color="#CCCCCC"> slow-add</font>
+
+324
+00:18:33.700 --> 00:18:40.240
+instead so the first thing<font color="#CCCCCC"> that we might</font>
+
+325
+00:18:38.200 --> 00:18:40.808
+<font color="#E5E5E5">try doing if we</font><font color="#CCCCCC"> wanted this to take two</font>
+
+326
+00:18:40.240 --> 00:18:44.950
+seconds
+
+327
+00:18:40.808 --> 00:18:49.569
+is adding one<font color="#CCCCCC"> of our set timeout</font>
+
+328
+00:18:44.950 --> 00:18:57.069
+examples<font color="#E5E5E5"> from before so I could add a</font>
+
+329
+00:18:49.569 --> 00:19:01.798
+set timeout in here and just<font color="#E5E5E5"> take the</font>
+
+330
+00:18:57.069 --> 00:19:01.798
+stuff<font color="#CCCCCC"> inside</font><font color="#E5E5E5"> a bath and add it in there</font>
+
+331
+00:19:02.940 --> 00:19:08.500
+so<font color="#E5E5E5"> now we're doing 20</font><font color="#CCCCCC"> of slow-add</font><font color="#E5E5E5"> we've</font>
+
+332
+00:19:06.700 --> 00:19:12.279
+got<font color="#E5E5E5"> a and B and we're turning the</font>
+
+333
+00:19:08.500 --> 00:19:14.319
+<font color="#E5E5E5">returning the result of the set timer so</font>
+
+334
+00:19:12.279 --> 00:19:19.509
+let's try doing that<font color="#E5E5E5"> now let's do</font>
+
+335
+00:19:14.319 --> 00:19:24.750
+console dot log<font color="#CCCCCC"> slow add 1314 and</font><font color="#E5E5E5"> see</font>
+
+336
+00:19:19.509 --> 00:19:28.089
+what<font color="#E5E5E5"> happens undefined</font>
+
+337
+00:19:24.750 --> 00:19:29.529
+except our program didn't finish quite
+
+338
+00:19:28.089 --> 00:19:34.589
+as soon as we learn<font color="#CCCCCC"> to it took a couple</font>
+
+339
+00:19:29.529 --> 00:19:37.418
+<font color="#CCCCCC">of seconds</font><font color="#E5E5E5"> to finish which usually means</font>
+
+340
+00:19:34.589 --> 00:19:41.439
+something more interesting<font color="#E5E5E5"> is</font><font color="#CCCCCC"> happening</font>
+
+341
+00:19:37.419 --> 00:19:46.710
+under the hood as<font color="#CCCCCC"> well so the reason we</font>
+
+342
+00:19:41.440 --> 00:19:49.870
+got undefined<font color="#E5E5E5"> is our return is in this</font>
+
+343
+00:19:46.710 --> 00:19:52.390
+set timeout<font color="#CCCCCC"> function so we're returning</font>
+
+344
+00:19:49.869 --> 00:19:54.909
+from the set timeout<font color="#E5E5E5"> but not from our</font>
+
+345
+00:19:52.390 --> 00:19:58.450
+main function<font color="#E5E5E5"> here so we're not going</font><font color="#CCCCCC"> to</font>
+
+346
+00:19:54.910 --> 00:20:03.150
+get<font color="#E5E5E5"> the result given to us in here so</font>
+
+347
+00:19:58.450 --> 00:20:03.150
+maybe we could try moving<font color="#E5E5E5"> that outside</font>
+
+348
+00:20:03.630 --> 00:20:15.070
+returning result there so add our things
+
+349
+00:20:10.750 --> 00:20:19.289
+together<font color="#E5E5E5"> after two</font><font color="#CCCCCC"> seconds</font><font color="#E5E5E5"> and then</font>
+
+350
+00:20:15.069 --> 00:20:19.289
+return the result maybe that would work
+
+351
+00:20:23.359 --> 00:20:29.009
+okay now we're getting reference our
+
+352
+00:20:25.559 --> 00:20:31.649
+result<font color="#E5E5E5"> is not defined</font><font color="#CCCCCC"> and the reason for</font>
+
+353
+00:20:29.009 --> 00:20:34.859
+<font color="#CCCCCC">that</font><font color="#E5E5E5"> is we created this result variable</font>
+
+354
+00:20:31.650 --> 00:20:37.769
+inside this<font color="#E5E5E5"> function in here</font><font color="#CCCCCC"> which</font><font color="#E5E5E5"> means</font>
+
+355
+00:20:34.859 --> 00:20:39.240
+it's not visible<font color="#E5E5E5"> outside of that we</font>
+
+356
+00:20:37.769 --> 00:20:41.730
+can't return<font color="#CCCCCC"> the result here even if it</font>
+
+357
+00:20:39.240 --> 00:20:43.620
+<font color="#E5E5E5">was visible</font><font color="#CCCCCC"> because we haven't added</font>
+
+358
+00:20:41.730 --> 00:20:46.410
+them together yet<font color="#CCCCCC"> like this all because</font>
+
+359
+00:20:43.619 --> 00:20:48.689
+<font color="#E5E5E5">that timeout is asynchronous this won't</font>
+
+360
+00:20:46.410 --> 00:20:50.400
+block and we'll move<font color="#E5E5E5"> straight on to</font>
+
+361
+00:20:48.690 --> 00:20:53.330
+trying to do<font color="#E5E5E5"> return result before we've</font>
+
+362
+00:20:50.400 --> 00:20:57.840
+even added<font color="#E5E5E5"> anything together</font>
+
+363
+00:20:53.329 --> 00:21:00.750
+and it turns out<font color="#E5E5E5"> that we can't actually</font>
+
+364
+00:20:57.839 --> 00:21:03.449
+<font color="#E5E5E5">use return in asynchronous functions in</font>
+
+365
+00:21:00.750 --> 00:21:07.200
+the way we normally would<font color="#CCCCCC"> we need</font><font color="#E5E5E5"> to</font>
+
+366
+00:21:03.450 --> 00:21:15.960
+have them accept and<font color="#E5E5E5"> use a</font><font color="#CCCCCC"> call</font><font color="#E5E5E5"> back as</font>
+
+367
+00:21:07.200 --> 00:21:17.819
+well so rather than<font color="#CCCCCC"> consult</font><font color="#E5E5E5"> logging the</font>
+
+368
+00:21:15.960 --> 00:21:20.069
+result of so<font color="#CCCCCC"> that this</font><font color="#E5E5E5"> would only work</font>
+
+369
+00:21:17.819 --> 00:21:22.169
+if apps were<font color="#E5E5E5"> added was going to return</font>
+
+370
+00:21:20.069 --> 00:21:23.909
+immediately<font color="#CCCCCC"> but it doesn't</font><font color="#E5E5E5"> because it's</font>
+
+371
+00:21:22.170 --> 00:21:28.350
+asynchronous<font color="#E5E5E5"> so we have to do something</font>
+
+372
+00:21:23.910 --> 00:21:31.050
+<font color="#CCCCCC">a little</font><font color="#E5E5E5"> bit weird instead so if we take</font>
+
+373
+00:21:28.349 --> 00:21:36.079
+our<font color="#E5E5E5"> slow add of 13 and for that we have</font>
+
+374
+00:21:31.049 --> 00:21:44.210
+<font color="#E5E5E5">from before</font><font color="#CCCCCC"> whoo I did a rhyme</font><font color="#E5E5E5"> yay</font><font color="#CCCCCC"> and</font>
+
+375
+00:21:36.079 --> 00:21:47.909
+add a<font color="#CCCCCC"> callback</font><font color="#E5E5E5"> to</font><font color="#CCCCCC"> the end then we can</font>
+
+376
+00:21:44.210 --> 00:21:51.000
+get<font color="#E5E5E5"> the result so we have to pass in a</font>
+
+377
+00:21:47.910 --> 00:21:55.800
+third input which is<font color="#CCCCCC"> our callback</font>
+
+378
+00:21:51.000 --> 00:21:59.339
+function and this function<font color="#E5E5E5"> is</font><font color="#CCCCCC"> going to</font>
+
+379
+00:21:55.799 --> 00:22:03.539
+<font color="#E5E5E5">have as an input to it the the result of</font>
+
+380
+00:21:59.339 --> 00:22:05.490
+the adding of things so I'm<font color="#E5E5E5"> gonna call</font>
+
+381
+00:22:03.539 --> 00:22:07.409
+it<font color="#E5E5E5"> the answer because it's just another</font>
+
+382
+00:22:05.490 --> 00:22:11.940
+<font color="#CCCCCC">variable and I can give</font><font color="#E5E5E5"> it any name at</font><font color="#CCCCCC"> 1</font>
+
+383
+00:22:07.410 --> 00:22:16.650
+<font color="#E5E5E5">and I'm going</font><font color="#CCCCCC"> to console dot log</font><font color="#E5E5E5"> the</font>
+
+384
+00:22:11.940 --> 00:22:20.970
+answer and now in our slow<font color="#CCCCCC"> add we</font><font color="#E5E5E5"> need</font>
+
+385
+00:22:16.650 --> 00:22:24.810
+to make it aware<font color="#CCCCCC"> of that extra</font><font color="#E5E5E5"> extra</font>
+
+386
+00:22:20.970 --> 00:22:27.569
+input<font color="#E5E5E5"> so I'm gonna call that callback</font>
+
+387
+00:22:24.809 --> 00:22:30.929
+<font color="#CCCCCC">because that's our callback function and</font>
+
+388
+00:22:27.569 --> 00:22:33.659
+what I'm<font color="#CCCCCC"> gonna do is where before we</font>
+
+389
+00:22:30.930 --> 00:22:36.779
+would<font color="#E5E5E5"> have had return result</font>
+
+390
+00:22:33.660 --> 00:22:40.920
+instead of return now<font color="#E5E5E5"> we can use</font><font color="#CCCCCC"> call</font>
+
+391
+00:22:36.779 --> 00:22:45.750
+our<font color="#CCCCCC"> callback to say that we're</font><font color="#E5E5E5"> done so</font>
+
+392
+00:22:40.920 --> 00:22:51.779
+instead of return result<font color="#CCCCCC"> I can call</font><font color="#E5E5E5"> call</font>
+
+393
+00:22:45.750 --> 00:22:53.009
+<font color="#E5E5E5">back with the result this is really</font>
+
+394
+00:22:51.779 --> 00:22:55.529
+weird
+
+395
+00:22:53.009 --> 00:22:58.789
+just just so you know<font color="#CCCCCC"> like</font><font color="#E5E5E5"> if you're not</font>
+
+396
+00:22:55.529 --> 00:23:03.029
+<font color="#E5E5E5">really following this like that's fine</font>
+
+397
+00:22:58.789 --> 00:23:04.829
+<font color="#CCCCCC">this</font><font color="#E5E5E5"> is like kind of like very very odd</font>
+
+398
+00:23:03.029 --> 00:23:06.690
+<font color="#CCCCCC">and complicated we've got like a lot</font><font color="#E5E5E5"> of</font>
+
+399
+00:23:04.829 --> 00:23:08.970
+functions going<font color="#E5E5E5"> around and our functions</font>
+
+400
+00:23:06.690 --> 00:23:10.350
+are now like tied together and like a
+
+401
+00:23:08.970 --> 00:23:13.620
+really weird way<font color="#CCCCCC"> that we haven't seen</font>
+
+402
+00:23:10.349 --> 00:23:21.469
+<font color="#CCCCCC">before but if we run this now</font><font color="#E5E5E5"> we should</font>
+
+403
+00:23:13.619 --> 00:23:21.469
+see if I add console dot log start and
+
+404
+00:23:21.920 --> 00:23:30.140
+console dot log end then we should see
+
+405
+00:23:27.029 --> 00:23:34.829
+<font color="#E5E5E5">I'll start an end run right away</font><font color="#CCCCCC"> and</font>
+
+406
+00:23:30.140 --> 00:23:38.310
+then after<font color="#E5E5E5"> two seconds that's I'm not</font>
+
+407
+00:23:34.829 --> 00:23:43.799
+<font color="#E5E5E5">come to the</font><font color="#CCCCCC"> login</font><font color="#E5E5E5"> here we get timer</font>
+
+408
+00:23:38.309 --> 00:23:47.579
+finished and we should get the<font color="#E5E5E5"> result of</font>
+
+409
+00:23:43.799 --> 00:23:51.779
+adding those two numbers<font color="#E5E5E5"> together so if</font>
+
+410
+00:23:47.579 --> 00:23:54.149
+I run<font color="#CCCCCC"> that starting in straightaway and</font>
+
+411
+00:23:51.779 --> 00:23:59.190
+then after a<font color="#CCCCCC"> couple</font><font color="#E5E5E5"> of seconds</font><font color="#CCCCCC"> I get</font>
+
+412
+00:23:54.150 --> 00:24:02.570
+timer finished<font color="#E5E5E5"> and my result so just to</font>
+
+413
+00:23:59.190 --> 00:24:05.400
+talk you<font color="#CCCCCC"> through what's happening</font><font color="#E5E5E5"> here</font>
+
+414
+00:24:02.569 --> 00:24:07.980
+we create<font color="#E5E5E5"> our</font><font color="#CCCCCC"> slow-add function that</font>
+
+415
+00:24:05.400 --> 00:24:09.630
+takes two<font color="#CCCCCC"> inputs to add together</font><font color="#E5E5E5"> and</font>
+
+416
+00:24:07.980 --> 00:24:16.079
+then the callback for when it's done<font color="#CCCCCC"> and</font>
+
+417
+00:24:09.630 --> 00:24:18.360
+<font color="#CCCCCC">we say wait two seconds and once you've</font>
+
+418
+00:24:16.079 --> 00:24:20.250
+<font color="#CCCCCC">done that run this function</font><font color="#E5E5E5"> in here and</font>
+
+419
+00:24:18.359 --> 00:24:22.229
+what<font color="#CCCCCC"> that function does</font><font color="#E5E5E5"> after two</font>
+
+420
+00:24:20.250 --> 00:24:27.150
+seconds<font color="#CCCCCC"> is it logs out kind of finished</font>
+
+421
+00:24:22.230 --> 00:24:31.980
+<font color="#E5E5E5">it</font><font color="#CCCCCC"> adds</font><font color="#E5E5E5"> our inputs</font><font color="#CCCCCC"> together and then it</font>
+
+422
+00:24:27.150 --> 00:24:33.300
+<font color="#E5E5E5">calls the callback with that answer</font><font color="#CCCCCC"> to</font>
+
+423
+00:24:31.980 --> 00:24:35.610
+give it back to<font color="#CCCCCC"> the thing that called it</font>
+
+424
+00:24:33.299 --> 00:24:38.839
+so we don't use return<font color="#E5E5E5"> when we're</font>
+
+425
+00:24:35.609 --> 00:24:41.159
+writing functions<font color="#CCCCCC"> that use callbacks and</font>
+
+426
+00:24:38.839 --> 00:24:43.769
+then down<font color="#CCCCCC"> here where we call it we give</font>
+
+427
+00:24:41.160 --> 00:24:48.450
+it<font color="#CCCCCC"> thirteen and four for a</font><font color="#E5E5E5"> and B</font>
+
+428
+00:24:43.769 --> 00:24:50.490
+then we have this anonymous function for
+
+429
+00:24:48.450 --> 00:24:52.830
+the the<font color="#E5E5E5"> callback that's gonna get given</font>
+
+430
+00:24:50.490 --> 00:24:55.289
+this the answer here<font color="#CCCCCC"> is the same as</font>
+
+431
+00:24:52.829 --> 00:24:59.759
+result here<font color="#E5E5E5"> that goes into here</font><font color="#CCCCCC"> and like</font>
+
+432
+00:24:55.289 --> 00:25:01.889
+gets<font color="#E5E5E5"> console</font><font color="#CCCCCC"> or</font><font color="#E5E5E5"> locked out</font><font color="#CCCCCC"> and this</font><font color="#E5E5E5"> is</font>
+
+433
+00:24:59.759 --> 00:25:03.629
+how like a lot of these places<font color="#E5E5E5"> but we've</font>
+
+434
+00:25:01.890 --> 00:25:05.960
+seen these like anonymous<font color="#E5E5E5"> functions like</font>
+
+435
+00:25:03.630 --> 00:25:08.190
+rocker and stuff<font color="#E5E5E5"> this is how maka works</font>
+
+436
+00:25:05.960 --> 00:25:11.480
+<font color="#E5E5E5">it's calling your function like when</font>
+
+437
+00:25:08.190 --> 00:25:14.759
+it's ready<font color="#E5E5E5"> to do whatever</font><font color="#CCCCCC"> its thing is</font>
+
+438
+00:25:11.480 --> 00:25:16.289
+but as I say like if the stuff<font color="#E5E5E5"> I just</font>
+
+439
+00:25:14.759 --> 00:25:18.869
+<font color="#E5E5E5">covered went over your head</font><font color="#CCCCCC"> a little bit</font>
+
+440
+00:25:16.289 --> 00:25:21.089
+<font color="#E5E5E5">don't</font><font color="#CCCCCC"> worry</font><font color="#E5E5E5"> too much about it if you're</font>
+
+441
+00:25:18.869 --> 00:25:22.529
+curious<font color="#E5E5E5"> then like there's some really</font>
+
+442
+00:25:21.089 --> 00:25:25.949
+<font color="#E5E5E5">good</font><font color="#CCCCCC"> resources out</font><font color="#E5E5E5"> there that</font><font color="#CCCCCC"> you can</font>
+
+443
+00:25:22.529 --> 00:25:29.430
+find<font color="#CCCCCC"> or come and</font><font color="#E5E5E5"> speak to</font><font color="#CCCCCC"> one of us but</font>
+
+444
+00:25:25.950 --> 00:25:31.710
+<font color="#E5E5E5">otherwise like don't sweat this little</font>
+
+445
+00:25:29.430 --> 00:25:33.779
+bit that<font color="#CCCCCC"> we just did here too much</font><font color="#E5E5E5"> so</font>
+
+446
+00:25:31.710 --> 00:25:36.150
+long as you understand<font color="#E5E5E5"> this</font><font color="#CCCCCC"> idea</font><font color="#E5E5E5"> of like</font>
+
+447
+00:25:33.779 --> 00:25:41.089
+these things can run out of order
+
+448
+00:25:36.150 --> 00:25:44.310
+because<font color="#E5E5E5"> that's like the main thing okay</font>
+
+449
+00:25:41.089 --> 00:25:49.319
+let's try<font color="#E5E5E5"> and</font><font color="#CCCCCC"> do</font><font color="#E5E5E5"> something actually</font>
+
+450
+00:25:44.309 --> 00:25:52.759
+useful<font color="#CCCCCC"> and I've got this</font><font color="#E5E5E5"> little API</font>
+
+451
+00:25:49.319 --> 00:25:57.450
+for<font color="#E5E5E5"> daug so I'm going to</font><font color="#CCCCCC"> open up</font>
+
+452
+00:25:52.759 --> 00:26:03.589
+<font color="#E5E5E5">insomnia and show you what it looks like</font>
+
+453
+00:25:57.450 --> 00:26:03.590
+let's I want to do<font color="#E5E5E5"> its ignore all this</font>
+
+454
+00:26:04.009 --> 00:26:14.000
+time spit bigger cool<font color="#CCCCCC"> I want to do a get</font>
+
+455
+00:26:09.390 --> 00:26:22.230
+request<font color="#E5E5E5"> to this special API that I have</font>
+
+456
+00:26:14.000 --> 00:26:26.579
+HTTP ADA - dog doc doc<font color="#E5E5E5"> Heroku app calm</font>
+
+457
+00:26:22.230 --> 00:26:30.720
+<font color="#CCCCCC">and this is an API that</font><font color="#E5E5E5"> will give us dog</font>
+
+458
+00:26:26.579 --> 00:26:34.009
+facts so we<font color="#E5E5E5"> can go</font><font color="#CCCCCC"> a to dog facts</font>
+
+459
+00:26:30.720 --> 00:26:41.850
+aircraft<font color="#CCCCCC"> or comm</font><font color="#E5E5E5"> slash facts slash</font>
+
+460
+00:26:34.009 --> 00:26:44.549
+random and send a get<font color="#CCCCCC"> request</font><font color="#E5E5E5"> and takes</font>
+
+461
+00:26:41.849 --> 00:26:46.379
+a moment<font color="#E5E5E5"> to start up in</font><font color="#CCCCCC"> this mate</font>
+
+462
+00:26:44.549 --> 00:26:49.799
+<font color="#CCCCCC">Internet is broken here we go we</font><font color="#E5E5E5"> should</font>
+
+463
+00:26:46.380 --> 00:26:53.200
+get a response back<font color="#E5E5E5"> with an ID so the</font>
+
+464
+00:26:49.799 --> 00:26:57.009
+the unique identifier for<font color="#CCCCCC"> that fact</font>
+
+465
+00:26:53.200 --> 00:26:57.580
+and the actual<font color="#E5E5E5"> fact itself so you try me</font>
+
+466
+00:26:57.009 --> 00:27:02.349
+run this
+
+467
+00:26:57.579 --> 00:27:07.059
+we should get back<font color="#E5E5E5"> a new dog fact random</font>
+
+468
+00:27:02.349 --> 00:27:08.709
+dog fact<font color="#CCCCCC"> from my API we can also ask for</font>
+
+469
+00:27:07.059 --> 00:27:13.259
+<font color="#E5E5E5">like specific</font><font color="#CCCCCC"> numbers so if I</font><font color="#E5E5E5"> ask the</font>
+
+470
+00:27:08.710 --> 00:27:17.170
+fact<font color="#E5E5E5"> 10 then it's always going to return</font>
+
+471
+00:27:13.259 --> 00:27:22.029
+fact with the ID 10 and what we're<font color="#E5E5E5"> going</font>
+
+472
+00:27:17.170 --> 00:27:26.050
+to do now is look at how we can get a
+
+473
+00:27:22.029 --> 00:27:30.039
+<font color="#E5E5E5">random dog fact like make</font><font color="#CCCCCC"> a request</font><font color="#E5E5E5"> to</font>
+
+474
+00:27:26.049 --> 00:27:32.139
+this API<font color="#E5E5E5"> from our code because what we</font>
+
+475
+00:27:30.039 --> 00:27:33.879
+can do then is<font color="#E5E5E5"> start to automate</font><font color="#CCCCCC"> all of</font>
+
+476
+00:27:32.140 --> 00:27:36.340
+<font color="#E5E5E5">the tests</font><font color="#CCCCCC"> that we wrote for the today's</font>
+
+477
+00:27:33.880 --> 00:27:38.200
+API<font color="#E5E5E5"> so rather than us</font><font color="#CCCCCC"> having to</font><font color="#E5E5E5"> go</font>
+
+478
+00:27:36.339 --> 00:27:40.659
+<font color="#CCCCCC">through and manually do those things in</font>
+
+479
+00:27:38.200 --> 00:27:47.080
+<font color="#CCCCCC">insomnia ourselves we can write a bit of</font>
+
+480
+00:27:40.660 --> 00:27:55.320
+code<font color="#E5E5E5"> and do all of them automatically so</font>
+
+481
+00:27:47.079 --> 00:27:55.319
+I'm gonna add a new file called<font color="#E5E5E5"> request</font>
+
+482
+00:27:56.519 --> 00:28:06.190
+experiment<font color="#CCCCCC"> dot yes and we're</font><font color="#E5E5E5"> going to</font>
+
+483
+00:28:03.430 --> 00:28:07.660
+use a library<font color="#E5E5E5"> to do this from NPM we're</font>
+
+484
+00:28:06.190 --> 00:28:16.900
+going to use something called<font color="#E5E5E5"> super</font>
+
+485
+00:28:07.660 --> 00:28:19.930
+agent and super agent is a way of making
+
+486
+00:28:16.900 --> 00:28:23.440
+HTTP requests from<font color="#E5E5E5"> node so I'm just</font>
+
+487
+00:28:19.930 --> 00:28:25.509
+<font color="#E5E5E5">going to google it super agent here we</font>
+
+488
+00:28:23.440 --> 00:28:32.019
+go by this<font color="#E5E5E5"> person called visual media</font>
+
+489
+00:28:25.509 --> 00:28:34.029
+and it's<font color="#E5E5E5"> got this great ferret who I</font>
+
+490
+00:28:32.019 --> 00:28:38.230
+believe<font color="#CCCCCC"> is actually</font><font color="#E5E5E5"> called Toby Toby</font>
+
+491
+00:28:34.029 --> 00:28:40.809
+<font color="#CCCCCC">maybe Toby</font><font color="#E5E5E5"> I think this is the person</font>
+
+492
+00:28:38.230 --> 00:28:43.200
+<font color="#CCCCCC">who wrote</font><font color="#E5E5E5"> this this is their ferret so</font>
+
+493
+00:28:40.809 --> 00:28:46.049
+that's that's<font color="#CCCCCC"> very good very important</font>
+
+494
+00:28:43.200 --> 00:28:51.190
+for<font color="#E5E5E5"> your open source project to have a</font>
+
+495
+00:28:46.049 --> 00:28:53.169
+mascot<font color="#E5E5E5"> with</font><font color="#CCCCCC"> our hat</font><font color="#E5E5E5"> anyway so we would</font>
+
+496
+00:28:51.190 --> 00:28:55.360
+install this<font color="#E5E5E5"> with NPM the same way we</font>
+
+497
+00:28:53.170 --> 00:28:58.269
+<font color="#CCCCCC">usually would with like ma crochet</font><font color="#E5E5E5"> NPM</font>
+
+498
+00:28:55.359 --> 00:29:01.149
+<font color="#E5E5E5">install</font><font color="#CCCCCC"> super-agent if you've already</font>
+
+499
+00:28:58.269 --> 00:29:03.279
+run<font color="#CCCCCC"> NPM install</font><font color="#E5E5E5"> on this project</font><font color="#CCCCCC"> then</font>
+
+500
+00:29:01.150 --> 00:29:06.700
+you'll<font color="#E5E5E5"> find that super agent was listed</font>
+
+501
+00:29:03.279 --> 00:29:07.148
+in the package<font color="#E5E5E5"> dot</font><font color="#CCCCCC"> jason so you should</font>
+
+502
+00:29:06.700 --> 00:29:10.269
+already
+
+503
+00:29:07.148 --> 00:29:13.298
+have it so we can require it<font color="#CCCCCC"> the same</font>
+
+504
+00:29:10.269 --> 00:29:21.038
+way we would anything<font color="#E5E5E5"> else super agent</font>
+
+505
+00:29:13.298 --> 00:29:23.819
+equals require<font color="#E5E5E5"> super agent and now we</font>
+
+506
+00:29:21.038 --> 00:29:26.528
+can<font color="#CCCCCC"> use</font><font color="#E5E5E5"> super agent for making requests</font>
+
+507
+00:29:23.819 --> 00:29:32.798
+so there's a<font color="#E5E5E5"> little example</font><font color="#CCCCCC"> here</font><font color="#E5E5E5"> request</font>
+
+508
+00:29:26.528 --> 00:29:35.769
+post<font color="#E5E5E5"> and then a path send for sending</font>
+
+509
+00:29:32.798 --> 00:29:37.690
+<font color="#CCCCCC">Jason along with a body</font><font color="#E5E5E5"> a way of setting</font>
+
+510
+00:29:35.769 --> 00:29:40.149
+some of<font color="#E5E5E5"> the different headers and stuff</font>
+
+511
+00:29:37.690 --> 00:29:44.139
+and then at the<font color="#CCCCCC"> end we've</font><font color="#E5E5E5"> got our</font>
+
+512
+00:29:40.148 --> 00:29:46.209
+<font color="#CCCCCC">callback we don't actually need a lot of</font>
+
+513
+00:29:44.138 --> 00:29:48.069
+these options<font color="#CCCCCC"> there some some example</font>
+
+514
+00:29:46.210 --> 00:29:51.869
+here like using<font color="#E5E5E5"> a query string and stuff</font>
+
+515
+00:29:48.069 --> 00:29:54.398
+<font color="#CCCCCC">and if you read</font><font color="#E5E5E5"> through this where is it</font>
+
+516
+00:29:51.868 --> 00:29:57.249
+<font color="#E5E5E5">yeah there's a link here</font><font color="#CCCCCC"> at the top</font><font color="#E5E5E5"> of</font>
+
+517
+00:29:54.398 --> 00:29:58.838
+the<font color="#E5E5E5"> document that says</font><font color="#CCCCCC"> Docs if you just</font>
+
+518
+00:29:57.249 --> 00:30:00.069
+click on<font color="#E5E5E5"> that you can</font><font color="#CCCCCC"> see like there's</font>
+
+519
+00:29:58.838 --> 00:30:02.259
+all the<font color="#CCCCCC"> things you want to do here like</font>
+
+520
+00:30:00.069 --> 00:30:05.138
+here's the<font color="#E5E5E5"> thing for get requests so if</font>
+
+521
+00:30:02.259 --> 00:30:09.848
+I click on that<font color="#CCCCCC"> it's showing me</font><font color="#E5E5E5"> how to</font>
+
+522
+00:30:05.138 --> 00:30:14.319
+make<font color="#E5E5E5"> the request and like add queries</font>
+
+523
+00:30:09.848 --> 00:30:20.348
+and stuff to it<font color="#CCCCCC"> you might see in these</font>
+
+524
+00:30:14.319 --> 00:30:22.239
+<font color="#CCCCCC">docs this doc then and I will ignore the</font>
+
+525
+00:30:20.348 --> 00:30:24.218
+dot then that's<font color="#E5E5E5"> for promises which we're</font>
+
+526
+00:30:22.239 --> 00:30:25.629
+not<font color="#E5E5E5"> going</font><font color="#CCCCCC"> to be covering</font><font color="#E5E5E5"> here instead</font>
+
+527
+00:30:24.219 --> 00:30:27.999
+we're gonna use something<font color="#CCCCCC"> called</font><font color="#E5E5E5"> end</font>
+
+528
+00:30:25.628 --> 00:30:33.368
+which is<font color="#E5E5E5"> the sort of cool</font><font color="#CCCCCC"> backi way of</font>
+
+529
+00:30:27.999 --> 00:30:36.759
+doing things<font color="#CCCCCC"> so let's have a go super</font>
+
+530
+00:30:33.368 --> 00:30:44.408
+<font color="#CCCCCC">agent</font><font color="#E5E5E5"> don't forget</font><font color="#CCCCCC"> i'm gonna</font><font color="#E5E5E5"> type in the</font>
+
+531
+00:30:36.759 --> 00:30:51.088
+<font color="#E5E5E5">URL for our our</font><font color="#CCCCCC"> what's a cool dog fact</font>
+
+532
+00:30:44.409 --> 00:30:51.089
+api<font color="#CCCCCC"> ada</font><font color="#E5E5E5"> dog</font>
+
+533
+00:30:51.398 --> 00:31:03.548
+Heroku<font color="#E5E5E5"> come slash facts and let's just</font>
+
+534
+00:30:56.079 --> 00:31:07.749
+get fact<font color="#E5E5E5"> number 100</font><font color="#CCCCCC"> so super agent</font>
+
+535
+00:31:03.548 --> 00:31:09.819
+thought<font color="#E5E5E5"> get this and then dot end which</font>
+
+536
+00:31:07.749 --> 00:31:12.159
+<font color="#CCCCCC">tell super agent like we're finished</font>
+
+537
+00:31:09.819 --> 00:31:14.678
+<font color="#CCCCCC">like making our request</font><font color="#E5E5E5"> we've ended</font>
+
+538
+00:31:12.159 --> 00:31:16.899
+making like telling me you what the
+
+539
+00:31:14.679 --> 00:31:19.229
+request<font color="#CCCCCC"> would be like send it and give</font>
+
+540
+00:31:16.898 --> 00:31:19.228
+<font color="#E5E5E5">us a result</font>
+
+541
+00:31:19.920 --> 00:31:25.440
+and we're going<font color="#CCCCCC"> to give our callback</font>
+
+542
+00:31:21.180 --> 00:31:28.259
+<font color="#CCCCCC">function to that now this function is</font>
+
+543
+00:31:25.440 --> 00:31:30.539
+<font color="#E5E5E5">going</font><font color="#CCCCCC"> to get two different things first</font>
+
+544
+00:31:28.259 --> 00:31:32.839
+of all it's two<font color="#CCCCCC"> different inputs first</font>
+
+545
+00:31:30.539 --> 00:31:38.519
+of<font color="#E5E5E5"> all it's going to get an error and</font>
+
+546
+00:31:32.839 --> 00:31:42.179
+then it's gonna get a response<font color="#E5E5E5"> from the</font>
+
+547
+00:31:38.519 --> 00:31:51.059
+<font color="#E5E5E5">server what I'm going to do to start off</font>
+
+548
+00:31:42.180 --> 00:31:52.440
+<font color="#E5E5E5">with is console.log the error and I'm</font>
+
+549
+00:31:51.059 --> 00:31:55.769
+gonna<font color="#CCCCCC"> come</font><font color="#E5E5E5"> for the log a few</font><font color="#CCCCCC"> bits and</font>
+
+550
+00:31:52.440 --> 00:32:02.880
+<font color="#E5E5E5">pieces from their response as well so</font>
+
+551
+00:31:55.769 --> 00:32:10.859
+the status code<font color="#E5E5E5"> response the status and</font>
+
+552
+00:32:02.880 --> 00:32:13.440
+<font color="#E5E5E5">the</font><font color="#CCCCCC"> contents of it the body response dot</font>
+
+553
+00:32:10.859 --> 00:32:17.189
+body<font color="#E5E5E5"> so that</font><font color="#CCCCCC"> should be all of the data</font>
+
+554
+00:32:13.440 --> 00:32:25.320
+that<font color="#E5E5E5"> we got sent back</font><font color="#CCCCCC"> to us if I run</font>
+
+555
+00:32:17.190 --> 00:32:26.700
+this now<font color="#CCCCCC"> requests experiment and we get</font>
+
+556
+00:32:25.319 --> 00:32:29.250
+this<font color="#CCCCCC"> little warning</font><font color="#E5E5E5"> which you could know</font>
+
+557
+00:32:26.700 --> 00:32:32.759
+about experimental features and we get
+
+558
+00:32:29.250 --> 00:32:36.450
+error<font color="#E5E5E5"> no</font><font color="#CCCCCC"> sir no error</font><font color="#E5E5E5"> that's good we get</font>
+
+559
+00:32:32.759 --> 00:32:44.549
+status<font color="#E5E5E5"> code of 200 which if we just go</font>
+
+560
+00:32:36.450 --> 00:32:47.400
+and check<font color="#E5E5E5"> the cat slash 200 200 okay</font>
+
+561
+00:32:44.549 --> 00:32:51.869
+<font color="#E5E5E5">amazing so that is a successful response</font>
+
+562
+00:32:47.400 --> 00:32:53.790
+<font color="#E5E5E5">code and then we get the body so</font><font color="#CCCCCC"> we get</font>
+
+563
+00:32:51.869 --> 00:33:00.839
+the ID which<font color="#CCCCCC"> is a hundred and then</font><font color="#E5E5E5"> the</font>
+
+564
+00:32:53.789 --> 00:33:02.420
+fact itself so<font color="#CCCCCC"> that all data</font><font color="#E5E5E5"> works</font>
+
+565
+00:33:00.839 --> 00:33:04.559
+pretty well
+
+566
+00:33:02.420 --> 00:33:07.289
+one thing that's important to do though
+
+567
+00:33:04.559 --> 00:33:09.599
+<font color="#CCCCCC">so this error response thing is really</font>
+
+568
+00:33:07.289 --> 00:33:11.879
+<font color="#E5E5E5">really common in node the convention</font>
+
+569
+00:33:09.599 --> 00:33:14.459
+with callback functions<font color="#E5E5E5"> is if it's</font>
+
+570
+00:33:11.880 --> 00:33:16.800
+something<font color="#CCCCCC"> that</font><font color="#E5E5E5"> can go wrong then the</font>
+
+571
+00:33:14.460 --> 00:33:18.930
+first<font color="#E5E5E5"> input to the callback is error and</font>
+
+572
+00:33:16.799 --> 00:33:22.470
+then the second thing<font color="#E5E5E5"> is like the</font><font color="#CCCCCC"> actual</font>
+
+573
+00:33:18.930 --> 00:33:27.990
+result<font color="#CCCCCC"> and it's a really good</font><font color="#E5E5E5"> idea</font><font color="#CCCCCC"> to</font>
+
+574
+00:33:22.470 --> 00:33:30.370
+add an if to say like<font color="#E5E5E5"> oh if there's an</font>
+
+575
+00:33:27.990 --> 00:33:32.289
+error<font color="#E5E5E5"> like</font>
+
+576
+00:33:30.369 --> 00:33:34.269
+handle it basically do something so I'm
+
+577
+00:33:32.289 --> 00:33:37.149
+gonna<font color="#E5E5E5"> just cancel the lock</font><font color="#CCCCCC"> era and I'm</font>
+
+578
+00:33:34.269 --> 00:33:39.069
+<font color="#E5E5E5">gonna return because return like return</font>
+
+579
+00:33:37.150 --> 00:33:41.680
+nothing<font color="#E5E5E5"> just stops the rest of the code</font>
+
+580
+00:33:39.069 --> 00:33:43.689
+in<font color="#E5E5E5"> this function from running</font><font color="#CCCCCC"> so if</font>
+
+581
+00:33:41.680 --> 00:33:46.720
+there's an error log what the error is
+
+582
+00:33:43.690 --> 00:33:49.600
+<font color="#E5E5E5">and then stop don't go</font><font color="#CCCCCC"> on to try</font><font color="#E5E5E5"> and do</font>
+
+583
+00:33:46.720 --> 00:33:51.190
+these<font color="#CCCCCC"> things if there's an error</font><font color="#E5E5E5"> if I</font>
+
+584
+00:33:49.599 --> 00:33:53.740
+<font color="#E5E5E5">changes to try and produce an error now</font>
+
+585
+00:33:51.190 --> 00:33:56.380
+if I send it to<font color="#E5E5E5"> somewhere that</font><font color="#CCCCCC"> it</font>
+
+586
+00:33:53.740 --> 00:34:00.759
+doesn't<font color="#E5E5E5"> exist like instead of</font><font color="#CCCCCC"> a dead dog</font>
+
+587
+00:33:56.380 --> 00:34:06.490
+<font color="#CCCCCC">fax if I go and add a cat facts which we</font>
+
+588
+00:34:00.759 --> 00:34:10.750
+don't<font color="#CCCCCC"> have</font><font color="#E5E5E5"> and try and run it then if we</font>
+
+589
+00:34:06.490 --> 00:34:13.300
+scroll<font color="#CCCCCC"> up to the top of all of this</font>
+
+590
+00:34:10.750 --> 00:34:17.440
+stuff<font color="#CCCCCC"> as a</font><font color="#E5E5E5"> bunch of it and</font><font color="#CCCCCC"> we see error</font>
+
+591
+00:34:13.300 --> 00:34:20.820
+<font color="#CCCCCC">not</font><font color="#E5E5E5"> found</font><font color="#CCCCCC"> and where</font><font color="#E5E5E5"> happened the status</font>
+
+592
+00:34:17.440 --> 00:34:20.820
+and response and all that sort of stuff
+
+593
+00:34:21.809 --> 00:34:25.840
+<font color="#CCCCCC">so that</font><font color="#E5E5E5"> sort of works okay then you get</font>
+
+594
+00:34:24.219 --> 00:34:28.959
+<font color="#CCCCCC">like a bunch of</font><font color="#E5E5E5"> this other crap as well</font>
+
+595
+00:34:25.840 --> 00:34:32.649
+which is all kind<font color="#CCCCCC"> of like nodes</font><font color="#E5E5E5"> internal</font>
+
+596
+00:34:28.960 --> 00:34:34.240
+stuff<font color="#E5E5E5"> about how it makes requests and</font>
+
+597
+00:34:32.648 --> 00:34:39.069
+all that sort of stuff<font color="#E5E5E5"> which we don't</font>
+
+598
+00:34:34.239 --> 00:34:40.388
+<font color="#CCCCCC">really</font><font color="#E5E5E5"> care about so yeah that's</font>
+
+599
+00:34:39.070 --> 00:34:43.720
+basically all there<font color="#E5E5E5"> is to it</font>
+
+600
+00:34:40.389 --> 00:34:44.950
+<font color="#E5E5E5">so we make a request</font><font color="#CCCCCC"> here and then</font><font color="#E5E5E5"> in</font>
+
+601
+00:34:43.719 --> 00:34:47.888
+<font color="#E5E5E5">our callback function we handle the</font>
+
+602
+00:34:44.949 --> 00:34:49.418
+response we can<font color="#E5E5E5"> get like</font><font color="#CCCCCC"> a sales code</font>
+
+603
+00:34:47.889 --> 00:34:51.370
+and the body and anything<font color="#E5E5E5"> else that we</font>
+
+604
+00:34:49.418 --> 00:34:54.460
+<font color="#CCCCCC">want all of the information</font><font color="#E5E5E5"> about what</font>
+
+605
+00:34:51.369 --> 00:35:00.730
+<font color="#CCCCCC">you</font><font color="#E5E5E5"> need to do here is in the super</font>
+
+606
+00:34:54.460 --> 00:35:02.050
+agent<font color="#E5E5E5"> Docs</font><font color="#CCCCCC"> so pause the</font><font color="#E5E5E5"> video and spend</font>
+
+607
+00:35:00.730 --> 00:35:05.579
+a little bit<font color="#E5E5E5"> of time like playing around</font>
+
+608
+00:35:02.050 --> 00:35:09.370
+<font color="#E5E5E5">with this for now</font><font color="#CCCCCC"> it's super super cool</font>
+
+609
+00:35:05.579 --> 00:35:12.360
+after that<font color="#E5E5E5"> part two of this is writing</font>
+
+610
+00:35:09.369 --> 00:35:15.549
+some tests for<font color="#E5E5E5"> this facts dog facts API</font>
+
+611
+00:35:12.360 --> 00:35:26.590
+and we have a few already stubbed out in
+
+612
+00:35:15.550 --> 00:35:29.110
+here<font color="#CCCCCC"> if I run them now then oh my I'm</font>
+
+613
+00:35:26.590 --> 00:35:31.809
+wrong oh I didn't<font color="#CCCCCC"> finish writing</font><font color="#E5E5E5"> you out</font>
+
+614
+00:35:29.110 --> 00:35:35.849
+<font color="#E5E5E5">let's see of me but hurry back on there</font>
+
+615
+00:35:31.809 --> 00:35:39.690
+we<font color="#E5E5E5"> go so we run</font>
+
+616
+00:35:35.849 --> 00:35:42.059
+<font color="#E5E5E5">test tests then we've got a few that</font>
+
+617
+00:35:39.690 --> 00:35:44.039
+have<font color="#E5E5E5"> green ticks already and a few that</font>
+
+618
+00:35:42.059 --> 00:35:45.570
+<font color="#CCCCCC">are</font><font color="#E5E5E5"> coming up as pending which just</font>
+
+619
+00:35:44.039 --> 00:35:46.739
+means<font color="#E5E5E5"> that like I've written the</font>
+
+620
+00:35:45.570 --> 00:35:49.080
+description<font color="#E5E5E5"> for the test</font>
+
+621
+00:35:46.739 --> 00:35:51.119
+I haven't<font color="#E5E5E5"> actually given them content</font>
+
+622
+00:35:49.079 --> 00:35:53.719
+yet<font color="#E5E5E5"> so it's gonna be up</font><font color="#CCCCCC"> to you to</font><font color="#E5E5E5"> write</font>
+
+623
+00:35:51.119 --> 00:35:57.599
+the content<font color="#CCCCCC"> of the</font><font color="#E5E5E5"> test</font><font color="#CCCCCC"> so actually like</font>
+
+624
+00:35:53.719 --> 00:35:59.219
+talks to the API<font color="#CCCCCC"> and does</font><font color="#E5E5E5"> something but</font>
+
+625
+00:35:57.599 --> 00:36:00.779
+I<font color="#E5E5E5"> just wanted to talk you</font><font color="#CCCCCC"> through how</font>
+
+626
+00:35:59.219 --> 00:36:03.139
+those tests<font color="#E5E5E5"> are working before you go</font>
+
+627
+00:36:00.780 --> 00:36:06.030
+went like welcome them on<font color="#E5E5E5"> your own</font>
+
+628
+00:36:03.139 --> 00:36:07.710
+so the first<font color="#CCCCCC"> couple of</font><font color="#E5E5E5"> lines of this</font>
+
+629
+00:36:06.030 --> 00:36:11.310
+file were the same as we've had before
+
+630
+00:36:07.710 --> 00:36:14.940
+<font color="#CCCCCC">so importing chai and Choi's version of</font>
+
+631
+00:36:11.309 --> 00:36:17.519
+expect to make assertions with and then
+
+632
+00:36:14.940 --> 00:36:21.269
+we're also requiring this thing called
+
+633
+00:36:17.519 --> 00:36:25.440
+super<font color="#E5E5E5"> test and super test is made by the</font>
+
+634
+00:36:21.269 --> 00:36:33.329
+same person<font color="#CCCCCC"> that</font><font color="#E5E5E5"> makes super agent</font><font color="#CCCCCC"> oops</font>
+
+635
+00:36:25.440 --> 00:36:39.030
+<font color="#E5E5E5">super thirst and it's basically the</font>
+
+636
+00:36:33.329 --> 00:36:42.690
+exact<font color="#CCCCCC"> same</font><font color="#E5E5E5"> thing except it's aimed at</font>
+
+637
+00:36:39.030 --> 00:36:46.170
+writing unit tests<font color="#CCCCCC"> or sorry</font><font color="#E5E5E5"> not unit has</font>
+
+638
+00:36:42.690 --> 00:36:48.510
+writing automated API tests so what we
+
+639
+00:36:46.170 --> 00:36:51.059
+do is we run the<font color="#E5E5E5"> super test function</font>
+
+640
+00:36:48.510 --> 00:36:53.520
+with our public main URL<font color="#E5E5E5"> for our API and</font>
+
+641
+00:36:51.059 --> 00:36:57.539
+now we can<font color="#CCCCCC"> use this API to like make</font>
+
+642
+00:36:53.519 --> 00:37:01.550
+requests<font color="#CCCCCC"> to this thing I'm</font><font color="#E5E5E5"> using</font>
+
+643
+00:36:57.539 --> 00:37:04.230
+<font color="#CCCCCC">describe to a group together like</font>
+
+644
+00:37:01.550 --> 00:37:06.570
+<font color="#CCCCCC">similar sorts of requests so get all of</font>
+
+645
+00:37:04.230 --> 00:37:09.030
+the get requests to<font color="#CCCCCC"> fact slash random</font>
+
+646
+00:37:06.570 --> 00:37:11.460
+<font color="#E5E5E5">I'm going to put in here and then I have</font>
+
+647
+00:37:09.030 --> 00:37:13.890
+each of these tests with an assertion so
+
+648
+00:37:11.460 --> 00:37:17.099
+we look<font color="#E5E5E5"> at the first</font><font color="#CCCCCC"> one it returns a</font>
+
+649
+00:37:13.889 --> 00:37:20.299
+<font color="#CCCCCC">200 status code so we're gonna make a</font>
+
+650
+00:37:17.099 --> 00:37:23.279
+<font color="#E5E5E5">request</font><font color="#CCCCCC"> to the fact slash random API and</font>
+
+651
+00:37:20.300 --> 00:37:25.950
+try and check that it gets a 200 status
+
+652
+00:37:23.280 --> 00:37:28.860
+code so as<font color="#CCCCCC"> usual we pass in this</font>
+
+653
+00:37:25.949 --> 00:37:32.250
+anonymous function<font color="#E5E5E5"> but we've got this</font>
+
+654
+00:37:28.860 --> 00:37:34.079
+extra<font color="#CCCCCC"> thing here</font><font color="#E5E5E5"> this has done this</font>
+
+655
+00:37:32.250 --> 00:37:39.300
+extra input<font color="#E5E5E5"> and that's</font><font color="#CCCCCC"> actually a</font>
+
+656
+00:37:34.079 --> 00:37:42.329
+callback function<font color="#E5E5E5"> so when we have our</font>
+
+657
+00:37:39.300 --> 00:37:43.769
+tests<font color="#E5E5E5"> can be asynchronous as well and we</font>
+
+658
+00:37:42.329 --> 00:37:46.349
+<font color="#E5E5E5">need to let maka know when we're</font>
+
+659
+00:37:43.769 --> 00:37:48.780
+finished running<font color="#E5E5E5"> them</font><font color="#CCCCCC"> but luckily</font>
+
+660
+00:37:46.349 --> 00:37:49.710
+because<font color="#E5E5E5"> like super test is already set</font>
+
+661
+00:37:48.780 --> 00:37:50.790
+up
+
+662
+00:37:49.710 --> 00:37:52.980
+we don't need to worry about actually
+
+663
+00:37:50.789 --> 00:37:55.170
+<font color="#E5E5E5">calling</font><font color="#CCCCCC"> done ourselves we just need to</font>
+
+664
+00:37:52.980 --> 00:37:58.230
+make<font color="#CCCCCC"> sure</font><font color="#E5E5E5"> that we give done to that end</font>
+
+665
+00:37:55.170 --> 00:38:01.019
+thing<font color="#E5E5E5"> basically say like once this</font>
+
+666
+00:37:58.230 --> 00:38:04.800
+requests<font color="#E5E5E5"> like finished make sure that</font>
+
+667
+00:38:01.019 --> 00:38:06.059
+you like run<font color="#E5E5E5"> the dumb thing again like</font>
+
+668
+00:38:04.800 --> 00:38:07.500
+if<font color="#E5E5E5"> this is something you're unsure about</font>
+
+669
+00:38:06.059 --> 00:38:10.019
+<font color="#E5E5E5">don't worry</font><font color="#CCCCCC"> about it</font>
+
+670
+00:38:07.500 --> 00:38:10.800
+just make sure<font color="#CCCCCC"> that</font><font color="#E5E5E5"> you end each of</font>
+
+671
+00:38:10.019 --> 00:38:13.650
+these things<font color="#CCCCCC"> with it</font>
+
+672
+00:38:10.800 --> 00:38:17.730
+<font color="#CCCCCC">got ends done because</font><font color="#E5E5E5"> that</font><font color="#CCCCCC"> couldn't make</font>
+
+673
+00:38:13.650 --> 00:38:21.480
+things<font color="#E5E5E5"> work the way this works is we're</font>
+
+674
+00:38:17.730 --> 00:38:24.030
+saying API so our super test<font color="#E5E5E5"> API with</font>
+
+675
+00:38:21.480 --> 00:38:27.019
+this<font color="#E5E5E5"> URL in it don't get facts such</font>
+
+676
+00:38:24.030 --> 00:38:30.839
+random<font color="#E5E5E5"> so get that path on this URL and</font>
+
+677
+00:38:27.019 --> 00:38:33.659
+then expect<font color="#CCCCCC"> 200 is expecting a 200</font>
+
+678
+00:38:30.838 --> 00:38:36.119
+status<font color="#E5E5E5"> code</font><font color="#CCCCCC"> and then that end done</font><font color="#E5E5E5"> that</font>
+
+679
+00:38:33.659 --> 00:38:41.399
+we already<font color="#E5E5E5"> talked</font><font color="#CCCCCC"> about when we run that</font>
+
+680
+00:38:36.119 --> 00:38:43.910
+now we get<font color="#E5E5E5"> the 200 say this code</font><font color="#CCCCCC"> green</font>
+
+681
+00:38:41.400 --> 00:38:49.289
+tick next to it<font color="#E5E5E5"> we go</font><font color="#CCCCCC"> off</font><font color="#E5E5E5"> to see it took</font>
+
+682
+00:38:43.909 --> 00:38:51.539
+230 milliseconds to run the next<font color="#E5E5E5"> one</font>
+
+683
+00:38:49.289 --> 00:38:54.210
+checks that the body<font color="#CCCCCC"> of response has a</font>
+
+684
+00:38:51.539 --> 00:38:56.579
+number in it called ID so<font color="#E5E5E5"> we do the same</font>
+
+685
+00:38:54.210 --> 00:39:00.389
+thing we used<font color="#CCCCCC"> for done</font><font color="#E5E5E5"> and we make an</font>
+
+686
+00:38:56.579 --> 00:39:02.909
+API request a<font color="#CCCCCC"> fact</font><font color="#E5E5E5"> slash random and then</font>
+
+687
+00:39:00.389 --> 00:39:04.559
+we do<font color="#E5E5E5"> not expect again except instead of</font>
+
+688
+00:39:02.909 --> 00:39:06.329
+just<font color="#E5E5E5"> giving it a number for the status</font>
+
+689
+00:39:04.559 --> 00:39:08.369
+code<font color="#E5E5E5"> we give it this anonymous function</font>
+
+690
+00:39:06.329 --> 00:39:10.409
+<font color="#CCCCCC">that</font><font color="#E5E5E5"> takes the response and then we can</font>
+
+691
+00:39:08.369 --> 00:39:13.289
+do whatever we want<font color="#CCCCCC"> with</font><font color="#E5E5E5"> the response so</font>
+
+692
+00:39:10.409 --> 00:39:16.618
+here we're using<font color="#E5E5E5"> Chai's expect to expect</font>
+
+693
+00:39:13.289 --> 00:39:18.179
+response body<font color="#E5E5E5"> dot ID to be a number so</font>
+
+694
+00:39:16.619 --> 00:39:22.289
+the ID<font color="#E5E5E5"> should be a number</font><font color="#CCCCCC"> that's all</font>
+
+695
+00:39:18.179 --> 00:39:23.219
+this says again with it done<font color="#CCCCCC"> and</font><font color="#E5E5E5"> then</font>
+
+696
+00:39:22.289 --> 00:39:25.289
+<font color="#E5E5E5">you're going to have a few of</font><font color="#CCCCCC"> these</font>
+
+697
+00:39:23.219 --> 00:39:27.419
+things where you have like a task<font color="#CCCCCC"> and</font>
+
+698
+00:39:25.289 --> 00:39:29.820
+you'll have an<font color="#CCCCCC"> it without function and</font>
+
+699
+00:39:27.420 --> 00:39:37.619
+all you need<font color="#E5E5E5"> to do here is</font><font color="#CCCCCC"> make sure the</font>
+
+700
+00:39:29.820 --> 00:39:42.480
+<font color="#E5E5E5">add a function</font><font color="#CCCCCC"> in that actually provides</font>
+
+701
+00:39:37.619 --> 00:39:47.039
+<font color="#E5E5E5">the body the the</font><font color="#CCCCCC"> content</font><font color="#E5E5E5"> of this test</font>
+
+702
+00:39:42.480 --> 00:39:48.809
+<font color="#E5E5E5">that actually runs the code that's</font>
+
+703
+00:39:47.039 --> 00:39:51.469
+basically it<font color="#E5E5E5"> if you have any questions</font>
+
+704
+00:39:48.809 --> 00:39:55.338
+there's no on slack or in person<font color="#E5E5E5"> and</font>
+
+705
+00:39:51.469 --> 00:39:55.338
+good<font color="#E5E5E5"> luck</font>
+
